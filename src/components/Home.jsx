@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './Header';
+import Navbar from './Navbar';
 
 
 const Home = ()=> {
@@ -7,6 +8,7 @@ const Home = ()=> {
   return (
     <div>
       <Header/>
+      <Navbar/>
     </div>
 
   )
