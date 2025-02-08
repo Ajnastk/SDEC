@@ -1,12 +1,16 @@
-import Navbar from "./Navbar";
+import { useState } from 'react'
+import Header from './Header';
+
+
 
 const Home = ()=> {
 
   return (
     <div>
-      <Navbar />
-      <h1 className="text-white">Vite + React</h1>
-    </div> 
+      <Header/>
+    </div>
+
+
   )
 }
 
