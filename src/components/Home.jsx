@@ -1,8 +1,13 @@
-import Navbar from "./Navbar";
+import { useState } from 'react'
+import Header from './Header';
+import Navbar from './Navbar';
+
+
 
 const Home = ()=> {
 
   return (
+
     <div className=" bg-[#010a23] bg-[url(/images/home-bg.png)]">
       <Navbar />
       <div className="flex">
@@ -37,6 +42,7 @@ const Home = ()=> {
         </div>
       </div>
     </div> 
+
   )
 }
 
