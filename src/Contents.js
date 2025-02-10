@@ -18,7 +18,7 @@ import customeAndServiceImage from "../public/assets/images/customeAndService.pn
 import webStartergyImage from "../public/assets/images/webStartergyImage.png";
 
 export const contents = {
-  home: [],
+  home: {},
   feature: {
     mainImage: BussinessIllustration,
     iconsImage: icons,
@@ -62,4 +62,7 @@ export const contents = {
       },
     ],
   },
+  who :{
+    
+  }
 };
