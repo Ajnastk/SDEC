@@ -43,14 +43,14 @@ const Home = ()=> {
         </div>
 
         <div className='flex flex-col mt-10 -mx-80'>
-            <img className=" mx-80 w-[140px] h-[45px] lg:w-[258px] lg:h-[82px]" src="/images/cloud1.png" />
+            <img className=" mx-80 w-[140px] h-[45px] lg:w-[258px] lg:h-[82px]" src="/assets/images/cloud1.png" />
             <div className='flex'>
-            <img className=" -mt-10 mx-20 w-[260px] h-[210px]  md:w-[360] md:h-[310px] lg:w-[718px] lg:h-[686px]" src="images/person.png"/>
+            <img className=" -mt-10 mx-20 w-[260px] h-[210px]  md:w-[360] md:h-[310px] lg:w-[718px] lg:h-[686px]" src="/assets/images/person.png"/>
             <img className='mt-30 -mx-30 w-[30px] h-[30px] lg:w-[70px] lg:h-[70px]' src="/images/Ball.png"/>
             </div>
 
         <div>
-          <img className="lg:w-[718px] lg:h-[686px]" src="/assets/images/person.png"/>
+          {/* <img className="lg:w-[718px] lg:h-[686px]" src="/assets/images/person.png"/> */}
         </div>
       </div>
     </div> 
