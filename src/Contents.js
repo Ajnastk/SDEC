@@ -10,7 +10,7 @@ import headingLineImage from "../public/assets/images/headingLineImage.png";
 
 
 export const contents = {
-  home: [],
+  home: {},
   feature: {
     mainImage: BussinessIllustration,
     iconsImage: icons,
@@ -20,4 +20,7 @@ export const contents = {
     researchIcon:researchIcon,
     headingLineImage:headingLineImage
   },
+  who :{
+    
+  }
 };

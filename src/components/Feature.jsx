@@ -1,3 +1,4 @@
+import React from "react";
 import { contents } from "../contents";
 
 const Feature = () => {
