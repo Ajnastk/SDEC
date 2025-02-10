@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.stroke-white {
+    -webkit-text-stroke: 0.5px rgb(148, 148, 148); /* Outline color and thickness */
+  }
+  
