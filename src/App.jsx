@@ -1,11 +1,11 @@
 import Home from "./components/Home";
-import Feature from "./components/Feature";
+import About from "./components/About";
 
 const App=()=>{
     return(
         <div className="bg-[#000A1F]">
             <Home/>
-            <Feature/>
+            <About/>
         </div>
     )
 }
