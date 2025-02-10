@@ -1,10 +1,10 @@
-import BussinessIllustration from "./assets/images/features/BussinessIllustration.png";
-import icons from "./assets/images/features/iconsImage.png";
-import bussinessGrowthIcon from "./assets/images/features/businessGrowthIcon.png";
-import dataSolutionIcon from "./assets/images/features/dataSolutionIcon.png";
-import productDesignIcon from "./assets/images/features/productDesignIcon.png";
-import researchIcon from "./assets/images/features/researchIcon.png";
-import headingLineImage from "./assets/images/features/headingLineImage.png";
+import BussinessIllustration from "../public/assets/images/BussinessIllustration.png";
+import icons from "../public/assets/images/iconsImage.png";
+import bussinessGrowthIcon from "../public/assets/images/businessGrowthIcon.png";
+import dataSolutionIcon from "../public/assets/images/dataSolutionIcon.png";
+import productDesignIcon from "../public/assets/images/productDesignIcon.png";
+import researchIcon from "../public/assets/images/researchIcon.png";
+import headingLineImage from "../public/assets/images/headingLineImage.png";
 
 
 

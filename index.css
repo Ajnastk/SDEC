@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
+
 .stroke-white {
     -webkit-text-stroke: 0.5px rgb(148, 148, 148); /* Outline color and thickness */
   }
   
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+
