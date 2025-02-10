@@ -25,7 +25,7 @@ const Feature = () => {
         <div className="w-full md:w-1/2">
           {/* Background Text */}
 
-          <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-[80px] md:text-[110px] font-bold text-[#1a2236] tracking-wide uppercase z-0">
+          <div className="absolute right-17 top-16 font-extrabold text-[80px] sm:text-[50px] md:text-[70px] lg:text-[130px] leading-[0] tracking-tight uppercase text-transparent stroke-white">
             FEATURES
           </div>
 

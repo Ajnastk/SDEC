@@ -42,11 +42,15 @@ const Home = ()=> {
         </div>
 
         <div className='flex flex-col mt-10 -mx-80'>
+
             <img className=" mx-60 w-[140px] h-[45px] lg:w-[258px] lg:h-[82px]" src="/assets/images/cloud1.png"/>
             <div className='flex'>
             <img className=" -mt-10 mx-5 w-[260px] h-[210px]  md:w-[360] md:h-[310px] lg:w-[718px] lg:h-[686px]" src="/assets/images/person.png"/>
             <img className='mt-30 -mx-30 w-[30px] h-[30px] lg:w-[70px] lg:h-[70px]' src="/assets/images/Ball.png"/>
             </div>
+
+
+
       </div>
     </div> 
     <div className=' flex items-center justify-center gap-20 -mt-80 bg-[url(/assets/images/vector-1.png)]'>
