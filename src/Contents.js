@@ -118,4 +118,12 @@ export const contents = {
       },
     ],
   },
+  Projects:{
+    backgroundHeading:'PROJECTS',
+    underLineImage:underLine,
+    heading:`Checkout our Recently
+    Completed Projects`,
+  }
+ 
+
 };
