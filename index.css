@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 @import "tailwindcss";
 
 
@@ -19,6 +20,8 @@
   /* * {
     outline: 1px solid red;
   } */
-  
+  .font-jost {
+    font-family: 'Jost', sans-serif;
+  }
   
 

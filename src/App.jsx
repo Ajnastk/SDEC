@@ -3,6 +3,7 @@ import About from "./components/About";
 import Seo from "./components/Seo";
 import Services from './components/Services'
 import Projects from './components/Projects';
+import Call from "./components/Call";
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
           <Services />
           <Seo/>
           <Projects />
+          <Call/>
         </div>
       </div>
     );
