@@ -6,6 +6,7 @@ import ball from '../assets/images/Ball.png';
 import person from '../assets/images/person.png';
 import headingLine from '../assets/images/headingLineImage.png';
 import vector from '../assets/images/vector.png';
+import homeBg from '../assets/images/home-bg.png';
 
 
 const Home = ()=> {
@@ -13,13 +14,12 @@ const Home = ()=> {
   return (
 
 
-    <div className=" bg-[#010a23] bg-[url(/assets/images/home-bg.png)]">
+    <div className=" bg-[#010a23]" style={{backgroundImage : `url(${homeBg})`}}>
       <Navbar />
-
-      <div className="flex flex-col lg:flex-row items-center justify-between px-5 lg:px-20">
-        <div className="flex flex-col items-center lg:items-start">
+      <div className="flex flex-col lg:flex-row justify-center px-5 lg:px-20">
+        <div className="flex flex-col items-center lg:items-start lg:mx-20">
         <img className='mt-5 w-[120px] h-[40px] sm:w-[150px] sm:h-[50px] lg:w-[278px] lg:h-[92px]' src={cloud1}/>
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:text-left ">
 
     
         <div className="flex flex-col sm:flex-row items-center gap-1">
@@ -43,7 +43,7 @@ const Home = ()=> {
         </div>
         </div>
 
-        <div className='flex flex-col items-center mt-5 lg:mt-0 lg:-mx-20'>
+        <div className='flex flex-col items-center mt-5 lg:mt-0 lg:-mx-30'>
 
 
             <img className="w-[100px] h-[30px] sm:w-[150px] sm:h-[50px] lg:w-[278px] lg:h-[92px]" src={cloud1}/>
@@ -58,14 +58,14 @@ const Home = ()=> {
       </div>
     </div> 
 
-    <div className='flex flex-col items-center justify-center mt-10 px-5 lg:px-20 bg-[url(/assets/images/vector.png)]'>
-    <div className='flex flex-col md:flex-row items-center justify-between gap-10'>
+    <div className='flex flex-col items-center justify-center lg:-mt-60 px-5 lg:px-20' style={{backgroundImage : `url(${vector})`}}>
+    <div className='flex flex-col md:flex-row items-center justify-between gap-20 mt-70'>
     <div className='text-center md:text-left '>
           <img className="mx-auto md:mx-0 w-10 sm:w-20" src={headingLine}/>
-          <p className="font-extrabold text-[50px] sm:text-[70px] md:text-[80px] lg:text-[100px] leading-[120%] tracking-tight uppercase text-transparent stroke-white">
+          <p className=" -mt-12 font-extrabold text-[50px] sm:text-[70px] md:text-[80px] lg:text-[100px] leading-[120%] tracking-tight uppercase text-transparent stroke-white">
              BRAND
         </p>
-        <p className='text-white font-medium text-xl sm:text-2xl lg:text-3xl mt-2'>We're More Then 254+ <br/> Global Partners</p>
+        <p className='text-white font-medium text-xl sm:text-2xl lg:text-3xl -mt-12'> We've More Then 254+ <br/> Global Partners</p>
 
       </div>
       <div className='text-center md:text-left'>
@@ -74,7 +74,7 @@ const Home = ()=> {
     </div>
      <div>
       {/* horizontal line */}
-      <hr className='w-full max-w-[200px] sm:max-w-[300px] lg:max-w-[500px] border-gray-500 my-5' />
+      <hr className='text-gray-600 w-200 mt-15' />
      </div>
     </div>
     </div>
