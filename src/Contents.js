@@ -20,6 +20,7 @@ import webStartergyImage from "./assets/images/webStartergyImage.png";
 export const contents = {
   home: {},
   feature: {
+    backgroundHeading: "FEATURE",
     mainImage: BussinessIllustration,
     iconsImage: icons,
     bussinessGrowthIcon: bussinessGrowthIcon,
@@ -27,10 +28,31 @@ export const contents = {
     productDesignIcon: productDesignIcon,
     researchIcon: researchIcon,
     headingLineImage: underLine,
+    heading: "Explore Our Professional Business Solutions",
+    featuresList: [
+      {
+        title: "Business Growth",
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+        icon: bussinessGrowthIcon,
+      },
+      {
+        title: "User Research",
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+        icon: researchIcon,
+      },
+      {
+        title: "Big Data Solution",
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+        icon: dataSolutionIcon,
+      },
+      {
+        title: "Product Design",
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+        icon: productDesignIcon,
+      },
+    ],
   },
-  who :{
-    
-  },
+  who: {},
   services: {
     backgroundHeading: "SERVICES",
     heading: `Great Features To Do Your Buisness
@@ -38,27 +60,27 @@ export const contents = {
     logo: servicesLogo,
     underLineImage: underLine,
     servicesList: {
-      graphicsDesign:{
+      graphicsDesign: {
         title: "Graphics Design",
         image: graphicsDesignImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-      ideationAndEvaluation:{
+      ideationAndEvaluation: {
         title: "Ideation & Evaluation",
         image: IdeationImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-      brandIdentity:{
+      brandIdentity: {
         title: "Brand Identity",
         image: BrandImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-      customerService:{
+      customerService: {
         title: "Customer Service",
         image: customeAndServiceImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-      webStrategy:{
+      webStrategy: {
         title: "Web Strategy",
         image: webStartergyImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
@@ -72,4 +94,5 @@ export const contents = {
     Completed Projects`,
   }
  
+
 };
