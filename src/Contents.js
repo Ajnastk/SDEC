@@ -1,21 +1,21 @@
 // Comen Images
-import underLine from "../public/assets/images/headingLineImage.png";
+import underLine from "./assets/images/headingLineImage.png";
 
 // Feature Images
-import BussinessIllustration from "../public/assets/images/BussinessIllustration.png";
-import icons from "../public/assets/images/iconsImage.png";
-import bussinessGrowthIcon from "../public/assets/images/businessGrowthIcon.png";
-import dataSolutionIcon from "../public/assets/images/dataSolutionIcon.png";
-import productDesignIcon from "../public/assets/images/productDesignIcon.png";
-import researchIcon from "../public/assets/images/researchIcon.png";
+import BussinessIllustration from "./assets/images/BussinessIllustration.png";
+import icons from "./assets/images/iconsImage.png";
+import bussinessGrowthIcon from "./assets/images/businessGrowthIcon.png";
+import dataSolutionIcon from "./assets/images/dataSolutionIcon.png";
+import productDesignIcon from "./assets/images/productDesignIcon.png";
+import researchIcon from "./assets/images/researchIcon.png";
 
 // Services Images
-import servicesLogo from "../public/assets/images/servicesLogo.png";
-import graphicsDesignImage from "../public/assets/images/graphicsDesignLogo.png";
-import IdeationImage from "../public/assets/images/ideaImage.png";
-import BrandImage from "../public/assets/images/brandAndIdentityImage.png";
-import customeAndServiceImage from "../public/assets/images/customeAndService.png";
-import webStartergyImage from "../public/assets/images/webStartergyImage.png";
+import servicesLogo from "./assets/images/servicesLogo.png";
+import graphicsDesignImage from "./assets/images/graphicsDesignLogo.png";
+import IdeationImage from "./assets/images/ideaImage.png";
+import BrandImage from "./assets/images/brandAndIdentityImage.png";
+import customeAndServiceImage from "./assets/images/customeAndService.png";
+import webStartergyImage from "./assets/images/webStartergyImage.png";
 
 export const contents = {
   home: {},
@@ -27,6 +27,9 @@ export const contents = {
     productDesignIcon: productDesignIcon,
     researchIcon: researchIcon,
     headingLineImage: underLine,
+  },
+  who :{
+    
   },
   services: {
     backgroundHeading: "SERVICES",
@@ -62,7 +65,5 @@ export const contents = {
       },
     ],
   },
-  who :{
-    
-  }
+ 
 };
