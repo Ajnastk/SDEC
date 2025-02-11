@@ -37,33 +37,33 @@ export const contents = {
     Growth & Development`,
     logo: servicesLogo,
     underLineImage: underLine,
-    servicesList: [
-      {
+    servicesList: {
+      graphicsDesign:{
         title: "Graphics Design",
         image: graphicsDesignImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-      {
+      ideationAndEvaluation:{
         title: "Ideation & Evaluation",
         image: IdeationImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-      {
+      brandIdentity:{
         title: "Brand Identity",
         image: BrandImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-      {
+      customerService:{
         title: "Customer Service",
         image: customeAndServiceImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-      {
+      webStrategy:{
         title: "Web Strategy",
         image: webStartergyImage,
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
-    ],
+    },
   },
  
 };
