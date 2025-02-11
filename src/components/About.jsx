@@ -1,12 +1,12 @@
 import Feature from './Feature'
-import Services from './Services'
+import Who from "./Who"
 
 const About = () => {
   return (
-    <>
+    <div>
     <Feature/>
-    <Services/>
-    </>
+    <Who/>
+    </div>
   )
 }
 
