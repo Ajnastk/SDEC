@@ -17,8 +17,17 @@ import BrandImage from "./assets/images/brandAndIdentityImage.png";
 import customeAndServiceImage from "./assets/images/customeAndService.png";
 import webStartergyImage from "./assets/images/webStartergyImage.png";
 
+//Project Images
+
+import project1Image from "./assets/images/project-1.png";
+import project2Image from "./assets/images/project-2.png";
+import project3Image from "./assets/images/project-3.png";
+
+
 // Seo
 import speakerImage from "./assets/images/seoImage.svg";
+
+
 export const contents = {
   home: {},
   feature: {
@@ -123,6 +132,30 @@ export const contents = {
     underLineImage:underLine,
     heading:`Checkout our Recently
     Completed Projects`,
+    ourProjects :[
+      {
+        id:1,
+        category:'Marketing',
+        title:'Tech website Solution',
+        image:project1Image
+      },
+      {
+        id:2,
+        category:'Technology',
+        title:'App platform Integration',
+        image:project2Image
+      },{
+        id:3,
+        category:'Software',
+        title:'Software Tools Development',
+        image:project3Image
+      },{
+        id:4,
+        category:'demo',
+        title:'just checking',
+        image:icons
+      }
+    ]
   }
  
 

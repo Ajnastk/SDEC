@@ -9,8 +9,10 @@ import Call from "./components/Call";
 
 const App = () => {
     return (
+
       <div className="bg-[#000A1F] min-h-screen w-[1920px] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+
           <Home />
           <About />
           <Services />
@@ -18,7 +20,6 @@ const App = () => {
           <Projects />
           <Call/>
         </div>
-      </div>
     );
   };
   
