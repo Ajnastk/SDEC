@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 const Projects=()=>{
 
-    const projectsData = contents.ourProjects;
+    const projectsData = contents.Projects;
     return(
         <div className="flex flex-col  py-20 text-white items-center">
             <div className="flex flex-col items-center">
