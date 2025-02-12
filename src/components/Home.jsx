@@ -14,7 +14,7 @@ const Home = ()=> {
   return (
 
 
-    <div className=" bg-[#010a23]" style={{backgroundImage : `url(${homeBg})`}}>
+    <div className=" bg-[#010a23] " style={{backgroundImage : `url(${homeBg})`}}>
       <Navbar />
       <div className="flex flex-col lg:flex-row justify-center px-5 lg:px-20">
         <div className="flex flex-col items-center lg:items-start lg:mx-20">
