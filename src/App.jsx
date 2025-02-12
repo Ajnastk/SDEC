@@ -3,24 +3,30 @@ import About from "./components/About";
 import Seo from "./components/Seo";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
-import Call from "./components/Call";
+import Fact from "./components/Fact";
 import Says from "./components/Says";
+import Call from "./components/Call"
+import Footer from "./components/Footer";
+
+
+
 
 const App = () => {
-  return (
+    return (
 
-    <div className="bg-[#000A1F] min-h-screen w-full overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-        <Home />
-        <About />
-        <Services />
-        <Projects />
-        <Seo />
-        <Says />
-        <Call />
-      </div>
-    </div>
-  );
-};
+      <div className="bg-[#000A1F] min-h-screen w-full overflow-hidden">
+          <Home />
+          <About />
+          <Services/>
+          <Seo/>
+          <Projects />
+          <Fact/>
+          <Says />
+          <Call/>
+          <Footer/>
+        </div>
+    );
+  }
+  
 
-export default App;
+

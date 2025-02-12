@@ -62,9 +62,9 @@ const Home = ()=> {
     <div className='flex flex-col md:flex-row items-center justify-between gap-20 mt-70'>
     <div className='text-center md:text-left '>
           <img className="mx-auto md:mx-0 w-10 sm:w-20" src={headingLine}/>
-          <p className=" -mt-12 font-extrabold text-[50px] sm:text-[70px] md:text-[80px] lg:text-[100px] leading-[120%] tracking-tight uppercase text-transparent stroke-white">
+          <h1 className=" -mt-12 font-extrabold text-[50px] sm:text-[70px] md:text-[80px] lg:text-[100px] leading-[120%] tracking-tight uppercase text-transparent stroke-white">
              BRAND
-        </p>
+        </h1>
         <p className='text-white font-medium text-xl sm:text-2xl lg:text-3xl -mt-12'> We've More Then 254+ <br/> Global Partners</p>
 
       </div>
