@@ -3,7 +3,7 @@ import call from '../assets/images/call.svg'
 import pseudo from '../assets/images/headingLineImage.png'; 
 const Call = () => {
   return (
-    <div className="container mx-[321] px-4 py-16 flex flex-col lg:flex-row items-center gap-8">
+    <div className="container px-4 py-16 flex flex-col lg:flex-row items-center gap-8">
       {/* Left Side - Image */}
       <div className="lg:w-1/2">
         <img className="w-full max-w-[541px]" alt="Person working on laptop" src={call} />

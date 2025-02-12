@@ -12,53 +12,56 @@ const Who = () => {
   ];
 
   return (
-    <div className="container mx-auto px-6 py-12 lg:py-16">
-      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-        {/* Left Side - Text Content */}
-        <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left relative">
-          <h1 className="absolute top-10 left-1/2 lg:left-[-27px] transform -translate-x-1/2 lg:translate-x-0 font-extrabold text-[80px] sm:text-[100px] lg:text-[140px] text-transparent stroke-white leading-none tracking-tight uppercase">
-            WHO
-          </h1>
-
-          <div className="relative pt-20">
+    <div className="container mx-auto px-4 sm:px-6 py-8 md:py-12 lg:py-16 xl:py-20">
+      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        {/* Left Content */}
+        <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
+          {/* Subtitle & Description */}
+          <div className="relative pt-10 sm:pt-16 text-center md:text-left">
             <img
-              className="mx-auto lg:mx-0 w-[70px] sm:w-[84px] h-2.5 mb-6"
+              className=" md:w-16 h-2 mb-4 mx-auto md:mx-0 w-10 sm:w-20"
               alt="Decorative line"
               src={pseudo}
             />
-            <h2 className="font-semibold text-white text-2xl sm:text-3xl md:text-4xl leading-tight tracking-wide">
-              We're an Award-Winning <br />
-              Modern Business Solutions <br />
+             {/* "WHO" Heading */}
+          <h1 className=" text-[60px] sm:text-[80px] md:text-[100px] lg:text-[120px] xl:text-[140px] font-extrabold text-transparent stroke-white leading-none uppercase tracking-tight -mt-12">
+            WHO
+          </h1>
+            <h2 className="font-semibold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight tracking-widetext-white  -mt-12 ">
+              We're an Award-Winning <br className="hidden sm:block" />
+              Modern Business Solutions <br className="hidden sm:block" />
               Agency
             </h2>
           </div>
 
-          <p className="text-white text-base sm:text-lg leading-7 max-w-lg mx-auto lg:mx-0">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque epsa quae ab illo inventore veritatis architecto beatae.
+          <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium totam rem aperiam eaque quae ab
+            illo inventore veritatis architecto beatae.
           </p>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-70 sm:w-150 md:w-183 max-w-auto mx-4 lg:mx-0">
-  {services.map((service) => (
-    <div
-      key={service}
-      className="p-3 bg-[#292738] shadow-lg rounded-md flex items-center space-x-3 transition-transform transform hover:scale-105"
-    >
-      <div className="w-7 h-7 rounded-full bg-gradient-to-b from-[#186EF2] to-[#6D18EF] flex items-center justify-center">
-        <CheckCircle className="w-4 h-4 text-white" />
-      </div>
-      <span className="text-white font-semibold text-sm md:text-base">
-        {service}
-      </span>
-    </div>
-  ))}
-</div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0">
+            {services.map((service) => (
+              <div
+                key={service}
+                className="p-3 bg-[#292738] shadow-lg rounded-md flex items-center space-x-3 transition-transform transform hover:scale-105"
+              >
+                <div className="w-8 h-8 rounded-full bg-gradient-to-b from-blue-600 to-purple-600 flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-white font-medium text-sm md:text-base">
+                  {service}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* Right Side - Image */}
+        {/* Right Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            className="w-full max-w-xs sm:max-w-md lg:max-w-xl h-auto object-cover"
+            className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[500px] h-auto object-cover"
             alt="Who We Are"
             src={who}
           />
@@ -69,3 +72,4 @@ const Who = () => {
 };
 
 export default Who;
+
