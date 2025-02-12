@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { contents } from "../contents";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation,Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -60,9 +60,10 @@ const Says = () => {
                 768: { slidesPerView: 2 },
               }}
               spaceBetween={30}
+              autoplay={{delay:3000,disableOnInteraction:false}}
               pagination={{ clickable: true }}
               navigation={!isMobile} // Hide navigation if it's mobile
-              modules={[Pagination, Navigation]}
+              modules={[Navigation, Pagination, Autoplay]}
               className="mySwiper"
             >
               {says.testimonials.map((testimonial, index) => (
