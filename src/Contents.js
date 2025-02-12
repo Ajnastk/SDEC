@@ -23,6 +23,11 @@ import project1Image from "./assets/images/project-1.png";
 import project2Image from "./assets/images/project-2.png";
 import project3Image from "./assets/images/project-3.png";
 
+
+// Seo
+import speakerImage from "./assets/images/seoImage.svg";
+
+
 export const contents = {
   home: {},
   feature: {
@@ -92,6 +97,35 @@ export const contents = {
         description: "Sed perspiciatis unde omnis natus error voluptatem.",
       },
     },
+  },
+  seo: {
+    backgroundHeading: "SEO",
+    underLine: underLine,
+    seoImage: speakerImage,
+    titile: `Manage Business SEO
+     Optimization Easily`,
+    description:
+      "Optimize your website with the best SEO strategies for higher rankings and better visibility.",
+    questions: [
+      {
+        question: " Why SEO Growth Business Strategy?",
+        answer: `On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralised by the charms of
+              pleasure of the moment, blinded.`,
+      },
+      {
+        question: " Why SEO Growth Business Strategy?",
+        answer: `On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralised by the charms of
+              pleasure of the moment, blinded.`,
+      },
+      {
+        question: " Why SEO Growth Business Strategy?",
+        answer: `On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralised by the charms of
+              pleasure of the moment, blinded.`,
+      },
+    ],
   },
   Projects:{
     backgroundHeading:'PROJECTS',
