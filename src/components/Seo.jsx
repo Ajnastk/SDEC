@@ -9,7 +9,7 @@ const Seo = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="flex flex-col w-[90%] mx-auto lg:flex-row lg:ml-20 lg:items-start gap-5 px-6 py-12 bg-[#000A1F] text-white">
+    <div className="flex flex-col w-[90%] mx-auto lg:flex-row lg:ml-20 lg:items-start gap-5 px-2 py-12 bg-[#000A1F] text-white">
       {/* Left Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
         <div className="relative">
@@ -30,7 +30,7 @@ const Seo = () => {
           {/* Accordion */}
           <div className="mt-6 space-y-3">
             {seo.questions.map((item, index) => (
-              <div key={index} className="w-full lg:w-[90%] overflow-hidden">
+              <div key={index} className="w-[100%] lg:w-[90%] overflow-hidden">
                 <button
                   className={`w-full flex justify-between items-center p-4 text-white text-base lg:text-lg font-semibold 
                 transition-all duration-300 ${

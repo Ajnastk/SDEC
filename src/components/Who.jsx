@@ -51,6 +51,7 @@ const Who = () => {
                   <CheckCircle className="w-4 h-4 text-white" />
                 </div>
                 <span className="text-white font-medium text-sm md:text-base">
+
                   {service}
                 </span>
               </div>
