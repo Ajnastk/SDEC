@@ -17,6 +17,13 @@ import BrandImage from "./assets/images/brandAndIdentityImage.png";
 import customeAndServiceImage from "./assets/images/customeAndService.png";
 import webStartergyImage from "./assets/images/webStartergyImage.png";
 
+//Project Images
+
+import project1Image from "./assets/images/project-1.png";
+import project2Image from "./assets/images/project-2.png";
+import project3Image from "./assets/images/project-3.png";
+
+
 // Seo
 import speakerImage from "./assets/images/seoImage.svg";
 
@@ -25,6 +32,7 @@ import iconsimage1 from "./assets/images/saysIconImage-1.svg";
 import iconsimage2 from "./assets/images/saysIconImage-2.svg";
 import commentImage from "./assets/images/commentImage.svg";
 import doubleCodes from "./assets/images/doubleCodes.svg";
+
 
 export const contents = {
   home: {},
@@ -169,4 +177,31 @@ export const contents = {
     ],
     totalTestimonials: 66,
   },
+    ourProjects :[
+      {
+        id:1,
+        category:'Marketing',
+        title:'Tech website Solution',
+        image:project1Image
+      },
+      {
+        id:2,
+        category:'Technology',
+        title:'App platform Integration',
+        image:project2Image
+      },{
+        id:3,
+        category:'Software',
+        title:'Software Tools Development',
+        image:project3Image
+      },{
+        id:4,
+        category:'demo',
+        title:'just checking',
+        image:icons
+      }
+    ]
+  }
+ 
+
 };
