@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 const Projects=()=>{
 
-    const projectsData = contents.Projects;
+    const projectsData = contents.ourProjects;
     return(
         <div className="flex flex-col  py-20 text-white items-center">
             <div className="flex flex-col items-center">
@@ -34,8 +34,7 @@ const Projects=()=>{
                 768:{slidesPerView:2},
                 1024:{slidesPerView:3,slidesPerGroup:1},
               }}>
-                {projectsData
-                .ourProjects.map((project)=>(
+                {projectsData.ourProjects.map((project)=>(
                     <SwiperSlide key={project.id} className="flex justify-center">
                         <div className="bg-gray-900 p-4 rounded-xl shadow-lg relative w-full mx-w-xs">
                             <img src={project.image}
