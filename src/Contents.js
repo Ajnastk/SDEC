@@ -19,6 +19,13 @@ import webStartergyImage from "./assets/images/webStartergyImage.png";
 
 // Seo
 import speakerImage from "./assets/images/seoImage.svg";
+
+// Say's
+import iconsimage1 from "./assets/images/saysIconImage-1.svg";
+import iconsimage2 from "./assets/images/saysIconImage-2.svg";
+import commentImage from "./assets/images/commentImage.svg";
+import doubleCodes from "./assets/images/doubleCodes.svg";
+
 export const contents = {
   home: {},
   feature: {
@@ -118,12 +125,48 @@ export const contents = {
       },
     ],
   },
-  Projects:{
-    backgroundHeading:'PROJECTS',
-    underLineImage:underLine,
-    heading:`Checkout our Recently
+  Projects: {
+    backgroundHeading: "PROJECTS",
+    underLineImage: underLine,
+    heading: `Checkout our Recently
     Completed Projects`,
-  }
- 
-
+  },
+  says: {
+    underLine: underLine,
+    backgroundHeading: "SAY'S",
+    iconsimage1: iconsimage1,
+    iconsimage2: iconsimage2,
+    title: "People's Say About Our Support & Services",
+    testimonials: [
+      {
+        text: `"Sed ut perspiciatis unde natus error sit voluptatem accusantium laudant totames."`,
+        name: "Richard S. Brooks",
+        image: commentImage,
+        doubleCodes: doubleCodes,
+        roll:"CEO"
+      },
+      {
+        text: `"Sed ut perspiciatis unde natus error sit voluptatem accusantium laudant totames."`,
+        name: "Another Person",
+        image: commentImage,
+        doubleCodes: doubleCodes,
+        roll:"FOUNDER"
+      },
+      {
+        text: `"Sed ut perspiciatis unde natus error sit voluptatem accusantium laudant totames."`,
+        name: "Richard S. Brooks",
+        image: commentImage,
+        doubleCodes: doubleCodes,
+        roll:"CEO"
+      },
+      {
+        text: `"Sed ut perspiciatis unde natus error sit voluptatem accusantium laudant totames."`,
+        name: "Another Person",
+        image: commentImage,
+        doubleCodes: doubleCodes,
+        roll:"FOUNDER"
+      },
+    ],
+    totalTestimonials: 66,
+  },
 };
