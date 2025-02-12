@@ -34,25 +34,27 @@ const Who = () => {
           </div>
 
           <p className="text-white text-base sm:text-lg leading-7 max-w-lg mx-auto lg:mx-0">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque epsa quae ab illo inventore veritatis architecto beatae.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium totam rem aperiam eaque epsa quae
+            ab illo inventore veritatis architecto beatae.
           </p>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-70 sm:w-150 md:w-183 max-w-auto mx-4 lg:mx-0">
-  {services.map((service) => (
-    <div
-      key={service}
-      className="p-3 bg-[#292738] shadow-lg rounded-md flex items-center space-x-3 transition-transform transform hover:scale-105"
-    >
-      <div className="w-7 h-7 rounded-full bg-gradient-to-b from-[#186EF2] to-[#6D18EF] flex items-center justify-center">
-        <CheckCircle className="w-4 h-4 text-white" />
-      </div>
-      <span className="text-white font-semibold text-sm md:text-base">
-        {service}
-      </span>
-    </div>
-  ))}
-</div>
+            {services.map((service) => (
+              <div
+                key={service}
+                className="p-3 bg-[#292738] shadow-lg rounded-md flex items-center space-x-3 transition-transform transform hover:scale-105"
+              >
+                <div className="w-7 h-7 rounded-full bg-gradient-to-b from-[#186EF2] to-[#6D18EF] flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-white font-semibold text-sm md:text-base">
+                  {service}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Right Side - Image */}

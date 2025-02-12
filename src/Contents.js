@@ -138,6 +138,31 @@ export const contents = {
     underLineImage: underLine,
     heading: `Checkout our Recently
     Completed Projects`,
+    ourProjects :[
+      {
+        id:1,
+        category:'Marketing',
+        title:'Tech website Solution',
+        image:project1Image
+      },
+      {
+        id:2,
+        category:'Technology',
+        title:'App platform Integration',
+        image:project2Image
+      },{
+        id:3,
+        category:'Software',
+        title:'Software Tools Development',
+        image:project3Image
+      },{
+        id:4,
+        category:'demo',
+        title:'just checking',
+        image:icons
+      }
+    ]
+    
   },
   says: {
     underLine: underLine,
@@ -177,31 +202,8 @@ export const contents = {
     ],
     totalTestimonials: 66,
   },
-    ourProjects :[
-      {
-        id:1,
-        category:'Marketing',
-        title:'Tech website Solution',
-        image:project1Image
-      },
-      {
-        id:2,
-        category:'Technology',
-        title:'App platform Integration',
-        image:project2Image
-      },{
-        id:3,
-        category:'Software',
-        title:'Software Tools Development',
-        image:project3Image
-      },{
-        id:4,
-        category:'demo',
-        title:'just checking',
-        image:icons
-      }
-    ]
+   
   }
  
 
-};
+

@@ -98,12 +98,12 @@ const Says = () => {
         </div>
 
         {/* Total Testimonials */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="text-4xl font-bold text-white">
             {says.totalTestimonials}
           </p>
           <p className="text-gray-400 mt-2">Total Testimonials</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
