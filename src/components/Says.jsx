@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { contents } from "../contents";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -60,27 +60,37 @@ const Says = () => {
                 768: { slidesPerView: 2 },
               }}
               spaceBetween={30}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               pagination={{ clickable: true }}
               navigation={!isMobile} // Hide navigation if it's mobile
-              modules={[Pagination, Navigation]}
+              modules={[Navigation, Pagination, Autoplay]}
               className="mySwiper"
             >
               {says.testimonials.map((testimonial, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-[#232331] ml-[5%] lg:ml-0 p-12 lg:w-[100%] w-[80%] h-[350px] shadow-lg">
-                    <img src={testimonial.doubleCodes} alt="" />
-                    <p className="text-gray-300 italic">{testimonial.text}</p>
-                    <div className="mt-4 flex items-center">
-                      <img
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-12 h-12"
-                      />
-                      <div className="ml-4">
-                        <p className="text-white font-semibold">
+                  <div className=" flex flex-col justify-around bg-[#232331] ml-[5%] lg:ml-0 p-5 px-10 lg:w-[100%] w-[80%] h-[350px] shadow-lg">
+                    <div>
+                      <img className="w-[15%]" src={testimonial.doubleCodes} alt="" />
+                    </div>
+                    <div>
+                      <p className="text-gray-300 italic">{testimonial.text}</p>
+                    </div>
+                    <div>
+                      <hr className="text-[#464548]" />
+                    </div>
+                    <div className="mt-4 flex flex-row justify-between items-center">
+                      <div>
+                        <h1 className="text-white font-semibold text-xl">
                           {testimonial.name}
-                        </p>
+                        </h1>
                         <p className="text-gray-400">{testimonial.roll}</p>
+                      </div>
+                      <div>
+                        <img
+                          src={testimonial.image}
+                          alt={testimonial.name}
+                          className="w-20 h-12"
+                        />
                       </div>
                     </div>
                   </div>
