@@ -43,7 +43,7 @@ const Says = () => {
         </div>
 
         {/* Testimonials Section with Icons */}
-        <div className="mt-10 flex items-center justify-center lg:justify-between">
+        <div className="mt-10 ml-5 lg:ml-40 flex items-center justify-center lg:justify-between">
           {/* Left Icon - Hidden on Mobile */}
           <img
             src={says.iconsimage1}
@@ -52,7 +52,7 @@ const Says = () => {
           />
 
           {/* Swiper Carousel */}
-          <div className="ml-[10%] w-full lg:w-[80%]">
+          <div className="lg:ml-[9%] flex justify-center w-full lg:w-[70%]">
             <Swiper
               slidesPerView={1}
               breakpoints={{
@@ -68,7 +68,7 @@ const Says = () => {
             >
               {says.testimonials.map((testimonial, index) => (
                 <SwiperSlide key={index}>
-                  <div className=" flex flex-col justify-around bg-[#232331] ml-[5%] lg:ml-0 p-5 px-10 lg:w-[100%] w-[80%] h-[350px] shadow-lg">
+                  <div className=" flex flex-col justify-around bg-[#232331] p-5 px-10 lg:w-[100%] w-[95%] h-[350px] shadow-lg">
                     <div>
                       <img className="w-[15%]" src={testimonial.doubleCodes} alt="" />
                     </div>
