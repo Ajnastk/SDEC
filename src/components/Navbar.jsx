@@ -1,6 +1,7 @@
 import { useState } from "react";
+import Link from "next/link";
 
-const Navbar = () => {
+export default function Navbar(){
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -32,28 +33,32 @@ const Navbar = () => {
         </button>
 
         {/* Navbar Links (Desktop View) */}
-        <ul className="hidden sm:flex space-x-6">
-           <li href="#" className="cursor-pointer hover:text-gray-200">Home</li>
-           <li href="#" className="cursor-pointer hover:text-gray-200">Clients</li>
-           <li href="#" className="cursor-pointer hover:text-gray-200">Services</li>
-           <li href="#" className="cursor-pointer hover:text-gray-200">Projects</li>
-           <li href="#" className="cursor-pointer hover:text-gray-200">About</li>
-           <li href="#" className="cursor-pointer hover:text-gray-200">Contact</li>
-        </ul>
-      </div>
+
+<ul className="hidden sm:flex space-x-6">
+  <li><Link href="/" className="cursor-pointer hover:text-gray-200">Home</Link></li>
+  <li><Link href="/clients" className="cursor-pointer hover:text-gray-200">Clients</Link></li>
+  <li><Link href="/services" className="cursor-pointer hover:text-gray-200">Services</Link></li>
+  <li><Link href="/projects" className="cursor-pointer hover:text-gray-200">Projects</Link></li>
+  <li><Link href="/about" className="cursor-pointer hover:text-gray-200">About</Link></li>
+  <li><Link href="/contact" className="cursor-pointer hover:text-gray-200">Contact</Link></li>
+</ul>
+
+      </div> 
 
       {/* Mobile Menu (Collapsible) */}
       {isOpen && (
-        <ul className="sm:hidden mt-2 p-4 rounded-md">
-          <li href="#" className="block py-2 text-center">Home</li>
-          <li href="#" className="block py-2 text-center">About</li>
-          <li href="#" className="block py-2 text-center">Services</li>
-          <li href="#" className="block py-2 text-center">Blog</li>
-          <li href="#" className="block py-2 text-center">Contact</li>
-        </ul>
+       <ul className="sm:hidden mt-2 p-4 rounded-md">
+       <li><Link href="/" className="block py-2 text-center">Home</Link></li>
+       <li><Link href="/clients" className="block py-2 text-center">Clients</Link></li>
+       <li><Link href="/services" className="block py-2 text-center">Services</Link></li>
+       <li><Link href="/projects" className="block py-2 text-center">Projects</Link></li>
+       <li><Link href="/about" className="block py-2 text-center">About</Link></li>
+       <li><Link href="/contact" className="block py-2 text-center">Contact</Link></li>
+     </ul>
+     
       )}
     </nav>
   );
 };
 
-export default Navbar;
+

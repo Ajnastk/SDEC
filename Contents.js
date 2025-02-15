@@ -1,0 +1,162 @@
+// Comen Images
+import underLine from "./src/assets/images/headingLineImage.png";
+
+// Feature Images
+import BussinessIllustration from "./src/assets/images/BussinessIllustration.png";
+import icons from "./src/assets/images/iconsImage.png";
+import bussinessGrowthIcon from "./src/assets/images/businessGrowthIcon.png";
+import dataSolutionIcon from "./src/assets/images/dataSolutionIcon.png";
+import productDesignIcon from "./src/assets/images/productDesignIcon.png";
+import researchIcon from "./src/assets/images/researchIcon.png";
+
+// Services Images
+import servicesLogo from "./src/assets/images/servicesLogo.png";
+import graphicsDesignImage from "./src/assets/images/graphicsDesignLogo.png";
+import IdeationImage from "./src/assets/images/ideaImage.png";
+import BrandImage from "./src/assets/images/brandAndIdentityImage.png";
+import customeAndServiceImage from "./src/assets/images/customeAndService.png";
+import webStartergyImage from "./src/assets/images/webStartergyImage.png";
+
+//Project Images
+
+import project1Image from "./src/assets/images/project-1.png";
+import project2Image from "./src/assets/images/project-2.png";
+import project3Image from "./src/assets/images/project-3.png";
+
+
+// Seo
+import speakerImage from "./src/assets/images/seoImage.svg";
+
+
+export const contents = {
+  home: {},
+  feature: {
+    backgroundHeading: "FEATURE",
+    mainImage: BussinessIllustration,
+    iconsImage: icons,
+    bussinessGrowthIcon: bussinessGrowthIcon,
+    dataSolutionIcon: dataSolutionIcon,
+    productDesignIcon: productDesignIcon,
+    researchIcon: researchIcon,
+    headingLineImage: underLine,
+    heading: "Explore Our Professional Business Solutions",
+    featuresList: [
+      {
+        title: "Business Growth",
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+        icon: bussinessGrowthIcon,
+      },
+      {
+        title: "User Research",
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+        icon: researchIcon,
+      },
+      {
+        title: "Big Data Solution",
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+        icon: dataSolutionIcon,
+      },
+      {
+        title: "Product Design",
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+        icon: productDesignIcon,
+      },
+    ],
+  },
+  who: {},
+  services: {
+    backgroundHeading: "SERVICES",
+    heading: `Great Features To Do Your Buisness
+    Growth & Development`,
+    logo: servicesLogo,
+    underLineImage: underLine,
+    servicesList: {
+      graphicsDesign: {
+        title: "Graphics Design",
+        image: graphicsDesignImage,
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+      },
+      ideationAndEvaluation: {
+        title: "Ideation & Evaluation",
+        image: IdeationImage,
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+      },
+      brandIdentity: {
+        title: "Brand Identity",
+        image: BrandImage,
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+      },
+      customerService: {
+        title: "Customer Service",
+        image: customeAndServiceImage,
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+      },
+      webStrategy: {
+        title: "Web Strategy",
+        image: webStartergyImage,
+        description: "Sed perspiciatis unde omnis natus error voluptatem.",
+      },
+    },
+  },
+  seo: {
+    backgroundHeading: "SEO",
+    underLine: underLine,
+    seoImage: speakerImage,
+    titile: `Manage Business SEO
+     Optimization Easily`,
+    description:
+      "Optimize your website with the best SEO strategies for higher rankings and better visibility.",
+    questions: [
+      {
+        question: " Why SEO Growth Business Strategy?",
+        answer: `On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralised by the charms of
+              pleasure of the moment, blinded.`,
+      },
+      {
+        question: " Why SEO Growth Business Strategy?",
+        answer: `On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralised by the charms of
+              pleasure of the moment, blinded.`,
+      },
+      {
+        question: " Why SEO Growth Business Strategy?",
+        answer: `On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralised by the charms of
+              pleasure of the moment, blinded.`,
+      },
+    ],
+  },
+  Projects:{
+    backgroundHeading:'PROJECTS',
+    underLineImage:underLine,
+    heading:`Checkout our Recently
+    Completed Projects`,
+    ourProjects :[
+      {
+        id:1,
+        category:'Marketing',
+        title:'Tech website Solution',
+        image:project1Image
+      },
+      {
+        id:2,
+        category:'Technology',
+        title:'App platform Integration',
+        image:project2Image
+      },{
+        id:3,
+        category:'Software',
+        title:'Software Tools Development',
+        image:project3Image
+      },{
+        id:4,
+        category:'demo',
+        title:'just checking',
+        image:icons
+      }
+    ]
+  }
+ 
+
+};

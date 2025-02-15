@@ -1,6 +1,6 @@
-import { contents } from "../contents";
+import { contents } from "../../Contents";
 
-const Feature = () => {
+export default function Feature(){
   const { feature } = contents;
 
   return (
@@ -72,4 +72,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+

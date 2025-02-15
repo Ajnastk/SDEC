@@ -1,6 +1,6 @@
-import { contents } from "../contents";
+import { contents } from "../../Contents";
 
-const ServiceList = () => {
+export default function ServiceList(){
   const { services } = contents;
   return (
     <div>
@@ -182,4 +182,3 @@ const ServiceList = () => {
   );
 };
 
-export default ServiceList;
