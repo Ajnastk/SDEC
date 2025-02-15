@@ -26,8 +26,6 @@ export default function Footer(){
           </div>
         </div>
 
-<<<<<<< HEAD
-=======
         {/* Services */}
         <div>
           <p className="text-lg font-medium">Services</p>
@@ -70,5 +68,5 @@ export default function Footer(){
   );
 };
 
-export default Footer;
->>>>>>> main
+
+

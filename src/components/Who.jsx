@@ -71,9 +71,3 @@ export default function Who(){
     </div>
   );
 };
-<<<<<<< HEAD
-=======
-
-export default Who;
-
->>>>>>> main
