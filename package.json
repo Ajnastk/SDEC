@@ -3,10 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run backend \" \"npm run frontend\"",
     "backend": "cd server && nodemon server.js",
     "frontend":"cd client && vite"
+=======
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "framer-motion": "^12.4.3",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "swiper": "^11.2.2"
+>>>>>>> 2072417f880d30c4cee8f9d634fbb3dd12b65ce1
   },
   "author": "",
   "license": "ISC",

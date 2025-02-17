@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+
+
 const Projects = () => {
   const projectsData = contents.Projects;
   return (
