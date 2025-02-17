@@ -2,13 +2,6 @@
 import who from "../assets/images/who.svg";
 import pseudo from "../assets/images/headingLineImage.png";
 
-<<<<<<< HEAD:client/src/components/Who.jsx
-export default function Who(){
-  const services = [
-=======
-
-
-
  const Who = () => {
   return (
     <div className="relative max-w-5xl mx-auto px-4 py-10 flex flex-col lg:flex-row items-center gap-10">
@@ -25,7 +18,6 @@ export default function Who(){
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mt-6">
   {[
->>>>>>> 2072417f880d30c4cee8f9d634fbb3dd12b65ce1:src/components/Who.jsx
     "Tech Solutions",
     "IT Consulting",
     "Web Solutions",
@@ -49,12 +41,7 @@ export default function Who(){
       </div>
     </div>
   );
-<<<<<<< HEAD:client/src/components/Who.jsx
-};
-=======
 };
 
 
 export default Who;
-
->>>>>>> 2072417f880d30c4cee8f9d634fbb3dd12b65ce1:src/components/Who.jsx
