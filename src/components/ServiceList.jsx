@@ -235,12 +235,13 @@ const ServiceList = () => {
               className="w-full max-w-[400px]"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              animate={isInView ? "visible" : "hidden"}  // Reverts animation to "hidden" when not in view
+              onViewportBoxUpdate={(_, info) => handleInView(info.isIntersecting)} // Update state based on visibility
+              // viewport={{ once: true }}
               variants={itemVariants}
               transition={{
                 duration: 0.8, // Increase duration for smoother animation
                 ease: "easeOut", // Smoother easing
-                delay: index * 0.3, // Delay for a staggered effect
               }}
             >
               <div className="flex items-center p-5 bg-[rgba(41,39,56,1)] rounded-lg shadow-lg transition-transform transform hover:scale-105">
