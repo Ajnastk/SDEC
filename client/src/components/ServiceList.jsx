@@ -1,10 +1,7 @@
-<<<<<<< HEAD:client/src/components/ServiceList.jsx
+
 import { contents } from "../Contents";
-=======
-import { contents } from "../contents";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import { useState } from "react";
->>>>>>> 2072417f880d30c4cee8f9d634fbb3dd12b65ce1:src/components/ServiceList.jsx
 
 export default function ServiceList(){
   const { services } = contents;
