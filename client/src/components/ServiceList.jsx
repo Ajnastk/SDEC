@@ -1,8 +1,9 @@
-import { contents } from "../contents";
+
+import { contents } from "../Contents";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import { useState } from "react";
 
-const ServiceList = () => {
+export default function ServiceList(){
   const { services } = contents;
   const [isInView, setIsInView] = useState(false);
 
@@ -273,4 +274,3 @@ const ServiceList = () => {
   );
 };
 
-export default ServiceList;

@@ -23,4 +23,18 @@ dist-ssr
 *.sln
 *.sw?
 
-/node_modules
+# Ignore node_modules in both client and server folders
+client/node_modules/
+server/node_modules/
+
+# Ignore environment variable files (.env)
+
+client/.env
+server/.env
+
+# Ignore build directories (if any)
+client/build/
+server/build/
+
+
+
