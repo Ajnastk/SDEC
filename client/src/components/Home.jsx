@@ -1,4 +1,3 @@
-
 import Navbar from './Navbar';
 import cloud1 from '../assets/images/cloud1.png';
 import bulb from '../assets/images/bulb.png'
@@ -14,7 +13,7 @@ const Home = ()=> {
   return (
 
 
-    <div className=" bg-[#010a23] " style={{backgroundImage : `url(${homeBg})`}}>
+    <div className=" bg-[#010a23] " style={{backgroundImage :` url(${homeBg})`}}>
       <Navbar />
       <div className="flex flex-col lg:flex-row justify-center px-5 lg:px-20">
         <div className="flex flex-col items-center lg:items-start lg:mx-20">
@@ -58,7 +57,7 @@ const Home = ()=> {
       </div>
     </div> 
 
-    <div className='flex flex-col items-center justify-center lg:-mt-60 px-5 lg:px-20' style={{backgroundImage : `url(${vector})`}}>
+    <div className='flex flex-col items-center justify-center lg:-mt-60 px-5 lg:px-20' style={{backgroundImage :` url(${vector})`}}>
     <div className='flex flex-col md:flex-row items-center justify-between gap-20 mt-70'>
     <div className='text-center md:text-left '>
           <img className="mx-auto md:mx-0 w-10 sm:w-20" src={headingLine}/>

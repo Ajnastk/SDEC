@@ -2,7 +2,7 @@ import { CheckCircle } from "lucide-react";
 import who from "../assets/images/who.svg";
 import pseudo from "../assets/images/headingLineImage.png";
 
-const Who = () => {
+export default function Who(){
   const services = [
     "Tech Solutions",
     "IT Consulting",
@@ -71,6 +71,3 @@ const Who = () => {
     </div>
   );
 };
-
-export default Who;
-

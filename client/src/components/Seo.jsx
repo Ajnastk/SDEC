@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
-import { contents } from "../contents";
+import { contents } from "../Contents";
 
 const Seo = () => {
   const { seo } = contents;
@@ -47,7 +47,7 @@ const Seo = () => {
                   animate={{ rotate: openIndex === index ? 90 : 0 }} // Rotate arrow
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 >
-                  {openIndex === index ? "⬇︎" : "➜"}
+                  {openIndex === index ? "⬇" : "➜"}
                 </motion.span>
               </motion.button>
 

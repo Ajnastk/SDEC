@@ -1,4 +1,4 @@
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import ServiceList from "./ServiceList";
 
 const Services = () => {
