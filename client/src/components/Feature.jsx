@@ -1,4 +1,4 @@
-import { contents } from "../../Contents";
+import { contents } from "../Contents";
 
 export default function Feature(){
   const { feature } = contents;

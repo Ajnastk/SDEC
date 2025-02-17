@@ -1,31 +1,31 @@
 // Comen Images
-import underLine from "./src/assets/images/headingLineImage.png";
+import underLine from "./assets/images/headingLineImage.png";
 
 // Feature Images
-import BussinessIllustration from "./src/assets/images/BussinessIllustration.png";
-import icons from "./src/assets/images/iconsImage.png";
-import bussinessGrowthIcon from "./src/assets/images/businessGrowthIcon.png";
-import dataSolutionIcon from "./src/assets/images/dataSolutionIcon.png";
-import productDesignIcon from "./src/assets/images/productDesignIcon.png";
-import researchIcon from "./src/assets/images/researchIcon.png";
+import BussinessIllustration from "./assets/images/BussinessIllustration.png";
+import icons from "./assets/images/iconsImage.png";
+import bussinessGrowthIcon from "./assets/images/businessGrowthIcon.png";
+import dataSolutionIcon from "./assets/images/dataSolutionIcon.png";
+import productDesignIcon from "./assets/images/productDesignIcon.png";
+import researchIcon from "./assets/images/researchIcon.png";
 
 // Services Images
-import servicesLogo from "./src/assets/images/servicesLogo.png";
-import graphicsDesignImage from "./src/assets/images/graphicsDesignLogo.png";
-import IdeationImage from "./src/assets/images/ideaImage.png";
-import BrandImage from "./src/assets/images/brandAndIdentityImage.png";
-import customeAndServiceImage from "./src/assets/images/customeAndService.png";
-import webStartergyImage from "./src/assets/images/webStartergyImage.png";
+import servicesLogo from "./assets/images/servicesLogo.png";
+import graphicsDesignImage from "./assets/images/graphicsDesignLogo.png";
+import IdeationImage from "./assets/images/ideaImage.png";
+import BrandImage from "./assets/images/brandAndIdentityImage.png";
+import customeAndServiceImage from "./assets/images/customeAndService.png";
+import webStartergyImage from "./assets/images/webStartergyImage.png";
 
 //Project Images
 
-import project1Image from "./src/assets/images/project-1.png";
-import project2Image from "./src/assets/images/project-2.png";
-import project3Image from "./src/assets/images/project-3.png";
+import project1Image from "./assets/images/project-1.png";
+import project2Image from "./assets/images/project-2.png";
+import project3Image from "./assets/images/project-3.png";
 
 
 // Seo
-import speakerImage from "./src/assets/images/seoImage.svg";
+import speakerImage from "./assets/images/seoImage.svg";
 
 // Say's
 import iconsimage1 from "./assets/images/saysIconImage-1.svg";
