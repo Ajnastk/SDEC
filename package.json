@@ -6,8 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run backend \" \"npm run frontend\"",
     "backend": "cd server && nodemon server.js",
-    "frontend":"cd client && vite"
-
+    "frontend": "cd client && vite"
   },
   "author": "",
   "license": "ISC",

@@ -5,7 +5,7 @@ import clientsKsa20300X3001Png from "../assets/images/clients-ksa-20-300x300-1.s
 import clientsKsa25300X3001Png from "../assets/images/clients-ksa-25-300x300-1.svg";
 import button from "../assets/images/Button.svg";
 import button1 from "../assets/images/Button1.svg"
-import hStroke from "../assets/images/H-stroke.svg";
+
 
 import image4 from "../assets/images/person.png";
 import image5 from "../assets/images/Ball.png";
@@ -17,34 +17,31 @@ import object4Png from "../assets/images/bulb.png";
 import pseudo from "../assets/images/headingLineImage.png";
 import vector1 from "../assets/images/Vector.svg";
 import Menu from "../assets/images/menu.svg";
-import wStroke from "../assets/images/w-stroke.png";
+import Stroke from "../assets/images/grid.svg";
 
  const Home1 = () => {
   return (
     <div
-      className="w-[1920px] h-[1410px] bg-white overflow-hidden [background:linear-gradient(180deg,rgb(0,10,31)_0%,rgb(0,12,47)_100%)]"
+      className="min-w-screen bg-amber-300 h-[1410px] [background:linear-gradient(180deg,rgb(0,10,31)_0%,rgb(0,12,47)_100%)]"
     >
       <div className="relative h-[1410px]">
-        <div className="absolute w-[1920px] h-[904px] top-0 left-0">
+        <div className="absolute  h-[904px] top-0 left-0">
           <div className="relative h-[904px]">
+         
             <img
-              className="absolute w-[1920px] h-[903px] top-0 left-0"
+              className="absolute min-w-screen h-[903px] top-0 left-0"
               alt="W stroke"
-              src={wStroke}
+              src={Stroke}
             />
-            <img
-              className="absolute w-[1920px] h-[904px] top-0 left-0"
-              alt="H stroke"
-              src={hStroke}
-            />
+          
           </div>
         </div>
         <img
-          className="absolute w-[1918px] h-[740px] top-[670px] left-0.5"
+          className="absolute h-[740px] top-[670px] left-0.5"
           alt="Vector"
           src={vector1}
         />
-        <div className="absolute w-[1170px] h-[295px] top-[1084px] left-[375px]">
+        <div className="absolute bg-amber-400 w-[1000px] h-[295px] top-[1084px] left-[375px]">
           <p className="absolute w-[463px] h-[84px] top-[26px] left-[677px] [font-family:'Kumbh_Sans-Regular',Helvetica] font-normal text-[#a8adb3] text-base tracking-[0] leading-8">
             Sed ut perspiciatis unde omnis natus error voluptatem santium <br />
             doloremque laudantium, totam rem aperiam, eaque ipsa quae <br />
