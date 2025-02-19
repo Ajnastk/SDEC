@@ -1,4 +1,4 @@
-import Home from "./components/Home";
+// import Home1 from "./components/Home1";
 import About from "./components/About";
 import Seo from "./components/Seo";
 import Services from "./components/Services";
@@ -7,9 +7,8 @@ import Fact from "./components/Fact";
 import Says from "./components/Says";
 import Call from "./components/Call"
 import Footer from "./components/Footer";
-import Home1 from "./components/Home1"
+import Home from "./components/Home";
 // import ThreeDScene from "./components/ThreeDScene";
-
 
 
 
@@ -18,7 +17,7 @@ const App = () => {
 
       <div className="bg-[#000A1F] min-h-screen w-full overflow-hidden">
         {/* <ThreeDScene /> */}
-          <Home />
+          <Home/>
           <About />
           <Services/>
           <Seo/>
