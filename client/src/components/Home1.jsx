@@ -22,7 +22,7 @@ import wStroke from "../assets/images/w-stroke.png";
  const Home1 = () => {
   return (
     <div
-      className="w-[1920px] h-[1410px] bg-white overflow-hidden [background:linear-gradient(180deg,rgb(0,10,31)_0%,rgb(0,12,47)_100%)]"
+      className="flex flex-colw-[1920px] h-[1410px] bg-white overflow-hidden [background:linear-gradient(180deg,rgb(0,10,31)_0%,rgb(0,12,47)_100%)]"
     >
       <div className="relative h-[1410px]">
         <div className="absolute w-[1920px] h-[904px] top-0 left-0">
@@ -161,7 +161,7 @@ import wStroke from "../assets/images/w-stroke.png";
         </div>
         <div className="absolute w-[1111px] h-[49px] top-16 left-[405px]">
          
-          <div className="absolute w-[1111px] h-[49px] top-16 left-[405px]">SDEC</div>
+          <div className="absolute w-[1111px] h-[49px] top-16 left-[405px] text-white text-5xl font-bold">SDEC</div>
 
           <div className="absolute w-[682px] h-[30px] top-0 left-[272px]">
             <div className="absolute w-[70px] h-[30px] top-0 left-0">

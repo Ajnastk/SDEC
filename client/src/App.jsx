@@ -8,6 +8,7 @@ import Says from "./components/Says";
 import Call from "./components/Call"
 import Footer from "./components/Footer";
 import Home1 from "./components/Home1"
+// import ThreeDScene from "./components/ThreeDScene";
 
 
 
@@ -16,7 +17,8 @@ const App = () => {
     return (
 
       <div className="bg-[#000A1F] min-h-screen w-full overflow-hidden">
-          <Home1 />
+        {/* <ThreeDScene /> */}
+          <Home />
           <About />
           <Services/>
           <Seo/>
