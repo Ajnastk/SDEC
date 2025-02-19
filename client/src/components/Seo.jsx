@@ -27,12 +27,19 @@ const Seo = () => {
 
         <img src={seo.underLine} alt="" className="mx-auto lg:mx-0" />
         <h2 className="text-2xl lg:text-3xl font-bold mt-4">{seo.titile}</h2>
-        <p className="text-gray-400 mt-3 text-sm lg:text-base">{seo.description} </p>
+        <p className="text-gray-400 mt-3 text-sm lg:text-base">
+          {seo.description}{" "}
+        </p>
 
-        {/* Accordion */} 
-        <div className="mt-6 space-y-2"> {/* Reduced spacing */}
+        {/* Accordion */}
+        <div className="mt-6 space-y-2">
+          {" "}
+          {/* Reduced spacing */}
           {seo.questions.map((item, index) => (
-            <div key={index} className="w-[100%] lg:w-[80%] lg:ml-10 overflow-hidden">
+            <div
+              key={index}
+              className="w-[100%] lg:w-[80%] lg:ml-10 overflow-hidden"
+            >
               {/* Animated Button */}
               <motion.button
                 className={`w-full flex justify-between items-center p-3 text-white text-sm lg:text-md font-semibold 
@@ -47,7 +54,7 @@ const Seo = () => {
                   animate={{ rotate: openIndex === index ? 90 : 0 }} // Rotate arrow
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 >
-                  {openIndex === index ? "⬇" : "➜"}
+                  {openIndex === index ? "➜" : "➜"}
                 </motion.span>
               </motion.button>
 
@@ -70,7 +77,11 @@ const Seo = () => {
 
       {/* Right Section */}
       <div className="lg:w-1/2 flex justify-center">
-        <img src={seo.seoImage} alt="SEO Optimization" className="max-w-xs lg:max-w-xl" />
+        <img
+          src={seo.seoImage}
+          alt="SEO Optimization"
+          className="max-w-xs lg:max-w-xl"
+        />
       </div>
     </div>
   );
