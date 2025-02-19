@@ -44,4 +44,8 @@ import pseudo from "../assets/images/headingLineImage.png";
 };
 
 
+<<<<<<< HEAD
 export default Who;
+=======
+export default Who;
+>>>>>>> a608a3eb5ef737ed851d895c9ab9aaf1d599aa6a
