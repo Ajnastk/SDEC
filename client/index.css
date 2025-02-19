@@ -23,5 +23,13 @@
   .font-jost {
     font-family: 'Jost', sans-serif;
   }
+
+  #container3d{
+    position: fixed;
+    inset: 0;
+    /* background-color: red; */
+    z-index: 100;
+    pointer-events: none;
+  }
   
 

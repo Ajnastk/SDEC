@@ -1,64 +1,45 @@
 import { useState } from "react";
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
-
-export default function Navbar(){
-  const [isOpen, setIsOpen] = useState(false);
+export default function Navbar() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  
 
   return (
-    <nav className=" text-white p-4">
+    <nav className="text-white p-4">
       <div className="container mx-auto flex justify-center items-center space-x-35">
         {/* Logo */}
         <div className="text-4xl font-bold">SDEC</div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="block sm:hidden text-white focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {/* Hamburger Icon */}
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button>
+        <div className="block sm:hidden" onClick={handleClick}>
+          {click ? <FaTimes size={30} style={{ color: '#ffffff' }} /> : <FaBars size={30} style={{ color: '#ffffff' }} />}
+        </div>
 
         {/* Navbar Links (Desktop View) */}
-
-<ul className="hidden sm:flex space-x-6">
-  <li href="/" className="cursor-pointer hover:text-gray-200">Home</li>
-  <li href="/clients" className="cursor-pointer hover:text-gray-200">Clients</li>
-  <li href="/services" className="cursor-pointer hover:text-gray-200">Services</li>
-  <li href="/about" className="cursor-pointer hover:text-gray-200">About</li>
-  <li href="/contact" className="cursor-pointer hover:text-gray-200">Contact</li>
-  <li href="/projects" className="cursor-pointer hover:text-gray-200">Projects</li>
-</ul>
-
+        <ul className="hidden sm:flex space-x-6">
+          <a href="#home" className="cursor-pointer hover:text-gray-200" >Home</a>
+          <a href="#fact" className="cursor-pointer hover:text-gray-200">Fact</a>
+          <a href="#services" className="cursor-pointer hover:text-gray-200">Services</a>
+          <a href="#about" className="cursor-pointer hover:text-gray-200">About</a>
+          <a href="#contact" className="cursor-pointer hover:text-gray-200">Contact</a>
+          <a href="#projects" className="cursor-pointer hover:text-gray-200">Projects</a>
+        </ul>
       </div> 
 
       {/* Mobile Menu (Collapsible) */}
-      {isOpen && (
-       <ul className="sm:hidden mt-2 p-4 rounded-md">
-       <li href="/" className="block py-2 text-center">Home</li>
-       <li href="/clients" className="block py-2 text-center">Clients</li>
-       <li href="/services" className="block py-2 text-center">Services</li>
-       <li href="/projects" className="block py-2 text-center">Projects</li>
-       <li href="/about" className="block py-2 text-center">About</li>
-       <li href="/contact" className="block py-2 text-center">Contact</li>
-     </ul>
-     
+      {click && (
+        <ul className="sm:hidden mt-2 p-4 rounded-md">
+          <a href="#home" className="block py-2 text-center" >Home</a>
+          <a href="#fact" className="block py-2 text-center" >fact</a>
+          <a href="#services" className="block py-2 text-center">Services</a>
+          <a href="#projects" className="block py-2 text-center">Projects</a>
+          <a href="#about" className="block py-2 text-center">About</a>
+          <a href="#contact" className="block py-2 text-center">Contact</a>
+        </ul>
       )}
     </nav>
   );
-};
-
-
+}
