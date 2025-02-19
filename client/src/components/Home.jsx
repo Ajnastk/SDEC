@@ -32,13 +32,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className='flex flex-col items-center justify-center lg:-mt-[420px] px-5 lg:px-20' style={{ backgroundImage: `url(${vector})`, backgroundSize: 'certain', backgroundPosition:"bottom"  ,backgroundRepeat: 'no-repeat'  }}>
         <div >
         <Brand />
         </div>
       </div>
-    </div>
+ 
   );
 }
 

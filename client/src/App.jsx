@@ -1,4 +1,4 @@
-import Home1 from "./components/Home1";
+import Home from "./components/Home1";
 import About from "./components/About";
 import Seo from "./components/Seo";
 import Services from "./components/Services";
@@ -13,8 +13,8 @@ import Footer from "./components/Footer";
 const App = () => {
     return (
 
-      <div className="bg-[#000A1F]   ">
-          <Home1 />
+      <div className="bg-[#000A1F] overflow-hidden ">
+          <Home/>
           <About />
           <Services/>
           <Seo/>
