@@ -2,9 +2,6 @@
 import who from "../assets/images/who.svg";
 import pseudo from "../assets/images/headingLineImage.png";
 
-
-
-
  const Who = () => {
   return (
     <div className="relative max-w-5xl mx-auto px-4 py-10 flex flex-col lg:flex-row items-center gap-10">
@@ -48,4 +45,3 @@ import pseudo from "../assets/images/headingLineImage.png";
 
 
 export default Who;
-

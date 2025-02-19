@@ -1,4 +1,4 @@
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import ServiceList from "./ServiceList";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import { useState } from "react";

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
