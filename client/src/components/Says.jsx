@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { contents } from "../Contents";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -45,7 +46,9 @@ const Says = () => {
         {/* Testimonials Section with Icons */}
         <div className="mt-10 ml-5 lg:ml-40 flex items-center justify-center lg:justify-between">
           {/* Left Icon - Hidden on Mobile */}
-          <img
+          <motion.img
+          animate={{scale :[],y:[0,50,0]}}
+          transition={{duration:5,repeat:Infinity,ease:"linear"}}
             src={says.iconsimage1}
             alt="Left Icon"
             className="ml-[-80px] absolute w-[20%] hidden lg:block"
@@ -100,7 +103,9 @@ const Says = () => {
           </div>
 
           {/* Right Icon - Hidden on Mobile */}
-          <img
+          <motion.img
+          animate={{scale:[],y:[0,50,0]}}
+          transition={{duration:5,repeat:Infinity,ease:"linear"}}
             src={says.iconsimage2}
             alt="Right Icon"
             className="absolute w-[25%] hidden lg:block ml-[900px]"
