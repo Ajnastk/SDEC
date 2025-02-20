@@ -15,8 +15,5 @@
     "concurrently": "^9.1.2",
     "nodemon": "^3.1.9",
     "vite": "^6.1.0"
-  },
-  "dependencies": {
-    "gsap": "^3.12.7"
   }
 }
