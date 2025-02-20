@@ -10,7 +10,7 @@ const fadeIn ={
 
 const About = () => {
   return (
-    <div>
+    <div className='pt-20 scroll-mt-20' id="about">
     <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount: 0.2}}>
       <Feature/>
     </motion.div>

@@ -1,64 +1,45 @@
 import { useState } from "react";
+import { Menu, X } from 'lucide-react';
 
-
-export default function Navbar(){
-  const [isOpen, setIsOpen] = useState(false);
+export default function Navbar() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
   return (
-    <nav className=" text-white p-4">
-      <div className="container mx-auto flex justify-center items-center space-x-35">
+    <nav className="text-white p-4 bg-gray-900 fixed top-0 left-0 w-full z-50 shadow-md">
+      <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
-        <div className="text-4xl font-bold">SDEC</div>
+        <div className="text-3xl font-bold">SDEC</div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="block sm:hidden text-white focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {/* Hamburger Icon */}
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
+        <button className="sm:hidden" onClick={handleClick} aria-label="Toggle Menu">
+          {click ? <X size={30} /> : <Menu size={30} />}
         </button>
 
         {/* Navbar Links (Desktop View) */}
-
-<ul className="hidden sm:flex space-x-6">
-  <li href="/" className="cursor-pointer hover:text-gray-200">Home</li>
-  <li href="/clients" className="cursor-pointer hover:text-gray-200">Clients</li>
-  <li href="/services" className="cursor-pointer hover:text-gray-200">Services</li>
-  <li href="/about" className="cursor-pointer hover:text-gray-200">About</li>
-  <li href="/contact" className="cursor-pointer hover:text-gray-200">Contact</li>
-  <li href="/projects" className="cursor-pointer hover:text-gray-200">Projects</li>
-</ul>
-
-      </div> 
+        <ul className="hidden sm:flex space-x-6 text-lg">
+          {["Home", "About", "Fact", "Services", "Projects", "Contact"].map((item) => (
+            <li key={item}>
+              <a href={`#${item.toLowerCase()}`} className="hover:text-gray-300">
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {/* Mobile Menu (Collapsible) */}
-      {isOpen && (
-       <ul className="sm:hidden mt-2 p-4 rounded-md">
-       <li href="/" className="block py-2 text-center">Home</li>
-       <li href="/clients" className="block py-2 text-center">Clients</li>
-       <li href="/services" className="block py-2 text-center">Services</li>
-       <li href="/projects" className="block py-2 text-center">Projects</li>
-       <li href="/about" className="block py-2 text-center">About</li>
-       <li href="/contact" className="block py-2 text-center">Contact</li>
-     </ul>
-     
+      {click && (
+        <ul className="sm:hidden flex flex-col items-center bg-gray-800 text-lg py-4 space-y-3">
+          {["Home","About", "Fact", "Services", "Projects",  "Contact"].map((item) => (
+            <li key={item}>
+              <a href={`#${item.toLowerCase()}`} className="block py-2" onClick={() => setClick(false)}>
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
       )}
     </nav>
   );
-};
-
-
+}

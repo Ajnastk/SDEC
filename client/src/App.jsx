@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import About from "./components/About";
 import Seo from "./components/Seo";
