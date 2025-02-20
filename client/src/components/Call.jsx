@@ -28,6 +28,11 @@ const Call = () => {
           icon: "success",
           confirmButtonText: "OK",
         });
+        setFormData({
+          name : "",
+          email: "",
+          message: "",
+        });
       } else {
         Swal.fire({
           title: "Error!",
@@ -44,9 +49,8 @@ const Call = () => {
         confirmButtonText: "OK",
       });
       console.error("Error sending email", error);
-    }
+    };
   };
-
   return (
     <div className="container px-4 py-16 flex flex-col lg:flex-row items-center gap-8" id="contact">
       {/* Left Side - Image */}
@@ -80,6 +84,7 @@ const Call = () => {
             <input
               type="text"
               name="name"
+              value={formdata.name}
               placeholder="Your Name*"
               onChange={handleChange}
               required
@@ -88,6 +93,7 @@ const Call = () => {
             <input
               type="email"
               name="email"
+              value={formdata.email}
               placeholder="Your Email*"
               onChange={handleChange}
               required
@@ -96,13 +102,14 @@ const Call = () => {
             <textarea
               name="message"
               placeholder="Your Message*"
+              value={formdata.message}
               onChange={handleChange}
               required
               className="w-full h-[120px] px-4 pt-4 bg-neutral-50 text-[#a8adb3] font-normal border rounded-md resize-none focus:ring-2"
             />
             <button
               type="submit"
-              className="w-[178px] h-[54px] text-white text-[17px] font-semibold bg-gradient-to-b from-[#186ef2] to-[#6d18ef] hover:opacity-90 rounded-[4px]"
+              className="w-[178px] h-[54px] text-white text-[17px] font-semibold bg-gradient-to-b from-[#186ef2] to-[#6d18ef] cursor-pointer hover:opacity-90 rounded-[4px]"
             >
               Send Message
             </button>
