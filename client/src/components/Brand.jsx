@@ -5,13 +5,12 @@ import X3001Png from "../assets/images/6-300x300-1.png"
 import button from "../assets/images/Button.svg";
 import clientsKsa20300X3001Png from "../assets/images/clients-ksa-20-300x300-1.svg";
 import clientsKsa25300X3001Png from "../assets/images/clients-ksa-25-300x300-1.svg";
-import button1 from "../assets/images/Button1.svg";
+import image from "../assets/images/Button1.svg";
 import line63 from "../assets/images/line-63.svg";
 import pseudo from "../assets/images/headingLineImage.png";
 
 const Brand = () => {
   return (
-
     <div className="relative max-w-full w-full px-4 md:px-8 lg:w-[1225px] h-auto lg:mb-[126px] md:h-[295px] mt-20 md:mt-90">
       
       {/* Brand Heading */}
@@ -39,7 +38,7 @@ const Brand = () => {
 
       {/* Logos Section */}
       <div className="flex flex-wrap justify-center md:justify-between items-center gap-6 md:gap-0 md:w-[1147px] h-auto md:h-24 mx-auto mt-8 md:mt-0">
-      <img className="w-12 h-12" alt="Button" src={button1} />
+      <img className="w-12 h-12" alt="Button" src={image} />
         <img className="w-24 md:w-[155px] h-20" alt="Clients ksa" src={clientsKsa20300X3001Png} />
         <img className="w-24 md:w-[155px] h-20" alt="Element png" src={X3001Png} />
         <img className="w-24 md:w-[154px] h-20" alt="Clients ksa" src={clientsKsa25300X3001Png} />
