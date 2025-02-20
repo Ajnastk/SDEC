@@ -22,9 +22,7 @@ const App = () => {
 
       <div className="bg-[#000A1F] min-h-screen w-full overflow-hidden">
         {/* <ThreeDScene /> */}
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount: 0.2}}>
           <Home/>
-        </motion.div>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
         <About />
         </motion.div>
