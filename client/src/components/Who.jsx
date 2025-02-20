@@ -43,5 +43,5 @@ import pseudo from "../assets/images/headingLineImage.png";
   );
 };
 
-
 export default Who;
+
