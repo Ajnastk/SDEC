@@ -22,7 +22,7 @@ export default function ServiceList(){
       <div className="space-y-6 ml-[20%] hidden lg:block">
         {/* graphicsDesign */}
         <motion.div
-          className="ml-[160px]"
+          className="ml-[160px] scroll-mt-20"
           initial="hidden"
           whileInView="visible"
           animate={isInView ? "visible" : "hidden"}  // Reverts animation to "hidden" when not in view

@@ -1,43 +1,43 @@
 import { useState } from "react";
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from "react-router-dom";
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  
 
   return (
-    <nav className="text-white p-4">
-      <div className="container mx-auto flex justify-center items-center space-x-35">
+    <nav className="text-white p-4 bg-gray-900 fixed top-0 left-0 w-full z-50 shadow-md">
+      <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
-        <div className="text-4xl font-bold">SDEC</div>
+        <div className="text-3xl font-bold">SDEC</div>
 
         {/* Mobile Menu Button */}
-        <div className="block sm:hidden" onClick={handleClick}>
-          {click ? <FaTimes size={30} style={{ color: '#ffffff' }} /> : <FaBars size={30} style={{ color: '#ffffff' }} />}
-        </div>
+        <button className="sm:hidden" onClick={handleClick} aria-label="Toggle Menu">
+          {click ? <X size={30} /> : <Menu size={30} />}
+        </button>
 
         {/* Navbar Links (Desktop View) */}
-        <ul className="hidden sm:flex space-x-6">
-          <a href="#home" className="cursor-pointer hover:text-gray-200" >Home</a>
-          <a href="#fact" className="cursor-pointer hover:text-gray-200">Fact</a>
-          <a href="#services" className="cursor-pointer hover:text-gray-200">Services</a>
-          <a href="#about" className="cursor-pointer hover:text-gray-200">About</a>
-          <a href="#contact" className="cursor-pointer hover:text-gray-200">Contact</a>
-          <a href="#projects" className="cursor-pointer hover:text-gray-200">Projects</a>
+        <ul className="hidden sm:flex space-x-6 text-lg">
+          {["Home", "About", "Fact", "Services", "Projects", "Contact"].map((item) => (
+            <li key={item}>
+              <a href={`#${item.toLowerCase()}`} className="hover:text-gray-300">
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
-      </div> 
+      </div>
 
       {/* Mobile Menu (Collapsible) */}
       {click && (
-        <ul className="sm:hidden mt-2 p-4 rounded-md">
-          <a href="#home" className="block py-2 text-center" >Home</a>
-          <a href="#fact" className="block py-2 text-center" >fact</a>
-          <a href="#services" className="block py-2 text-center">Services</a>
-          <a href="#projects" className="block py-2 text-center">Projects</a>
-          <a href="#about" className="block py-2 text-center">About</a>
-          <a href="#contact" className="block py-2 text-center">Contact</a>
+        <ul className="sm:hidden flex flex-col items-center bg-gray-800 text-lg py-4 space-y-3">
+          {["Home","About", "Fact", "Services", "Projects",  "Contact"].map((item) => (
+            <li key={item}>
+              <a href={`#${item.toLowerCase()}`} className="block py-2" onClick={() => setClick(false)}>
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
       )}
     </nav>

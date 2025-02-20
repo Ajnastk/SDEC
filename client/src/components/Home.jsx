@@ -15,7 +15,7 @@ const fadeIn ={
 
 const Home = () => {
   return (
-    <div className=" flex flex-col z-0 bg-[#010a23] " id='home' style={{ backgroundImage: `url(${homeBg})`, backgroundSize: 'contain'}}>
+    <div className=" flex flex-col pt-20 scroll-mt-20 z-0 bg-[#010a23] " id='home' style={{ backgroundImage: `url(${homeBg})`, backgroundSize: 'contain'}}>
       <Navbar />
       <div className="flex flex-col lg:flex-row justify-center px-5 lg:px-20 ">
         <div className="flex flex-col items-center lg:items-start lg:mx-20">

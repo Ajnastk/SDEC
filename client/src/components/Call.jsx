@@ -52,7 +52,7 @@ const Call = () => {
     };
   };
   return (
-    <div className="container px-4 py-16 flex flex-col lg:flex-row items-center gap-8" id="contact">
+    <div className="container  px-4 py-16 flex flex-col lg:flex-row items-center gap-8" id="contact">
       {/* Left Side - Image */}
       <div className="lg:w-1/2">
         <img

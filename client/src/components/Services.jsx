@@ -19,7 +19,7 @@ const Services = () => {
   };
 
   return (
-    <div className="flex flex-col bg-[#000A1F] py-20 text-white min-h-screen" id="services">
+    <div className="flex flex-col bg-[#000A1F] py-20 text-white min-h-screen pt-20 scroll-mt-20" id="services">
       {/* Background Title */}
       <h1 className="absolute text-center left-1/2 transform -translate-x-1/2 font-extrabold text-[80px] sm:text-[50px] md:text-[70px] lg:text-[130px] leading-none tracking-tight uppercase text-transparent stroke-white">
         {services.backgroundHeading}
