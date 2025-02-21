@@ -47,6 +47,7 @@ export default function ServiceList() {
               alt={services.servicesList.graphicsDesign.title}
               className="w-[90%] object-contain"
             />
+
           </div>
           <div className="ml-4 flex-1">
             <h3 className="text-lg font-semibold">

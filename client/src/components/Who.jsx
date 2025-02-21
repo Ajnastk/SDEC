@@ -4,7 +4,7 @@ import pseudo from "../assets/images/headingLineImage.png";
 
  const Who = () => {
   return (
-    <div className="relative max-w-5xl mx-auto px-4 py-10 flex flex-col lg:flex-row items-center gap-10">
+    <div className="relative max-w-5xl pt-20 scroll-mt-20 mx-auto px-4 py-10 flex flex-col lg:flex-row items-center gap-10">
       <div className="lg:w-1/2 space-y-6 text-white">
         <div className="right-12 top-[150px] relative text-transparent text-[150px] font-black leading-none" style={{ WebkitTextStroke: "1px #ffffff26" }}>
           WHO

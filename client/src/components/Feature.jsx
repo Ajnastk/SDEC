@@ -28,7 +28,7 @@ export default function Feature() {
   // };
 
   return (
-    <section className="relative bg-[#000A1F] text-white py-8 px-4 md:px-12 overflow-hidden mt-[127px]">
+    <section className="relative bg-[#000A1F] text-white py-8 px-4 md:px-12 overflow-hidden mt-[126px]">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
         <div className="relative w-full md:w-3/7 flex flex-col justify-center items-center mb-8 md:mb-0">

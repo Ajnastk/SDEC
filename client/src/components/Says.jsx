@@ -22,7 +22,7 @@ const Says = () => {
   }, []);
 
   return (
-    <div className="py-[150px] bg-[#000A1F]">
+    <div className="py-[150px] bg-[#000A1F] pt-20 scroll-mt-20">
       <div>
         <div className="relative">
           {/* Desktop Background Heading */}
