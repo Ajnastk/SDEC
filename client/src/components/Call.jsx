@@ -51,11 +51,8 @@ const Call = () => {
       console.error("Error sending email", error);
     };
   };
-
- 
-
   return (
-    <div className="container px-4 py-16 flex flex-col lg:flex-row items-center gap-8">
+    <div className="container  px-4 py-16 flex flex-col lg:flex-row items-center gap-8" id="contact">
       {/* Left Side - Image */}
       <div className="lg:w-1/2">
         <img

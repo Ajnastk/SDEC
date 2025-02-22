@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 const Projects = () => {
   const projectsData = contents.Projects;
   return (
-    <div className="flex flex-col  py-20 text-white items-center">
+    <div className="flex flex-col pt-20 scroll-mt-20 py-20 text-white items-center" id="projects">
       <div className="flex flex-col items-center">
         <p className="font-extrabold text-[70px] sm:text-[50px] md:text-[80px] lg:text-[120px] leading-[0%] tracking-tight uppercase text-transparent stroke-white">
           {projectsData.backgroundHeading}
