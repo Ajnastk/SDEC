@@ -8,10 +8,10 @@ export default function Feature() {
   const { feature } = contents;
 
   // Animation variants for each element
-  const iconsImageVariants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
-  };
+  // const iconsImageVariants = {
+  //   hidden: { opacity: 0, x: -100 },
+  //   visible: { opacity: 1, x: 0 },
+  // };
 
   const mainImageVariants = {
     hidden: { opacity: 0, y: 100 },
@@ -54,15 +54,17 @@ export default function Feature() {
             {/* Animated Main Image */}
             <motion.img
               src={feature.mainImage}
+              animate={{ scale: [], y: [0, 10, 0], x: [0, 10, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
               alt="Business Illustration"
               className="w-48 ml-15 md:w-60"
-              initial="hidden"
-              whileInView="visible"
-              variants={mainImageVariants}
-              transition={{
-                duration: 1, // Control the duration of the animation
-                ease: "easeOut",
-              }}
+              // initial="hidden"
+              // whileInView="visible"
+              // variants={mainImageVariants}
+              // transition={{
+              //   duration: 1, // Control the duration of the animation
+              //   ease: "easeOut",
+              // }}
             />
           </div>
 
@@ -117,7 +119,7 @@ export default function Feature() {
             {feature.featuresList.map((item, index) => (
               <SpotlightCard
                 key={index}
-                className="custom-spotlight-card"
+                className="custom-spotlight-card border border-gray-800 border-opacity-50 rounded-2xl"
                 spotlightColor="rgba(0, 229, 255, 0.2)"
               >
                 <div
