@@ -77,11 +77,18 @@ const Seo = () => {
 
       {/* Right Section */}
       <div className="lg:w-1/2 flex justify-center">
-        <img
+        <motion.img
+          animate={{ scale: [], y: [0, 10, 0], x: [0, 10, 0] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+          src={seo.seoImage}
+          alt="Left Icon"
+          className="w-full"
+        />
+        {/* <img
           src={seo.seoImage}
           alt="SEO Optimization"
           className="max-w-xs lg:max-w-xl"
-        />
+        /> */}
       </div>
     </div>
   );
