@@ -15,5 +15,8 @@
     "concurrently": "^9.1.2",
     "nodemon": "^3.1.9",
     "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.30.0"
   }
 }
