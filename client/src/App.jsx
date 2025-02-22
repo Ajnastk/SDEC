@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import About from "./components/About";
 import Seo from "./components/Seo";
 import Services from "./components/Services";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
+import { AppleCardsCarouselDemo } from "./components/AppleCardDemo";
 import Fact from "./components/Fact";
 import Says from "./components/Says";
 import Call from "./components/Call"
@@ -21,7 +22,7 @@ const fadeIn ={
 const App = () => {
     return (
 
-      <div className="bg-[#000A1F] min-h-screen w-full overflow-hidden">
+      <div className="bg-[#000a1f] min-h-screen w-full overflow-hidden">
         {/* <ThreeDScene /> */}
           <Home/>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
@@ -34,7 +35,8 @@ const App = () => {
         <Seo/>
         </motion.div>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
-        <Projects />
+        {/* <Projects /> */}
+        <AppleCardsCarouselDemo />
         </motion.div>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
         <Fact/>

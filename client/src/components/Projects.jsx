@@ -1,4 +1,4 @@
-import { contents } from "../Contents";
+import { contents } from "../contents";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -61,3 +61,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
