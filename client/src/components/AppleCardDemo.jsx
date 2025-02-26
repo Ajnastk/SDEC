@@ -1,4 +1,4 @@
-
+import { contents } from "../contents";
 import { Carousel,Card } from "./Project-Card-Carousal";
 
 
@@ -6,12 +6,18 @@ export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
-
+  const projectsData = contents.Projects;
   return (
-    <div className="w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Get to know your iSad.
-      </h2>
+    <div className="flex flex-col items-center mt-[126px]">
+    <p className="font-extrabold text-[70px] sm:text-[50px] md:text-[80px] lg:text-[120px] leading-[0%] tracking-tight uppercase text-transparent stroke-white">
+      {projectsData.backgroundHeading}
+    </p>
+    <img src={projectsData.underLineImage} />
+    <p className="text-3xl md:text-4xl sm:text-xl font-semibold text-amber-50">
+      Checkout our Recently
+      <br />
+      Completed Projects
+    </p>
       <Carousel items={cards} />
     </div>
   );
