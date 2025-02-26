@@ -1,7 +1,6 @@
 import { contents } from "../contents";
 import { motion } from "framer-motion";
 import SpotlightCard from "../assets/animations/SpotlightCard";
-import BlurText from "../assets/animations/BlurText";
 import Magnet from "../assets/animations/Magnet";
 
 export default function Feature() {
@@ -88,15 +87,7 @@ export default function Feature() {
               alt=""
               className="mx-auto md:mx-0"
             />
-            <BlurText
-              text={feature.heading}
-              delay={150}
-              animateBy="words"
-              direction="top"
-              // onAnimationComplete={handleAnimationComplete}
-              // className="text-2xl mb-8"
-            />
-            {/* {feature.heading} */}
+              {feature.heading}
           </h2>
 
           {/* Animated Extra Div (Added New Section) */}
