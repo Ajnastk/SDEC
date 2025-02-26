@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
+
 import cloud1 from '../assets/images/cloud1.png';
 import bulb from '../assets/images/bulb.png';
 import ball from '../assets/images/Ball.png';
