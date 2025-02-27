@@ -31,7 +31,7 @@ const App = () => {
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
         <Services/>
         </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.3}}>
         <Seo/>
         </motion.div>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
