@@ -11,7 +11,7 @@ const Seo = () => {
   };
 
   return (
-    <div className="flex flex-col pt-20 scroll-mt-20 w-[70%] mx-auto lg:flex-row lg:ml-60 lg:items-start gap-10 px-2 py-12 bg-[#000A1F] text-white">
+    <div className="flex flex-col mt-[130px] pt-20 scroll-mt-20 w-[70%] mx-auto lg:flex-row lg:ml-60 lg:items-start gap-10 px-2 py-12 bg-[#000A1F] text-white">
       {/* Left Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
         <div className="relative">
