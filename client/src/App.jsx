@@ -6,7 +6,8 @@ import Services from "./components/Services";
 // import Projects from "./components/Projects";
 import { AppleCardsCarouselDemo } from "./components/AppleCardDemo";
 import Fact from "./components/Fact";
-import Says from "./components/Says";
+// import Says from "./components/Says";
+import { InfiniteMovingCardsDemo } from "./components/InfiniteMovingCardsDemo";
 import Call from "./components/Call"
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -31,7 +32,7 @@ const App = () => {
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
         <Services/>
         </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.3}}>
         <Seo/>
         </motion.div>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
@@ -42,7 +43,8 @@ const App = () => {
         <Fact/>
         </motion.div>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
-        <Says />
+        {/* <Says /> */}
+        <InfiniteMovingCardsDemo />
         </motion.div>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
         <Call/>

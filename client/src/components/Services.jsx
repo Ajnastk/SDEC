@@ -21,7 +21,7 @@ const Services = () => {
 
   return (
     <div
-      className="flex flex-col bg-[#000A1F] py-20 text-white min-h-screen pt-20 scroll-mt-20"
+      className="flex flex-col bg-[#000A1F] py-20 text-white min-h-screen pt-20 mt-[130px]"
       id="services"
     >
       {/* Background Title */}

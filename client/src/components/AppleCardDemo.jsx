@@ -8,7 +8,7 @@ export function AppleCardsCarouselDemo() {
   ));
   const projectsData = contents.Projects;
   return (
-    <div className="flex flex-col items-center mt-[126px]">
+    <div className="flex flex-col items-center mt-[130px]" id="projects">
     <p className="font-extrabold text-[70px] sm:text-[50px] md:text-[80px] lg:text-[120px] leading-[0%] tracking-tight uppercase text-transparent stroke-white">
       {projectsData.backgroundHeading}
     </p>

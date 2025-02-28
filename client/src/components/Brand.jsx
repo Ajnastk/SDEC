@@ -10,7 +10,7 @@ import pseudo from "../assets/images/headingLineImage.png";
 
 const Brand = () => {
   return (
-    <div className="relative max-w-full  px-4 md:px-8 lg:w-[1225px] h-auto lg:mb-[126px] md:h-[295px] mt-50 md:mt-80">
+    <div className="relative max-w-full lg:left-[210px] px-4 md:px-8 lg:w-[1225px] h-auto lg:mb-[126px] md:h-[295px] mt-50 md:mt-80">
       {/* Brand Heading */}
       <div className="relative text-center md:text-left w-full md:w-[559px] mx-auto md:ml-8">
         <div className="relative">
@@ -19,7 +19,7 @@ const Brand = () => {
             alt="Pseudo"
             src={pseudo}
           />
-          <div className="text-transparent text-[60px] sm:text-[60px]  md:text-[80px] lg:text-[140px] font-black leading-tight [-webkit-text-stroke:1px_#ffffff26] -mt-20">
+          <div className="text-transparent text-[60px] sm:text-[60px]  md:text-[80px] lg:text-[140px] font-black  -mt-20" style={{ WebkitTextStroke: "1px #ffffff26" }} >
             BRAND
           </div>
           <p className="relative text-white text-2xl sm:text-2xl -top-[60px] md:text-[42px] font-semibold leading-[1.3] mt-2">

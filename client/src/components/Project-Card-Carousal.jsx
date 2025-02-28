@@ -6,8 +6,12 @@ import React, {
   createContext,
   useContext,
 } from "react";
-import { IconArrowNarrowLeft, IconArrowNarrowRight, IconX } from "@tabler/icons-react";
-import { cn } from "../utils/projectCardlib";
+import {
+  IconArrowNarrowLeft,
+  IconArrowNarrowRight,
+  IconX,
+} from "@tabler/icons-react";
+import { cn } from "../utils/cardLib";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../utils/ProjectuseOutsideClick";
 
