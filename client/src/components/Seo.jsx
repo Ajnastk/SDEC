@@ -4,14 +4,14 @@ import { contents } from "../Contents";
 
 const Seo = () => {
   const { seo } = contents;
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div className="flex flex-col pt-20 scroll-mt-20 w-[70%] mx-auto lg:flex-row lg:ml-60 lg:items-start gap-10 px-2 py-12 bg-[#000A1F] text-white">
+    <div className="flex flex-col mt-[130px] pt-20 scroll-mt-20 w-[70%] mx-auto lg:flex-row lg:ml-60 lg:items-start gap-10 px-2 py-12 bg-[#000A1F] text-white">
       {/* Left Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
         <div className="relative">
@@ -77,11 +77,18 @@ const Seo = () => {
 
       {/* Right Section */}
       <div className="lg:w-1/2 flex justify-center">
-        <img
+        <motion.img
+          animate={{ scale: [], y: [0, 10, 0], x: [0, 10, 0] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+          src={seo.seoImage}
+          alt="Left Icon"
+          className="w-full"
+        />
+        {/* <img
           src={seo.seoImage}
           alt="SEO Optimization"
           className="max-w-xs lg:max-w-xl"
-        />
+        /> */}
       </div>
     </div>
   );

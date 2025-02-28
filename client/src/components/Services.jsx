@@ -2,6 +2,7 @@ import { contents } from "../Contents";
 import ServiceList from "./ServiceList";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import { useState } from "react";
+import Magnet from "../assets/animations/Magnet";
 
 const Services = () => {
   const { services } = contents;
@@ -9,8 +10,8 @@ const Services = () => {
   const [isInView, setIsInView] = useState(false); // State to track visibility
 
   const itemVariants = {
-    hidden: { opacity: 0, x: 100 },  // Start from the left side
-    visible: { opacity: 1, x: 0 },    // Move to the original position (right side)
+    hidden: { opacity: 0, x: 100 }, // Start from the left side
+    visible: { opacity: 1, x: 0 }, // Move to the original position (right side)
   };
 
   // When component comes into view, trigger the animation
@@ -19,7 +20,10 @@ const Services = () => {
   };
 
   return (
-    <div className="flex flex-col bg-[#000A1F] py-20 text-white min-h-screen pt-20 scroll-mt-20" id="services">
+    <div
+      className="flex flex-col bg-[#000A1F] py-20 text-white min-h-screen pt-20 mt-[130px]"
+      id="services"
+    >
       {/* Background Title */}
       <h1 className="absolute text-center left-1/2 transform -translate-x-1/2 font-extrabold text-[80px] sm:text-[50px] md:text-[70px] lg:text-[130px] leading-none tracking-tight uppercase text-transparent stroke-white">
         {services.backgroundHeading}
@@ -37,19 +41,30 @@ const Services = () => {
       <div className="flex flex-wrap items-center justify-center">
         {/* Services Logo (Hidden on Small Screens) */}
         <div className="absolute mb-10 mr-[35%] w-full md:w-1/3 lg:w-2/7 hidden lg:block hover:scale-99">
-          <motion.div
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}  // Reverts animation to "hidden" when not in view
-            whileInView="visible"
-            onViewportBoxUpdate={(_, info) => handleInView(info.isIntersecting)} // Update state based on visibility
-            variants={itemVariants}
-            transition={{
-              duration: 1, // Increase duration for smoother animation
-              ease: "easeOut", // Smoother easing
-            }}
-          >
-            <img className="w-full" src={services.logo} alt="" />
-          </motion.div>
+          <Magnet padding={50} disabled={false} magnetStrength={10}>
+            <motion.div
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"} // Reverts animation to "hidden" when not in view
+              whileInView="visible"
+              onViewportBoxUpdate={(_, info) =>
+                handleInView(info.isIntersecting)
+              } // Update state based on visibility
+              variants={itemVariants}
+              transition={{
+                duration: 1, // Increase duration for smoother animation
+                ease: "easeOut", // Smoother easing
+              }}
+            >
+              <motion.img
+                animate={{ scale: [], y: [0, 10, 0],x: [0, 10, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                src={services.logo}
+                alt="Left Icon"
+                className="w-full"
+              />
+              {/* <img className="w-full" src={services.logo} alt="" /> */}
+            </motion.div>
+          </Magnet>
         </div>
 
         {/* Services List */}

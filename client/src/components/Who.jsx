@@ -4,13 +4,13 @@ import pseudo from "../assets/images/headingLineImage.png";
 
  const Who = () => {
   return (
-    <div className="relative max-w-5xl pt-20 scroll-mt-20 mx-auto px-4 py-10 flex flex-col lg:flex-row items-center gap-10">
+    <div className="relative max-w-5xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-10 mt-[130px]">
       <div className="lg:w-1/2 space-y-6 text-white">
-        <div className="right-12 top-[150px] relative text-transparent text-[150px] font-black leading-none" style={{ WebkitTextStroke: "1px #ffffff26" }}>
+        <div className=" relative top-[120px] text-transparent text-[100px] sm:text-[100px]  md:text-[120px] lg:text-[140px] font-black leading-none" style={{ WebkitTextStroke: "1px #ffffff26" }}>
           WHO
         </div>
         <img className="w-20 h-2.5" alt="Pseudo" src={pseudo} />
-        <p className="text-4xl font-semibold leading-snug">
+        <p className=" font-semibold leading-snug text-2xl md:text-4xl">
           We’re an Award-Winning <br /> Modern Business Solutions <br /> Agency
         </p>
         <p className="text-lg leading-8">

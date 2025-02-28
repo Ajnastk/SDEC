@@ -1,17 +1,16 @@
 import { contents } from "../contents";
 import { motion } from "framer-motion";
 import SpotlightCard from "../assets/animations/SpotlightCard";
-import BlurText from "../assets/animations/BlurText";
 import Magnet from "../assets/animations/Magnet";
 
 export default function Feature() {
   const { feature } = contents;
 
   // Animation variants for each element
-  const iconsImageVariants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
-  };
+  // const iconsImageVariants = {
+  //   hidden: { opacity: 0, x: -100 },
+  //   visible: { opacity: 1, x: 0 },
+  // };
 
   const mainImageVariants = {
     hidden: { opacity: 0, y: 100 },
@@ -28,7 +27,7 @@ export default function Feature() {
   // };
 
   return (
-    <section className="relative bg-[#000A1F] text-white py-8 px-4 md:px-12 overflow-hidden mt-[126px]">
+    <section className="relative bg-[#000A1F] text-white py-8 px-4 md:px-12 overflow-hidden mt-[130px]">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
         <div className="relative w-full md:w-3/7 flex flex-col justify-center items-center mb-8 md:mb-0">
@@ -54,15 +53,17 @@ export default function Feature() {
             {/* Animated Main Image */}
             <motion.img
               src={feature.mainImage}
+              animate={{ scale: [], y: [0, 10, 0], x: [0, 10, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
               alt="Business Illustration"
               className="w-48 ml-15 md:w-60"
-              initial="hidden"
-              whileInView="visible"
-              variants={mainImageVariants}
-              transition={{
-                duration: 1, // Control the duration of the animation
-                ease: "easeOut",
-              }}
+              // initial="hidden"
+              // whileInView="visible"
+              // variants={mainImageVariants}
+              // transition={{
+              //   duration: 1, // Control the duration of the animation
+              //   ease: "easeOut",
+              // }}
             />
           </div>
 
@@ -86,15 +87,7 @@ export default function Feature() {
               alt=""
               className="mx-auto md:mx-0"
             />
-            <BlurText
-              text={feature.heading}
-              delay={150}
-              animateBy="words"
-              direction="top"
-              // onAnimationComplete={handleAnimationComplete}
-              // className="text-2xl mb-8"
-            />
-            {/* {feature.heading} */}
+              {feature.heading}
           </h2>
 
           {/* Animated Extra Div (Added New Section) */}
@@ -117,7 +110,7 @@ export default function Feature() {
             {feature.featuresList.map((item, index) => (
               <SpotlightCard
                 key={index}
-                className="custom-spotlight-card"
+                className="custom-spotlight-card border border-gray-800 border-opacity-50 rounded-2xl"
                 spotlightColor="rgba(0, 229, 255, 0.2)"
               >
                 <div

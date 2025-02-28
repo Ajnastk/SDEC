@@ -2,7 +2,7 @@ import pseudo from "../assets/images/headingLineImage.png";
 import featureIcon1Png from "../assets/images/icon1.svg";
 import featureIcon2Png from "../assets/images/icon2.svg";
 import featureIcon3Png from "../assets/images/icon4.svg";
-import PlayButton from "./Playbutton";
+//import PlayButton from "./Playbutton";
 
 const Fact = () => {
   const facts = [
@@ -12,11 +12,11 @@ const Fact = () => {
   ];
 
   return (
-    <div className="pt-20 scroll-mt-20 relative w-full max-w-[1200px] mx-auto px-6 py-16 flex flex-col lg:flex-row items-center lg:items-start gap-12" id="fact">
+    <div className="pt-20 mt-[130px] scroll-smooth relative w-full max-w-[1200px] mx-auto px-6 py-16 flex flex-col lg:flex-row items-center lg:items-start gap-12 " id="fact">
       {/* Left Section: Heading & Description */}
       <div className=" lg:w-1/2 text-center lg:text-left">
         <div className="relative">
-          <img className="absolute top-8 left-6 w-20 h-2" alt="Pseudo" src={pseudo} />
+          <img className="absolute top-8 left-[120px] w-20 h-2" alt="Pseudo" src={pseudo} />
           <h1 className="text-[#ffffff26] font-bold text-[80px] lg:text-[120px] leading-none -mt-12">
             FACT
           </h1>
@@ -32,11 +32,11 @@ const Fact = () => {
       </div>
 
       {/* Right Section: Play Button */}
-      <div className="absolute top-0 right-10 lg:right-20 flex justify-center lg:justify-end">
+      {/* <div className="absolute top-0 right-10 lg:right-20 flex justify-center lg:justify-end">
         <div className="w-[90px] h-[90px] bg-[#ffffff08] rounded-full shadow-xl flex items-center justify-center hover:scale-105 transition-transform">
           <PlayButton />
         </div>
-      </div>
+      </div> */}
 
       {/* Fact Cards (3 in a Row) */}
       <div className="lg:w-1/2 flex flex-wrap justify-center lg:justify-between gap-6">
