@@ -40,7 +40,7 @@ const Home = () => {
         </div>
       </div>
       <div className=' relative top-10 items-center lg:px-20  ' style={{ backgroundImage: `url(${vector})`, backgroundSize: 'certain' ,backgroundRepeat: 'no-repeat'  }}>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount: 0.1}}>
+        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount: 0.}}>
         <Brand />
         </motion.div>
       </div>
