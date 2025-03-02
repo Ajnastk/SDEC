@@ -37,7 +37,7 @@ import doubleCodes from "./assets/images/doubleCodes.svg";
 export const contents = {
   home: {},
   feature: {
-    backgroundHeading: "FEATURE",
+    backgroundHeading: "feature",
     mainImage: BussinessIllustration,
     iconsImage: icons,
     bussinessGrowthIcon: bussinessGrowthIcon,
