@@ -13,5 +13,8 @@ export default defineConfig({
     outDir:'dist',
     sourcemap:true,
   },
+  optimizeDeps: {
+    include: ['three', '@splinetool/loader'],
+  },
  
 })
