@@ -19,7 +19,7 @@ const Brand = () => {
             alt="Pseudo"
             src={pseudo}
           />
-          <div className="text-transparent text-[60px] sm:text-[60px]  md:text-[80px] lg:text-[140px] font-black  -mt-20" style={{ WebkitTextStroke: "1px #ffffff26" }} >
+          <div className="text-transparent text-[60px] sm:text-[60px]  md:text-[80px] lg:text-[140px] font-black  leading-none" style={{ WebkitTextStroke: "1px #ffffff26" }} >
             BRAND
           </div>
           <p className="relative text-white text-2xl sm:text-2xl -top-[60px] md:text-[42px] font-semibold leading-[1.3] mt-2">
