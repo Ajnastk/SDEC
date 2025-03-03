@@ -77,7 +77,7 @@ export default function Feature() {
         {/* Right Side - Content */}
         <div className="w-full md:w-1/2 relative">
           {/* Background Heading (Only for Desktop) */}
-          <div className="font-bold mb-[-45px] md:ml-[-10px] ml-18 ">
+          <div className="font-bold md:mb-[-45px] md:ml-[-10px] ml-15 mb-[-30px] ">
             <ScrollFloat
               animationDuration={1}
               ease="back.inOut(2)"
@@ -89,7 +89,7 @@ export default function Feature() {
             </ScrollFloat>
           </div>
 
-          <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-center md:text-left">
+          <h2 className="text-gray-400 text-2xl md:text-4xl mb-6 text-center md:text-left">
             <img
               src={feature.headingLineImage}
               alt=""

@@ -1,6 +1,6 @@
 import { contents } from "../contents";
-import { Carousel,Card } from "./Project-Card-Carousal";
-
+import { Carousel, Card } from "./Project-Card-Carousal";
+import ScrollFloat from "../assets/animations/ScrollFloat";
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
@@ -9,15 +9,23 @@ export function AppleCardsCarouselDemo() {
   const projectsData = contents.Projects;
   return (
     <div className="flex flex-col items-center mt-[130px]" id="projects">
-    <p className="font-extrabold text-[70px] sm:text-[50px] md:text-[80px] lg:text-[120px] leading-[0%] tracking-tight uppercase text-transparent stroke-white">
-      {projectsData.backgroundHeading}
-    </p>
-    <img src={projectsData.underLineImage} />
-    <p className="text-3xl md:text-4xl sm:text-xl font-semibold text-amber-50">
-      Checkout our Recently
-      <br />
-      Completed Projects
-    </p>
+      <div className=" text-white font-bold md:mb-[-45px] text-center mb-[-30px]">
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=50%"
+          stagger={0.03}
+        >
+          {projectsData.backgroundHeading}
+        </ScrollFloat>
+      </div>
+      <img src={projectsData.underLineImage} />
+      <p className="text-3xl md:text-4xl sm:text-xl text-gray-400">
+        Checkout our Recently
+        <br />
+        Completed Projects
+      </p>
       <Carousel items={cards} />
     </div>
   );
@@ -37,8 +45,7 @@ const DummyContent = () => {
             </span>{" "}
             Keep a journal, quickly jot down a grocery list, and take amazing
             class notes. Want to convert those notes to text? No problem.
-            Langotiya jeetu ka mara hua yaar is ready to capture every
-            thought.
+            Langotiya jeetu ka mara hua yaar is ready to capture every thought.
           </p>
           <img
             src="https://assets.aceternity.com/macbook.png"
@@ -91,4 +98,3 @@ const data = [
     content: <DummyContent />,
   },
 ];
-

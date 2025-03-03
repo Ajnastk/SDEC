@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
 import { contents } from "../Contents";
+import ScrollFloat from "../assets/animations/ScrollFloat";
 
 const Seo = () => {
   const { seo } = contents;
@@ -16,17 +17,22 @@ const Seo = () => {
       <div className="lg:w-1/2 text-center lg:text-left">
         <div className="relative">
           {/* Desktop view */}
-          <h1 className="absolute top-0 mt-[-80px] left-[-40px] font-extrabold text-[130px] text-white opacity-10 tracking-wide hidden lg:block">
-            {seo.backgroundHeading}
-          </h1>
-          {/* Mobile view */}
-          <h1 className="absolute top-0 mt-[-80px] font-extrabold text-[130px] text-white opacity-10 tracking-wide lg:hidden">
-            {seo.backgroundHeading}
-          </h1>
+          <div className="font-bold md:mb-[-45px] mb-[-30px] md:ml-[-10px] ml-2 ">
+            <ScrollFloat
+              animationDuration={1}
+              ease="back.inOut(2)"
+              scrollStart="center bottom+=50%"
+              scrollEnd="bottom bottom-=50%"
+              stagger={0.03}
+            >
+              {seo.backgroundHeading}
+            </ScrollFloat>
+          </div>
+         
         </div>
 
-        <img src={seo.underLine} alt="" className="mx-auto lg:mx-0" />
-        <h2 className="text-2xl lg:text-3xl font-bold mt-4">{seo.titile}</h2>
+        <img src={seo.underLine} alt="" className="mx-auto mb-[-20px] lg:mx-0" />
+        <h2 className="text-2xl lg:text-3xl text-gray-400 mt-4">{seo.titile}</h2>
         <p className="text-gray-400 mt-3 text-sm lg:text-base">
           {seo.description}{" "}
         </p>

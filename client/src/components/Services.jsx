@@ -3,6 +3,7 @@ import ServiceList from "./ServiceList";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import { useState } from "react";
 import Magnet from "../assets/animations/Magnet";
+import ScrollFloat from "../assets/animations/ScrollFloat";
 
 const Services = () => {
   const { services } = contents;
@@ -25,14 +26,24 @@ const Services = () => {
       id="services"
     >
       {/* Background Title */}
-      <h1 className="absolute text-center left-1/2 transform -translate-x-1/2 font-extrabold text-[80px] sm:text-[50px] md:text-[70px] lg:text-[130px] leading-none tracking-tight uppercase text-transparent stroke-white">
-        {services.backgroundHeading}
-      </h1>
+      <div className=" text-center font-bold mb-[-30px] md:mb-[-40px] md:ml-[-10px]">
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=50%"
+          stagger={0.03}
+        >
+          {services.backgroundHeading}
+        </ScrollFloat>
+      </div>
 
       {/* Section Title */}
-      <div className="text-center mb-10 flex justify-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6 mt-10">
-          <img className="ml-[250px]" src={services.underLineImage} alt="" />
+      <div className="text-center md:mb-[-70px] flex justify-center">
+        <h2 className="text-3xl md:text-4xl mb-6 mt- text-gray-400">
+          <div className="flex justify-center">
+            <img className="" src={services.underLineImage} alt="" />
+          </div>
           Great Features To Do Your Business <br /> Growth & Development
         </h2>
       </div>
@@ -56,7 +67,7 @@ const Services = () => {
               }}
             >
               <motion.img
-                animate={{ scale: [], y: [0, 10, 0],x: [0, 10, 0] }}
+                animate={{ scale: [], y: [0, 10, 0], x: [0, 10, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
                 src={services.logo}
                 alt="Left Icon"
