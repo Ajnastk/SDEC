@@ -1,10 +1,12 @@
-import pseudo from "../assets/images/headingLineImage.png";
 import featureIcon1Png from "../assets/images/icon1.svg";
 import featureIcon2Png from "../assets/images/icon2.svg";
 import featureIcon3Png from "../assets/images/icon4.svg";
+import { contents } from "../contents";
+import ScrollFloat from "../assets/animations/ScrollFloat";
 //import PlayButton from "./Playbutton";
 
 const Fact = () => {
+  const { fact } = contents;
   const facts = [
     { icon: featureIcon1Png, number: "150+", text: "Project Completed" },
     { icon: featureIcon2Png, number: "250+", text: "Satisfied Clients" },
@@ -12,22 +14,40 @@ const Fact = () => {
   ];
 
   return (
-    <div className="pt-20 mt-[130px] scroll-smooth relative w-full max-w-[1200px] mx-auto px-6 py-16 flex flex-col lg:flex-row items-center lg:items-start gap-12 " id="fact">
+    <div
+      className="pt-20 mt-[130px] scroll-smooth relative w-full max-w-[1200px] mx-auto px-6 py-16 flex flex-col lg:flex-row items-center lg:items-start gap-12 "
+      id="fact"
+    >
       {/* Left Section: Heading & Description */}
       <div className=" lg:w-1/2 text-center lg:text-left">
-        <div className="relative">
-          <img className="absolute top-8 left-[120px] w-20 h-2" alt="Pseudo" src={pseudo} />
-          <h1 className="text-[#ffffff26] font-bold text-[80px] lg:text-[120px] leading-none -mt-12">
-            FACT
-          </h1>
+        <div className="mb-13">
+          <div className=" text-white font-bold mb-[-25px] md:mb-[-45px] md:ml-[-10px] ">
+            <ScrollFloat
+              animationDuration={1}
+              ease="back.inOut(2)"
+              scrollStart="center bottom+=50%"
+              scrollEnd="bottom bottom-=50%"
+              stagger={0.03}
+            >
+              {fact.heading}
+            </ScrollFloat>
+          </div>
+          <div className="flex justify-center">
+
+          <img
+            className="md:mr-[480px]"
+            alt="Pseudo"
+            src={fact.underLine}
+            />
+            </div>
         </div>
-        <h3 className="text-white text-2xl -mt-12 md:text-4xl font-semibold ">
+        <h3 className="text-gray-400 text-2xl -mt-12 md:text-4xl">
           Let’s See Our Company <br /> Achievement
         </h3>
         <p className="text-[#a8adb3] text-base leading-7 mt-4">
-          Sed ut perspiciatis unde omnis iste natus error sit ways
-          voluptatem accusantium doloremque laudantium totam rem
-          aperiam eaque epsa quae ab illo inventore
+          Sed ut perspiciatis unde omnis iste natus error sit ways voluptatem
+          accusantium doloremque laudantium totam rem aperiam eaque epsa quae ab
+          illo inventore
         </p>
       </div>
 
@@ -45,8 +65,14 @@ const Fact = () => {
             key={index}
             className="w-[280px] h-[180px] bg-[#292738] rounded-lg flex flex-col items-center justify-center shadow-md hover:rotate-[-5deg] transition-transform"
           >
-            <img className="w-14 h-14 mb-3" src={item.icon} alt="Feature Icon" />
-            <div className="text-3xl font-bold text-[#e4e4e4]">{item.number}</div>
+            <img
+              className="w-14 h-14 mb-3"
+              src={item.icon}
+              alt="Feature Icon"
+            />
+            <div className="text-3xl font-bold text-[#e4e4e4]">
+              {item.number}
+            </div>
             <p className="text-lg font-medium text-[#e4e4e4]">{item.text}</p>
           </div>
         ))}
