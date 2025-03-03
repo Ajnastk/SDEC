@@ -28,30 +28,30 @@ const App = () => {
           <Cube/>
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
         <About />
-        </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        {/* </motion.div> */}
+        {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
         <Services/>
-        </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.3}}>
+        {/* </motion.div> */}
+        {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.3}}> */}
         <Seo/>
-        </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        {/* </motion.div> */}
+        {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
         {/* <Projects /> */}
         <AppleCardsCarouselDemo />
-        </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        {/* </motion.div> */}
+        {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
         <Fact/>
-        </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        {/* </motion.div> */}
+        {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
         {/* <Says /> */}
         <InfiniteMovingCardsDemo />
-        </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        {/* </motion.div> */}
+        {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
         <Call/>
-        </motion.div>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        {/* </motion.div> */}
+        {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
         <Footer/>
-        </motion.div>
+        {/* </motion.div> */}
         </div>
     );
   }
