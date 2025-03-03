@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import About from "./components/About";
 import Seo from "./components/Seo";
@@ -22,11 +21,11 @@ const fadeIn ={
 const App = () => {
     return (
 
-      <div className="bg-[#000a1f] min-h-screen w-full overflow-hidden">
+      <div className="bg-[#000a1f] w-full overflow-hidden">
         {/* <ThreeDScene /> */}
           <Home/>
           <Cube/>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}/>
         <About />
         {/* </motion.div> */}
         {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
@@ -57,6 +56,3 @@ const App = () => {
   }
 
   export default App;
-  
-
-

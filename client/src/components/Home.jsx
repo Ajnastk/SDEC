@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-import RotatingText from "../assets/animations/RotatingText";
+//import RotatingText from "../assets/animations/RotatingText";
 import cloud1 from "../assets/images/cloud1.png";
-import bulb from "../assets/images/bulb.png";
+//import bulb from "../assets/images/bulb.png";
 import ball from "../assets/images/Ball.png";
 import person from "../assets/images/person.png";
 import vector from "../assets/images/vector.png";
 import homeBg from "../assets/images/home-bg.png";
 import Brand from "../components/Brand";
+import FlipWords from "./FlipWords";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 50 },
@@ -30,24 +31,13 @@ const Home = () => {
             alt="Cloud"
           />
           <div> 
-            <div className="flex bg-amber-50">
+            <div className="flex">
               <p></p> 
-              <RotatingText
-              texts={["React", "Bits", "Is", "Cool!"]}
-              mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
-              staggerFrom={"last"}
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "-120%" }}
-              staggerDuration={0.025}
-              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-              transition={{ type: "spring", damping: 30, stiffness: 400 }}
-              rotationInterval={2000}
-            />
+           <FlipWords/>
             </div>
           
            
-            <div className="flex items-center">
+            {/* <div className="flex bg-amber-900 items-center">
               <p className="text-white font-bold text-3xl lg:text-6xl  w-[160px] sm:w-[190px] md:w-[200px] lg:w-[400px] sm:text-4xl">
                 We Provide
               </p>
@@ -56,15 +46,8 @@ const Home = () => {
                 src={bulb}
                 alt="Bulb"
               />
-            </div>
-            <p className="text-white font-bold text-3xl sm:text-4xl lg:text-6xl">
-              Smart Business
-              <br />
-              Solution
-            </p>
-            <p className="text-white text-sm sm:text-base mt-3">
-              Grow Your Business With Us Best Business Solution
-            </p>
+            </div> */}
+  
           </div>
         </div>
 
