@@ -26,7 +26,7 @@ const App = () => {
         {/* <ThreeDScene /> */}
           <Home/>
           <Cube/>
-        <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}>
+        {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
         <About />
         {/* </motion.div> */}
         {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
