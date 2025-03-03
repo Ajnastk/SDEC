@@ -13,20 +13,21 @@ export const InfiniteMovingCards = ({
   const [start, setStart] = useState(false);
 
   useEffect(() => {
+    setStart(true);
     addAnimation();
-    console.log('Animation started',start);
-    setTimeout(()=>setStart(true),100)
   }, []);
 
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
+      
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         if (scrollerRef.current) {
           scrollerRef.current.appendChild(duplicatedItem);
         }
       });
+
       getDirection();
       getSpeed();
       setStart(true);
@@ -60,8 +61,8 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll",
+          "flex w-max min-w-[300%] shrink-0 gap-4 py-4  flex-nowrap animate-scroll",
+          start & "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
