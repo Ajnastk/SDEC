@@ -48,23 +48,23 @@ export default function Feature() {
                   disabled={false}
                   magnetStrength={8}
                 >
-                  <motion.img
-                    className={`${marginLeftValues[index]}`}
-                    src={icon}
-                    alt="icons"
-                    animate={iconsAnimation[index]}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Infinity, // Makes animation continuous
-                      ease: "easeInOut",
-                    }}
-                  />
+                <motion.img
+  className={`hidden md:block ${marginLeftValues[index]}`} // Hide on mobile
+  src={icon}
+  alt="icons"
+  animate={iconsAnimation[index]}
+  transition={{
+    duration: 1.5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+/>
                 </Magnet>
               ))}
             </div>
 
             {/* Animated Main Image */}
-            <motion.img
+            {/* <motion.img
               src={feature.mainImage}
               animate={{ scale: [], y: [0, 8, 0], x: [0, 5, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
@@ -77,7 +77,14 @@ export default function Feature() {
               //   duration: 1, // Control the duration of the animation
               //   ease: "easeOut",
               // }}
-            />
+            /> */}
+          <motion.img
+  src={feature.mainImage}
+  animate={{ scale: [], y: [0, 8, 0], x: [0, 5, 0] }}
+  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+  alt="Business Illustration"
+  className="hidden md:block w-48 md:w-60" // Hide on mobile, show on md+
+/>
           </div>
 
           {/* Background Heading (Only for Mobile) */}

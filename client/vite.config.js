@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import react from '@vitejs/plugin-react';
 import tailwindcss from "@tailwindcss/vite"
 
 // https://vite.dev/config/
@@ -10,19 +10,18 @@ export default defineConfig({
  open : true,
   },
   build: {
-    outDir: 'dist', // Explicitly set the output directory
+    outDir: 'dist',
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('react')) return 'react-vendor';
             if (id.includes('three')) return 'three-vendor';
-            return 'vendor'; // Common dependencies
+            return 'vendor'; // Keep React inside the main bundle
           }
         },
       },
     },
-    chunkSizeWarningLimit: 1000, // Suppress warnings for larger chunks
+    chunkSizeWarningLimit: 1000,
   },
   optimizeDeps: {
     include: ['three', '@splinetool/loader'],
