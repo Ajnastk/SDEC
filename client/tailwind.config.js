@@ -11,18 +11,14 @@ module.exports = {
     extend: {
       animation: {
         scroll:
-          // "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-         "scroll 3s ease-in-out infinite alternate",
+          "scroll var(--animation-duration, 40s) linear infinite",
       },
       keyframes: {
         scroll: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-20px)" },
-          // from :{transform :"translateX(0)"},
-          // to: {
-            // transform: "translate(calc(-50% - 0.5rem))",
-          //   transform:"translateX(-20%)"
-          // },
+          to: {
+            transform: "translateX(calc(-50% - 0.5rem))",
+          
+          },
         },
       },
     },

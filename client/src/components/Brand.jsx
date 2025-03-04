@@ -6,23 +6,34 @@ import clientsKsa20300X3001Png from "../assets/images/clients-ksa-20-300x300-1.s
 import clientsKsa25300X3001Png from "../assets/images/clients-ksa-25-300x300-1.svg";
 //import image from "../assets/images/Button1.svg";
 import line63 from "../assets/images/line-63.svg";
-import pseudo from "../assets/images/headingLineImage.png";
+import { contents } from "../contents";
+import ScrollFloat from "../assets/animations/ScrollFloat";
 
 const Brand = () => {
+  const { brand } = contents;
   return (
-    <div className="relative max-w-full lg:left-[210px] px-4 md:px-8 lg:w-[1225px] h-auto lg:mb-[126px] md:h-[295px] mt-50 md:mt-80">
+    <div className="relative max-w-full lg:left-[100px] px-4 md:px-8 lg:w-[1225px] h-auto lg:mb-[126px] md:h-[295px] mt-50 md:mt-80">
       {/* Brand Heading */}
       <div className="relative text-center md:text-left w-full md:w-[559px] mx-auto md:ml-8">
         <div className="relative">
-          <img
-            className="w-20 md:w-[84px] h-2.5 mx-auto md:ml-[41px] "
-            alt="Pseudo"
-            src={pseudo}
-          />
-          <div className="text-transparent text-[60px] sm:text-[60px]  md:text-[80px] lg:text-[140px] font-black  -mt-20" style={{ WebkitTextStroke: "1px #ffffff26" }} >
-            BRAND
+          
+          <div className="font-bold mb-[-35px] md:ml-[-10px] text-white ">
+            <ScrollFloat
+              animationDuration={1}
+              ease="back.inOut(2)"
+              scrollStart="center bottom+=50%"
+              scrollEnd="bottom bottom-=50%"
+              stagger={0.03}
+            >
+              {brand.heading}
+            </ScrollFloat>
           </div>
-          <p className="relative text-white text-2xl sm:text-2xl -top-[60px] md:text-[42px] font-semibold leading-[1.3] mt-2">
+          <img
+            className="w-20 md:w-[84px] h-2.5 mx-auto mb-15 md:ml-[1px] "
+            alt="Pseudo"
+            src={brand.headingLineImage}
+          />
+          <p className="relative text-2xl sm:text-2xl -top-[60px] md:text-[42px] text-gray-400 leading-[1.3] mt-2">
             We’ve More Then 254+ <br className="hidden md:block" /> Global
             Partners
           </p>

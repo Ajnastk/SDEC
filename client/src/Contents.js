@@ -23,7 +23,6 @@ import project1Image from "./assets/images/project-1.png";
 import project2Image from "./assets/images/project-2.png";
 import project3Image from "./assets/images/project-3.png";
 
-
 // Seo
 import speakerImage from "./assets/images/seoImage.svg";
 
@@ -33,11 +32,14 @@ import iconsimage2 from "./assets/images/saysIconImage-2.svg";
 import commentImage from "./assets/images/commentImage.svg";
 import doubleCodes from "./assets/images/doubleCodes.svg";
 
-
 export const contents = {
   home: {},
+  brand: {
+    heading: "Brand",
+    headingLineImage: underLine,
+  },
   feature: {
-    backgroundHeading: "FEATURE",
+    backgroundHeading: "Feature",
     mainImage: BussinessIllustration,
     iconsImage: icons,
     bussinessGrowthIcon: bussinessGrowthIcon,
@@ -69,9 +71,12 @@ export const contents = {
       },
     ],
   },
-  who: {},
+  who: {
+    heading: "Who",
+    underLineImage: underLine,
+  },
   services: {
-    backgroundHeading: "SERVICES",
+    backgroundHeading: "Services",
     heading: `Great Features To Do Your Buisness
     Growth & Development`,
     logo: servicesLogo,
@@ -134,35 +139,36 @@ export const contents = {
     ],
   },
   Projects: {
-    backgroundHeading: "PROJECTS",
+    backgroundHeading: "Projects",
     underLineImage: underLine,
     heading: `Checkout our Recently
     Completed Projects`,
-    ourProjects :[
+    ourProjects: [
       {
-        id:1,
-        category:'Marketing',
-        title:'Tech website Solution',
-        image:project1Image
+        id: 1,
+        category: "Marketing",
+        title: "Tech website Solution",
+        image: project1Image,
       },
       {
-        id:2,
-        category:'Technology',
-        title:'App platform Integration',
-        image:project2Image
-      },{
-        id:3,
-        category:'Software',
-        title:'Software Tools Development',
-        image:project3Image
-      },{
-        id:4,
-        category:'demo',
-        title:'just checking',
-        image:icons
-      }
-    ]
-    
+        id: 2,
+        category: "Technology",
+        title: "App platform Integration",
+        image: project2Image,
+      },
+      {
+        id: 3,
+        category: "Software",
+        title: "Software Tools Development",
+        image: project3Image,
+      },
+      {
+        id: 4,
+        category: "demo",
+        title: "just checking",
+        image: icons,
+      },
+    ],
   },
   says: {
     underLine: underLine,
@@ -176,34 +182,38 @@ export const contents = {
         name: "Richard S. Brooks",
         image: commentImage,
         doubleCodes: doubleCodes,
-        roll:"CEO"
+        roll: "CEO",
       },
       {
         text: `"Sed ut perspiciatis unde natus error sit voluptatem accusantium laudant totames."`,
         name: "Another Person",
         image: commentImage,
         doubleCodes: doubleCodes,
-        roll:"FOUNDER"
+        roll: "FOUNDER",
       },
       {
         text: `"Sed ut perspiciatis unde natus error sit voluptatem accusantium laudant totames."`,
         name: "Richard S. Brooks",
         image: commentImage,
         doubleCodes: doubleCodes,
-        roll:"CEO"
+        roll: "CEO",
       },
       {
         text: `"Sed ut perspiciatis unde natus error sit voluptatem accusantium laudant totames."`,
         name: "Another Person",
         image: commentImage,
         doubleCodes: doubleCodes,
-        roll:"FOUNDER"
+        roll: "FOUNDER",
       },
     ],
     totalTestimonials: 66,
   },
-   
-  }
- 
-
-
+  fact: {
+    heading: "Fact",
+    underLine: underLine,
+  },
+  call: {
+    heading: "Call",
+    underLine: underLine,
+  },
+};

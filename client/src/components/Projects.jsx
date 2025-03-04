@@ -17,9 +17,7 @@ const Projects = () => {
         </p>
         <img src={projectsData.underLineImage} />
         <p className="text-3xl md:text-4xl sm:text-xl font-semibold">
-          Checkout our Recently
-          <br />
-          Completed Projects
+          Checkout our Recently Completed Projects
         </p>
       </div>
       {/* image swiper section */}

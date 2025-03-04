@@ -2,6 +2,7 @@ import { contents } from "../contents";
 import { motion } from "framer-motion";
 import SpotlightCard from "../assets/animations/SpotlightCard";
 import Magnet from "../assets/animations/Magnet";
+import ScrollFloat from "../assets/animations/ScrollFloat";
 
 export default function Feature() {
   const { feature } = contents;
@@ -27,13 +28,13 @@ export default function Feature() {
   // };
 
   return (
-    <section className="relative bg-[#000A1F] text-white py-8 px-4 md:px-12 overflow-hidden mt-[130px]">
+    <section className="relative bg-[#000A1F] text-white py-8 px-4 md:px-12 overflow-hidden">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
         <div className="relative w-full md:w-3/7 flex flex-col justify-center items-center mb-8 md:mb-0">
           <div className="flex justify-center items-center w-full">
             <Magnet padding={50} disabled={false} magnetStrength={5}>
-              <motion.div              >
+              <motion.div>
                 <motion.img
                   src={feature.iconsImage}
                   alt="icons"
@@ -68,26 +69,33 @@ export default function Feature() {
           </div>
 
           {/* Background Heading (Only for Mobile) */}
-          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 text-[50px] font-extrabold uppercase text-transparent stroke-white md:hidden">
+          {/* <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 text-[50px] font-extrabold uppercase text-transparent stroke-white md:hidden">
             {feature.backgroundHeading}
-          </div>
+          </div> */}
         </div>
 
         {/* Right Side - Content */}
         <div className="w-full md:w-1/2 relative">
           {/* Background Heading (Only for Desktop) */}
-          <div className="absolute md:right-2 top-8 md:top-3 font-extrabold text-[40px] sm:text-[50px] md:text-[70px] lg:text-[140px] leading-[0] tracking-tight uppercase text-transparent stroke-white hidden md:block">
-            {/* <TextHoverEffect text={feature.backgroundHeading}/> */}
-            {feature.backgroundHeading}
+          <div className="font-bold md:mb-[-45px] md:ml-[-10px] ml-15 mb-[-30px] ">
+            <ScrollFloat
+              animationDuration={1}
+              ease="back.inOut(2)"
+              scrollStart="center bottom+=50%"
+              scrollEnd="bottom bottom-=50%"
+              stagger={0.03}
+            >
+              {feature.backgroundHeading}
+            </ScrollFloat>
           </div>
 
-          <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-center md:text-left">
+          <h2 className="text-gray-400 text-2xl md:text-4xl mb-6 text-center md:text-left">
             <img
               src={feature.headingLineImage}
               alt=""
               className="mx-auto md:mx-0"
             />
-              {feature.heading}
+            {feature.heading}
           </h2>
 
           {/* Animated Extra Div (Added New Section) */}

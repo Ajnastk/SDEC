@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
-import call from "../assets/images/call.svg";
-import pseudo from "../assets/images/headingLineImage.png";
+import callImage from "../assets/images/call.svg";
+import { contents } from "../contents";
+import ScrollFloat from "../assets/animations/ScrollFloat";
 const Call = () => {
+  const { call } = contents;
   const [formdata, setFormData] = useState({
     name: "",
     email: "",
@@ -29,7 +31,7 @@ const Call = () => {
           confirmButtonText: "OK",
         });
         setFormData({
-          name : "",
+          name: "",
           email: "",
           message: "",
         });
@@ -49,31 +51,42 @@ const Call = () => {
         confirmButtonText: "OK",
       });
       console.error("Error sending email", error);
-    };
+    }
   };
   return (
-    <div className="container mt-[130px]  px-4 py-16 flex flex-col lg:flex-row items-center gap-8" id="contact">
+    <div
+      className="container mt-[130px]  px-4 py-16 flex flex-col lg:flex-row items-center gap-8"
+      id="contact"
+    >
       {/* Left Side - Image */}
       <div className="lg:w-1/2">
         <img
           className="w-full max-w-[541px]"
           alt="Person working on laptop"
-          src={call}
+          src={callImage}
         />
       </div>
 
       {/* Right Side - Form */}
       <div className="lg:w-1/2 max-w-[515px]">
         <div className="relative mb-8">
-          <div className="absolute font-jost bottom-2 text-[150px] font-bold text-[#ffffff26] leading-none">
-            CALL
+          <div className=" text-white font-bold md:mb-[-45px] mb-[-30px] md:ml-[30px] ml-9 ">
+            <ScrollFloat
+              animationDuration={1}
+              ease="back.inOut(2)"
+              scrollStart="center bottom+=50%"
+              scrollEnd="bottom bottom-=50%"
+              stagger={0.03}
+            >
+              {call.heading}
+            </ScrollFloat>
           </div>
           <img
-            className="w-[84px] h-2.5 ml-10 relative z-10 my-4"
+            className="ml-10"
             alt="Decorative line"
-            src={pseudo}
+            src={call.underLine}
           />
-          <h2 className="text-4xl font-semibold text-white ml-10 relative z-10 leading-tight">
+          <h2 className="text-4xl text-gray-400 ml-10 relative z-10 leading-tight">
             Ready to Work Together <br /> In News Projects?
           </h2>
         </div>

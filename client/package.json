@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.5",
+    "@splinetool/loader": "^1.9.72",
     "@tabler/icons-react": "^3.30.0",
     "@tailwindcss/postcss": "^4.0.6",
     "@tailwindcss/vite": "^4.0.0",
     "clsx": "^2.1.1",
     "esm": "^3.2.25",
     "framer-motion": "^12.4.2",
+    "gsap": "^3.12.7",
     "lucide-react": "^0.475.0",
     "motion": "^12.4.7",
     "next": "^15.1.7",
@@ -29,7 +31,7 @@
     "sweetalert2": "^11.17.2",
     "swiper": "^11.2.2",
     "tailwind-merge": "^3.0.1",
-    "three": "^0.174.0"
+    "three": "^0.149.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
