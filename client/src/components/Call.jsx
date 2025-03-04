@@ -16,13 +16,17 @@ const Call = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const BackendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
+    
     try {
-      const response = await fetch("http://localhost:2000/send-email", {
+      const response = await fetch(`${BackendUrl}send-email`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formdata),
       });
       const data = await response.json();
+      
       if (response.ok) {
         Swal.fire({
           title: "success",
