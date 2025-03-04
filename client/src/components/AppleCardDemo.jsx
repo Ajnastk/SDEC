@@ -23,7 +23,6 @@ export function AppleCardsCarouselDemo() {
       <img src={projectsData.underLineImage} />
       <p className="text-3xl md:text-4xl sm:text-xl text-gray-400">
         Checkout our Recently
-        <br />
         Completed Projects
       </p>
       <Carousel items={cards} />
