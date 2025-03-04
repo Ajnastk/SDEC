@@ -1,7 +1,7 @@
 import featureIcon1Png from "../assets/images/icon1.svg";
 import featureIcon2Png from "../assets/images/icon2.svg";
 import featureIcon3Png from "../assets/images/icon4.svg";
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
 //import PlayButton from "./Playbutton";
 

@@ -1,4 +1,4 @@
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import { motion } from "framer-motion";
 import SpotlightCard from "../assets/animations/SpotlightCard";
 import Magnet from "../assets/animations/Magnet";

@@ -1,4 +1,4 @@
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import { Carousel, Card } from "./Project-Card-Carousal";
 import ScrollFloat from "../assets/animations/ScrollFloat";
 

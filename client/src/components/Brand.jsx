@@ -6,7 +6,7 @@ import clientsKsa20300X3001Png from "../assets/images/clients-ksa-20-300x300-1.s
 import clientsKsa25300X3001Png from "../assets/images/clients-ksa-25-300x300-1.svg";
 //import image from "../assets/images/Button1.svg";
 import line63 from "../assets/images/line-63.svg";
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
 
 const Brand = () => {
