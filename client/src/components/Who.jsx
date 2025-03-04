@@ -1,5 +1,5 @@
 import whoImage from "../assets/images/who.svg";
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
 const Who = () => {
   const { who } = contents;
