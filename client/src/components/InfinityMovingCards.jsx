@@ -7,7 +7,7 @@ export const InfiniteMovingCards = ({
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
-  className
+  className,
 }) => {
   const containerRef = useRef(null);
   const scrollerRef = useRef(null);
@@ -20,24 +20,28 @@ export const InfiniteMovingCards = ({
 
     // Clone the cards for continuous effect
     const scrollerChildren = Array.from(scrollerRef.current.children);
-    scrollerChildren.forEach(child => {
+    scrollerChildren.forEach((child) => {
       const clone = child.cloneNode(true);
       scrollerRef.current.appendChild(clone);
     });
 
     // Set CSS variables for animation control
     const directionValue = direction === "left" ? "forwards" : "reverse";
-    containerRef.current.style.setProperty("--animation-direction", directionValue);
-    
-    const speedValue = speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
+    containerRef.current.style.setProperty(
+      "--animation-direction",
+      directionValue
+    );
+
+    const speedValue =
+      speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
     containerRef.current.style.setProperty("--animation-duration", speedValue);
-    
+
     // Start animation after short delay to allow DOM updates
     const timer = setTimeout(() => {
       setIsAnimating(true);
       console.log("Animation started:", true);
     }, 100);
-    
+
     return () => clearTimeout(timer);
   }, [direction, speed]);
 
@@ -49,7 +53,8 @@ export const InfiniteMovingCards = ({
         className
       )}
       style={{
-        maskImage: "linear-gradient(to right, transparent, white 20%, white 80%, transparent)"
+        maskImage:
+          "linear-gradient(to right, transparent, white 20%, white 80%, transparent)",
       }}
     >
       <ul
@@ -69,27 +74,35 @@ export const InfiniteMovingCards = ({
             )}
           >
             <blockquote>
-              <span className={cn(
-                "relative z-20 text-sm leading-[1.6] text-gray-100 font-normal",
-                "quote"
-              )}>
+              <span
+                className={cn(
+                  "relative z-20 text-sm leading-[1.6] text-gray-100 font-normal",
+                  "quote"
+                )}
+              >
                 {item.quote}
               </span>
-              <div className={cn(
-                "relative z-20 mt-6 flex flex-row items-center",
-                "author-info"
-              )}>
+              <div
+                className={cn(
+                  "relative z-20 mt-6 flex flex-row items-center",
+                  "author-info"
+                )}
+              >
                 <span className="flex flex-col gap-1">
-                  <span className={cn(
-                    "text-sm leading-[1.6] text-gray-400 font-normal",
-                    "name"
-                  )}>
+                  <span
+                    className={cn(
+                      "text-sm leading-[1.6] text-gray-400 font-normal",
+                      "name"
+                    )}
+                  >
                     {item.name}
                   </span>
-                  <span className={cn(
-                    "text-sm leading-[1.6] text-gray-500 font-normal",
-                    "title"
-                  )}>
+                  <span
+                    className={cn(
+                      "text-sm leading-[1.6] text-gray-500 font-normal",
+                      "title"
+                    )}
+                  >
                     {item.title}
                   </span>
                 </span>
