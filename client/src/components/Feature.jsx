@@ -27,34 +27,46 @@ export default function Feature() {
   //   console.log("Animation completed!");
   // };
 
+  const marginLeftValues = ["ml-[35px]", "ml-[0px]", "ml-[35px]"];
+  const iconsAnimation = [
+    { scale: [], y: [0, 2, 0], x: [0, 3, 0] },
+    { scale: [], y: [0, 2, 0], x: [0, 1, 0] },
+    { scale: [], y: [0, 3, 0], x: [0, 2, 0] },
+  ];
+
   return (
     <section className="relative bg-[#000A1F] text-white px-4 md:px-12 overflow-hidden">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
         <div className="relative w-full md:w-3/7 flex flex-col justify-center items-center mb-8 md:mb-0">
           <div className="flex justify-center items-center w-full">
-            <Magnet padding={50} disabled={false} magnetStrength={5}>
-              <motion.div>
-                <motion.img
-                  src={feature.iconsImage}
-                  alt="icons"
-                  animate={{
-                    rotate: [0, 1, -1, 0], // Example: Add rotation animation
-                    scale: [1, 1, 1], // Example: Add scaling animation
-                  }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity, // Makes animation continuous
-                    ease: "easeInOut",
-                  }}
-                />
-              </motion.div>
-            </Magnet>
+            <div className="flex flex-col gap-20">
+              {feature.iconsImageArray.map((icon, index) => (
+                <Magnet
+                  key={index}
+                  padding={50}
+                  disabled={false}
+                  magnetStrength={8}
+                >
+                  <motion.img
+                    className={`${marginLeftValues[index]}`}
+                    src={icon}
+                    alt="icons"
+                    animate={iconsAnimation[index]}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity, // Makes animation continuous
+                      ease: "easeInOut",
+                    }}
+                  />
+                </Magnet>
+              ))}
+            </div>
 
             {/* Animated Main Image */}
             <motion.img
               src={feature.mainImage}
-              animate={{ scale: [], y: [0, 10, 0], x: [0, 10, 0] }}
+              animate={{ scale: [], y: [0, 8, 0], x: [0, 5, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
               alt="Business Illustration"
               className="w-48 ml-15 md:w-60"
