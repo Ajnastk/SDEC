@@ -9,9 +9,20 @@ export default defineConfig({
  port : 3000,
  open : true,
   },
-  build:{
-    outDir:'dist',
-    sourcemap:true,
+  build: {
+    outDir: 'dist', // Explicitly set the output directory
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react')) return 'react-vendor';
+            if (id.includes('three')) return 'three-vendor';
+            return 'vendor'; // Common dependencies
+          }
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000, // Suppress warnings for larger chunks
   },
   optimizeDeps: {
     include: ['three', '@splinetool/loader'],
