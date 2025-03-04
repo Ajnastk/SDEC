@@ -1,0 +1,77 @@
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: infiniteScroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite !important;
+}
+
+.hover-pause:hover {
+  animation-play-state: paused !important;
+}
+
+/* Custom card styling */
+.scroller ul li {
+  border-radius: 16px;
+  background-color: #0f172a; /* Dark blue background like in the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.scroller ul li:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.15) inset,
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Creates the subtle border glow effect seen in the image */
+.scroller ul li::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    to bottom right, 
+    rgba(255, 255, 255, 0.15), 
+    transparent 50%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Quote and author styling to match the image */
+.quote {
+  display: block;
+  color: #e2e8f0; /* Light gray for better readability */
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.author-info {
+  margin-top: 1.5rem;
+}
+
+.name {
+  color: #94a3b8; /* Medium gray for author name */
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.title {
+  color: #64748b; /* Darker gray for title/subtext */
+  font-size: 0.875rem;
+}

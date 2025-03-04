@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion'
+//import { motion } from 'framer-motion'
 import Feature from './Feature'
 import Who from "./Who"
 
-const fadeIn ={
-  hidden:{ opacity:0,y:50},
-  visible:{opacity:1,y:0, transition :{duration:0.8,ease:"easeOut"}},
-}
+// const fadeIn ={
+//   hidden:{ opacity:0,y:50},
+//   visible:{opacity:1,y:0, transition :{duration:0.8,ease:"easeOut"}},
+// }
 
 
 const About = () => {

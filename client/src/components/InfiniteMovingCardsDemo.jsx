@@ -1,7 +1,8 @@
-
 import { InfiniteMovingCards } from "./InfinityMovingCards";
-
+import { contents } from "../Contents";
+import ScrollFloat from "../assets/animations/ScrollFloat";
 export function InfiniteMovingCardsDemo() {
+  const { says } = contents;
   const testimonials = [
     {
       quote:
@@ -35,10 +36,37 @@ export function InfiniteMovingCardsDemo() {
   ];
   return (
     <div
-      className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-[#000a1f] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
+      className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden mt-[130px]"
+      // style={{
+      //   background: "linear-gradient(to bottom, #000510, #001033)",
+      //   backgroundImage: "radial-gradient(circle at 25% 25%, rgba(16, 21, 55, 0.8) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(16, 40, 80, 0.6) 0%, transparent 50%)"
+      // }}
+    >
+      <div className="font-bold md:mb-[-45px] md:ml-[-10px] ml-15 mb-[-30px] text-white ">
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=50%"
+          stagger={0.03}
+        >
+          {says.backgroundHeading}
+        </ScrollFloat>
+      </div>
+
+      {/* Section Title */}
+      <div className="flex flex-col justify-center items-center text-center text-3xl md:text-4xl sm:text-xl font-semibold  text-gray-400 ">
+        <img className="mx-auto" src={says.underLine} alt="underline" />
+        <h1>
+          {`People's Say About Our`} <br /> Support & Services
+        </h1>
+      </div>
+
+      <InfiniteMovingCards
+        items={testimonials}
+        direction="right"
+        speed="slow"
+      />
     </div>
   );
 }
-
-

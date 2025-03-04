@@ -1,90 +1,108 @@
 import { useEffect, useState, useRef } from "react";
 import { cn } from "../utils/cardLib";
+import "../styles/infiniteCard.css";
 
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
-  className
+  className,
 }) => {
   const containerRef = useRef(null);
   const scrollerRef = useRef(null);
-  const [start, setStart] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
+  // Handle animation setup
   useEffect(() => {
-    addAnimation();
-    console.log('Animation started',start);
-    setTimeout(()=>setStart(true),100)
-  }, []);
+    // Skip if refs aren't available
+    if (!containerRef.current || !scrollerRef.current) return;
 
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
-      getDirection();
-      getSpeed();
-      setStart(true);
-    }
-  }
+    // Clone the cards for continuous effect
+    const scrollerChildren = Array.from(scrollerRef.current.children);
+    scrollerChildren.forEach((child) => {
+      const clone = child.cloneNode(true);
+      scrollerRef.current.appendChild(clone);
+    });
 
-  function getDirection() {
-    if (containerRef.current) {
-      containerRef.current.style.setProperty(
-        "--animation-direction",
-        direction === "left" ? "forwards" : "reverse"
-      );
-    }
-  }
+    // Set CSS variables for animation control
+    const directionValue = direction === "left" ? "forwards" : "reverse";
+    containerRef.current.style.setProperty(
+      "--animation-direction",
+      directionValue
+    );
 
-  function getSpeed() {
-    if (containerRef.current) {
-      const duration = speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
-      containerRef.current.style.setProperty("--animation-duration", duration);
-    }
-  }
+    const speedValue =
+      speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
+    containerRef.current.style.setProperty("--animation-duration", speedValue);
+
+    // Start animation after short delay to allow DOM updates
+    const timer = setTimeout(() => {
+      setIsAnimating(true);
+      console.log("Animation started:", true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [direction, speed]);
 
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 max-w-7xl overflow-hidden",
         className
       )}
+      style={{
+        maskImage:
+          "linear-gradient(to right, transparent, white 20%, white 80%, transparent)",
+      }}
     >
       <ul
         ref={scrollerRef}
         className={cn(
           "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          isAnimating && "animate-scroll",
+          pauseOnHover && "hover-pause"
         )}
       >
-        {items.map((item) => (
+        {items.map((item, idx) => (
           <li
-            key={item.name}
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
-            style={{ background: "linear-gradient(180deg, var(--slate-800), var(--slate-900))" }}
+            key={`${item.name}-${idx}`}
+            className={cn(
+              "w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px]",
+              "card"
+            )}
           >
             <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className="relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+              <span
+                className={cn(
+                  "relative z-20 text-sm leading-[1.6] text-gray-100 font-normal",
+                  "quote"
+                )}
+              >
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
+              <div
+                className={cn(
+                  "relative z-20 mt-6 flex flex-row items-center",
+                  "author-info"
+                )}
+              >
                 <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span
+                    className={cn(
+                      "text-sm leading-[1.6] text-gray-400 font-normal",
+                      "name"
+                    )}
+                  >
                     {item.name}
                   </span>
-                  <span className="text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span
+                    className={cn(
+                      "text-sm leading-[1.6] text-gray-500 font-normal",
+                      "title"
+                    )}
+                  >
                     {item.title}
                   </span>
                 </span>
