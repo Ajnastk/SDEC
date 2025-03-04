@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 import callImage from "../assets/images/call.svg";
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
 const Call = () => {
   const { call } = contents;
