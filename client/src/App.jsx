@@ -21,7 +21,8 @@ const fadeIn ={
 const App = () => {
     return (
 
-      <div className="bg-[#000a1f] w-full overflow-hidden">
+      <div className="bg-[#000a1f] w-full overflow-hidden"
+      >
         {/* <ThreeDScene /> */}
           <Home/>
           <Cube/>
