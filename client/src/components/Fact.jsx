@@ -32,10 +32,10 @@ const Fact = () => {
               {fact.heading}
             </ScrollFloat>
           </div>
-          <div className="flex justify-center">
+          <div>
 
           <img
-            className="md:mr-[480px]"
+            className="w-20 mb-[-1px] h-2.5 mx-auto lg:mx-0"
             alt="Pseudo"
             src={fact.underLine}
             />
