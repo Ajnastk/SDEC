@@ -38,7 +38,7 @@ export default function Feature() {
     <section className="relative bg-[#000A1F] text-white px-4 md:px-12 overflow-hidden mt-[140px]">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
-        <div className="relative w-full md:w-3/7 flex flex-col justify-center items-center mb-8 md:mb-0">
+        <div className="relative w-full md:w-3/7 flex flex-col justify-center mt-[200px] ">
           <div className="md:flex justify-center items-center w-full hidden ">
             <div className="flex flex-col gap-20">
               {feature.iconsImageArray.map((icon, index) => (
@@ -94,9 +94,9 @@ export default function Feature() {
         </div>
 
         {/* Right Side - Content */}
-        <div className="w-full md:w-1/2 relative">
+        <div className="lg:w-1/2  text-center lg:text-left md:text-left relative">
           {/* Background Heading (Only for Desktop) */}
-          <div className="font-bold md:mb-[-45px] md:ml-[-250px] text-center mb-[-30px] ">
+          <div className=" text-white font-bold mb-[-30px] md:mb-[-45px] md:ml-[-10px] ">
             <ScrollFloat
               animationDuration={1}
               ease="back.inOut(2)"
@@ -133,7 +133,7 @@ export default function Feature() {
             </p>
           </motion.div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center justify-center text-center md:text-left">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 items-center justify-center text-center md:text-left">
             {feature.featuresList.map((item, index) => (
               <SpotlightCard
                 key={index}

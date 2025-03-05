@@ -12,7 +12,7 @@ const Seo = () => {
   };
 
   return (
-    <div className="flex flex-col mt-[130px] pt-20 scroll-mt-20 w-[70%] mx-auto lg:flex-row lg:ml-60 lg:items-start gap-10 px-2 py-12 bg-[#000A1F] text-white">
+    <div className="flex flex-col max-w-5xl mt-[130px] pt-20 scroll-mt-20 w-[70%] mx-auto lg:flex-row lg:ml-60 lg:items-start gap-10 px-2 py-12 bg-[#000A1F] text-white">
       {/* Left Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
         <div className="relative">
@@ -32,7 +32,7 @@ const Seo = () => {
         </div>
 
         <img src={seo.underLine} alt="" className="mx-auto mb-[-1px] lg:mx-0" />
-        <h2 className="text-2xl lg:text-3xl text-gray-400 mt-4">{seo.titile}</h2>
+        <h2 className="text-2xl lg:text-3xl text-gray-400 ">{seo.titile}</h2>
         <p className="text-gray-400 mt-3 text-sm lg:text-base">
           {seo.description}{" "}
         </p>

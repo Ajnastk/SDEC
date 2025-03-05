@@ -4,7 +4,7 @@ import ScrollFloat from "../assets/animations/ScrollFloat";
 const Who = () => {
   const { who } = contents;
   return (
-    <div className="relative max-w-5xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-10 mt-[130px]">
+    <div className="relative max-w-5xl md:mx-6 sm:mx-6 mx-6 lg:mx-auto px-4 flex flex-col lg:flex-row items-center gap-10 mt-[130px]">
       <div className="lg:w-1/2 space-y-6 text-center lg:text-left text-white">
         <div className="font-bold mb-[-30px] md:mb-[-45px] ml-[-10px]  md:ml-[-15px] ">
           <ScrollFloat
