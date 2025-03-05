@@ -31,8 +31,7 @@ const Home = () => {
             alt="Cloud"
           />
           <div> 
-            <div className="flex">
-              <p></p> 
+            <div className="flex"> 
            <FlipWords/>
             </div>
           
