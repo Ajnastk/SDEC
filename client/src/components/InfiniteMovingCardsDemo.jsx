@@ -42,7 +42,8 @@ export function InfiniteMovingCardsDemo() {
       //   backgroundImage: "radial-gradient(circle at 25% 25%, rgba(16, 21, 55, 0.8) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(16, 40, 80, 0.6) 0%, transparent 50%)"
       // }}
     >
-      <div className="font-bold md:mb-[-45px] md:ml-[-10px] ml-15 mb-[-30px] text-white ">
+
+      <div className="font-bold  md:mb-[-45px] md:ml-[-10px] text-center mb-[-30px] text-white ">
         <ScrollFloat
           animationDuration={1}
           ease="back.inOut(2)"
@@ -55,7 +56,7 @@ export function InfiniteMovingCardsDemo() {
       </div>
 
       {/* Section Title */}
-      <div className="flex flex-col justify-center items-center text-center text-3xl md:text-4xl sm:text-xl font-semibold  text-gray-400 ">
+      <div className="flex flex-col justify-center items-center text-center text-3xl md:text-4xl sm:text-xl  text-gray-400 ">
         <img className="mx-auto" src={says.underLine} alt="underline" />
         <h1>
           {`People's Say About Our`} <br /> Support & Services

@@ -5,8 +5,8 @@ import X3001Png from "../assets/images/6-300x300-1.png";
 import clientsKsa20300X3001Png from "../assets/images/clients-ksa-20-300x300-1.svg";
 import clientsKsa25300X3001Png from "../assets/images/clients-ksa-25-300x300-1.svg";
 //import image from "../assets/images/Button1.svg";
-import line63 from "../assets/images/line-63.svg";
-import { contents } from "../contents";
+//import line63 from "../assets/images/line-63.svg";
+import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
 
 const Brand = () => {
@@ -49,10 +49,8 @@ const Brand = () => {
       </p>
       {/* Divider Line */}
       <div className="relative mt-6 md:mt-8">
-        <img
+        <hr
           className="w-full max-w-[1110px] mx-auto h-px object-cover"
-          alt="Line"
-          src={line63}
         />
       </div>
 

@@ -4,6 +4,10 @@ import underLine from "./assets/images/headingLineImage.png";
 // Feature Images
 import BussinessIllustration from "./assets/images/BussinessIllustration.png";
 import icons from "./assets/images/iconsImage.png";
+import icon1 from "./assets/images/iconsImage1.png";
+import icon2 from "./assets/images/iconsImage2.png";
+import icon3 from "./assets/images/iconsImage3.png";
+
 import bussinessGrowthIcon from "./assets/images/businessGrowthIcon.png";
 import dataSolutionIcon from "./assets/images/dataSolutionIcon.png";
 import productDesignIcon from "./assets/images/productDesignIcon.png";
@@ -42,6 +46,8 @@ export const contents = {
     backgroundHeading: "Feature",
     mainImage: BussinessIllustration,
     iconsImage: icons,
+    iconsImageArray: [icon1, icon2, icon3],
+
     bussinessGrowthIcon: bussinessGrowthIcon,
     dataSolutionIcon: dataSolutionIcon,
     productDesignIcon: productDesignIcon,

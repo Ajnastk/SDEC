@@ -17,7 +17,7 @@ const Seo = () => {
       <div className="lg:w-1/2 text-center lg:text-left">
         <div className="relative">
           {/* Desktop view */}
-          <div className="font-bold md:mb-[-45px] mb-[-30px] md:ml-[-10px] ml-2 ">
+          <div className="font-bold md:mb-[-45px] mb-[-35px] md:ml-[-10px] ml-1 ">
             <ScrollFloat
               animationDuration={1}
               ease="back.inOut(2)"

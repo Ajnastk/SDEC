@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 import callImage from "../assets/images/call.svg";
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
 const Call = () => {
   const { call } = contents;
@@ -16,13 +16,17 @@ const Call = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const BackendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
+    
     try {
-      const response = await fetch("http://localhost:2000/send-email", {
+      const response = await fetch(`${BackendUrl}send-email`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formdata),
       });
       const data = await response.json();
+      
       if (response.ok) {
         Swal.fire({
           title: "success",
