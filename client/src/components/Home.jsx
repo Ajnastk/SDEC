@@ -5,7 +5,7 @@ import cloud1 from "../assets/images/cloud1.png";
 //import bulb from "../assets/images/bulb.png";
 import ball from "../assets/images/Ball.png";
 import person from "../assets/images/person.png";
-//import vector from "../assets/images/vector.png";
+import vector from "../assets/images/vector-1.png";
 import homeBg from "../assets/images/home-bg.png";
 //import Brand from "../components/Brand";
 import FlipWords from "./FlipWords";
@@ -58,7 +58,7 @@ const Home = () => {
           />
           <div className="flex items-center justify-center gap-5 sm:gap-10">
             <img
-              className="w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px] z-10 ml-5"
+              className="w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px] z-30"
               src={person}
               alt="Person"
             />
@@ -70,23 +70,24 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div
-        className=" relative top-10 items-center lg:px-20  "
+       <div
+        className="absolute bottom-0 left-0 w-full h-1/3 z-20"
         style={{
           backgroundImage: `url(${vector})`,
-          backgroundSize: "certain",
+          backgroundSize: "cover",
+          backgroundPosition: "top center",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <motion.div
+        {/* <motion.div
           variants={fadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0 }}
         >
-          <Brand />
-        </motion.div>
-      </div> */}
+      <Brand />
+        </motion.div> */}
+      </div> 
     </div>
   );
 };
