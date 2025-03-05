@@ -15,7 +15,7 @@ const Fact = () => {
 
   return (
     <div
-      className="pt-20 mt-[130px] scroll-smooth relative w-full max-w-[1200px] mx-auto px-6 py-16 flex flex-col lg:flex-row items-center lg:items-start gap-12 "
+      className="pt-20 mt-[130px] scroll-smooth relative w-full max-w-6xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center lg:items-start gap-12 "
       id="fact"
     >
       {/* Left Section: Heading & Description */}

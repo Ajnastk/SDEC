@@ -79,7 +79,7 @@ const Services = () => {
         </div>
 
         {/* Services List */}
-        <div className="w-full p-5 md:w-1/2">
+        <div className="w-full p-5 md:w-1/2 sm:mt-[70px] lg:mt-[20px]">
           <ServiceList />
         </div>
       </div>
