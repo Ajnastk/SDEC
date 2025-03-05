@@ -1,19 +1,19 @@
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 //import RotatingText from "../assets/animations/RotatingText";
 import cloud1 from "../assets/images/cloud1.png";
 //import bulb from "../assets/images/bulb.png";
 import ball from "../assets/images/Ball.png";
 import person from "../assets/images/person.png";
-import vector from "../assets/images/vector.png";
+//import vector from "../assets/images/vector.png";
 import homeBg from "../assets/images/home-bg.png";
-import Brand from "../components/Brand";
+//import Brand from "../components/Brand";
 import FlipWords from "./FlipWords";
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-};
+// const fadeIn = {
+//   hidden: { opacity: 0, y: 50 },
+//   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+// };
 
 const Home = () => {
   return (
@@ -58,7 +58,7 @@ const Home = () => {
           />
           <div className="flex items-center justify-center gap-5 sm:gap-10">
             <img
-              className="w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px] z-10"
+              className="w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px] z-10 ml-5"
               src={person}
               alt="Person"
             />
@@ -70,7 +70,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className=" relative top-10 items-center lg:px-20  "
         style={{
           backgroundImage: `url(${vector})`,
@@ -86,7 +86,7 @@ const Home = () => {
         >
           <Brand />
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 };

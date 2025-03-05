@@ -1,7 +1,7 @@
 import featureIcon1Png from "../assets/images/icon1.svg";
 import featureIcon2Png from "../assets/images/icon2.svg";
 import featureIcon3Png from "../assets/images/icon4.svg";
-import { contents } from "../contents";
+import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
 //import PlayButton from "./Playbutton";
 
@@ -21,7 +21,7 @@ const Fact = () => {
       {/* Left Section: Heading & Description */}
       <div className=" lg:w-1/2 text-center lg:text-left">
         <div className="mb-13">
-          <div className=" text-white font-bold mb-[-25px] md:mb-[-45px] md:ml-[-10px] ">
+          <div className=" text-white font-bold mb-[-30px] md:mb-[-45px] md:ml-[-10px] ">
             <ScrollFloat
               animationDuration={1}
               ease="back.inOut(2)"

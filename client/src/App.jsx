@@ -10,7 +10,7 @@ import { InfiniteMovingCardsDemo } from "./components/InfiniteMovingCardsDemo";
 import Call from "./components/Call";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Cube from "./components/Cube";
+// import Cube from "./components/Cube";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 50 },
@@ -23,7 +23,7 @@ const App = () => {
       >
         {/* <ThreeDScene /> */}
           <Home/>
-          <Cube/>
+          {/* <Cube/> */}
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}/>
         <About />
         {/* </motion.div> */}

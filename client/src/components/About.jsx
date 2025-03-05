@@ -10,7 +10,7 @@ import Who from "./Who"
 
 const About = () => {
   return (
-    <div className='pt-20 scroll-mt-20 mt-[130px]' id="about">
+    <div className='pt-20 scroll-mt-20 ' id="about">
     {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount: 0.3}}> */}
       <Feature/>
     {/* </motion.div> */}
