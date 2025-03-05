@@ -5,8 +5,8 @@ const Who = () => {
   const { who } = contents;
   return (
     <div className="relative max-w-5xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-10 mt-[130px]">
-      <div className="lg:w-1/2 space-y-6 text-white">
-        <div className="font-bold mb-[-30px] md:mb-[-45px] ml-[-10px]  md:ml-[-15px]">
+      <div className="lg:w-1/2 space-y-6 text-center lg:text-left text-white">
+        <div className="font-bold mb-[-30px] md:mb-[-45px] ml-[-10px]  md:ml-[-15px] ">
           <ScrollFloat
             animationDuration={1}
             ease="back.inOut(2)"
@@ -18,7 +18,7 @@ const Who = () => {
           </ScrollFloat>
         </div>
         <img
-          className="w-20 mb-[-1px] h-2.5"
+          className="w-20 mb-[-1px] h-2.5 mx-auto lg:mx-0"
           alt="Pseudo"
           src={who.underLineImage}
         />

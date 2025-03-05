@@ -9,7 +9,7 @@ export function AppleCardsCarouselDemo() {
   const projectsData = contents.Projects;
   return (
     <div className="flex flex-col items-center mt-[130px]" id="projects">
-      <div className=" text-white font-bold md:mb-[-45px] text-center mb-[-30px]">
+      <div className=" text-white font-bold md:mb-[-45px] text-center mb-[-30px] lg:pb-[10px]">
         <ScrollFloat
           animationDuration={1}
           ease="back.inOut(2)"

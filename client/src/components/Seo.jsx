@@ -31,7 +31,7 @@ const Seo = () => {
          
         </div>
 
-        <img src={seo.underLine} alt="" className="mx-auto mb-[-20px] lg:mx-0" />
+        <img src={seo.underLine} alt="" className="mx-auto mb-[-1px] lg:mx-0" />
         <h2 className="text-2xl lg:text-3xl text-gray-400 mt-4">{seo.titile}</h2>
         <p className="text-gray-400 mt-3 text-sm lg:text-base">
           {seo.description}{" "}

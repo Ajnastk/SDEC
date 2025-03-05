@@ -58,13 +58,13 @@ const Call = () => {
   };
   return (
     <div
-      className="container mt-[130px]  px-4 py-16 flex flex-col lg:flex-row items-center gap-8"
+      className="container mt-[130px]  px-4 py-16 flex flex-col justify-center mx-auto lg:flex-row items-center gap-8"
       id="contact"
     >
       {/* Left Side - Image */}
       <div className="lg:w-1/2">
         <img
-          className="w-full max-w-[541px]"
+          className=" w-[350px] sm:w-[400px] md:w-[400px] lg:w-[541px]"
           alt="Person working on laptop"
           src={callImage}
         />
