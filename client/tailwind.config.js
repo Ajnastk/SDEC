@@ -5,7 +5,7 @@ const { transform } = require("next/dist/build/swc/generated-native");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{ts,tsx,js,jsx}"],
+  content: ["./src/**/*.{html,ts,tsx,js,jsx}"],
   darkMode: "class",
   theme: {
     extend: {

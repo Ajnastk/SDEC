@@ -1,0 +1,174 @@
+[33me8dd73f[m[33m ([m[1;36mHEAD -> [m[1;32mhome[m[33m)[m HEAD@{0}: reset: moving to HEAD~2
+[33m4f31561[m[33m ([m[1;31morigin/home[m[33m)[m HEAD@{1}: commit: server production setup
+[33m68802b2[m HEAD@{2}: checkout: moving from main to home
+[33m6821b8c[m[33m ([m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from home to main
+[33m68802b2[m HEAD@{4}: commit (merge): error clearence
+[33me8dd73f[m[33m ([m[1;36mHEAD -> [m[1;32mhome[m[33m)[m HEAD@{5}: checkout: moving from main to home
+[33m6821b8c[m[33m ([m[1;32mmain[m[33m)[m HEAD@{6}: checkout: moving from main to main
+[33m6821b8c[m[33m ([m[1;32mmain[m[33m)[m HEAD@{7}: pull origin main: Merge made by the 'ort' strategy.
+[33m980e8d7[m HEAD@{8}: checkout: moving from home to main
+[33me8dd73f[m[33m ([m[1;36mHEAD -> [m[1;32mhome[m[33m)[m HEAD@{9}: commit (merge): error clearence
+[33md8e9c00[m HEAD@{10}: checkout: moving from main to home
+[33m980e8d7[m HEAD@{11}: commit (merge): main clearence
+[33m3e5a037[m HEAD@{12}: checkout: moving from home to main
+[33md8e9c00[m HEAD@{13}: commit (merge): finale clearence
+[33me77caa0[m HEAD@{14}: checkout: moving from main to home
+[33m3e5a037[m HEAD@{15}: commit: clearence
+[33m4df0aef[m HEAD@{16}: pull origin main: Fast-forward
+[33m44426f2[m HEAD@{17}: checkout: moving from home to main
+[33me77caa0[m HEAD@{18}: commit: cursor animation clearence
+[33m44426f2[m HEAD@{19}: checkout: moving from main to home
+[33m44426f2[m HEAD@{20}: checkout: moving from home to main
+[33m44426f2[m HEAD@{21}: merge main: Fast-forward
+[33ma93e9d9[m HEAD@{22}: checkout: moving from main to home
+[33m44426f2[m HEAD@{23}: pull origin main: Fast-forward
+[33mddbe298[m HEAD@{24}: checkout: moving from home to main
+[33ma93e9d9[m HEAD@{25}: commit: says section updation
+[33mddbe298[m HEAD@{26}: merge main: Fast-forward
+[33m7afc3aa[m HEAD@{27}: checkout: moving from main to home
+[33mddbe298[m HEAD@{28}: checkout: moving from main to main
+[33mddbe298[m HEAD@{29}: pull origin main: Fast-forward
+[33me9fbc7d[m HEAD@{30}: checkout: moving from home to main
+[33m7afc3aa[m HEAD@{31}: commit: new project demo section
+[33me9fbc7d[m HEAD@{32}: merge main: Fast-forward
+[33m03da555[m HEAD@{33}: checkout: moving from main to home
+[33me9fbc7d[m HEAD@{34}: pull origin main: Fast-forward
+[33m69504ad[m HEAD@{35}: checkout: moving from home to main
+[33m03da555[m HEAD@{36}: commit: home animation clear
+[33m895f046[m HEAD@{37}: commit: component animation setup finally
+[33m90004fe[m HEAD@{38}: checkout: moving from main to home
+[33m69504ad[m HEAD@{39}: checkout: moving from home to main
+[33m90004fe[m HEAD@{40}: commit: smooth movements in each components
+[33m1a6f07d[m HEAD@{41}: commit (merge): home page responsive
+[33mfb30887[m HEAD@{42}: checkout: moving from main to home
+[33m69504ad[m HEAD@{43}: commit (merge): 3d setup
+[33m7b83133[m HEAD@{44}: checkout: moving from home to main
+[33mfb30887[m HEAD@{45}: commit (merge): 3d animation implimentation checking
+[33md1ce0b8[m HEAD@{46}: checkout: moving from main to home
+[33m7b83133[m HEAD@{47}: commit: git setup
+[33me44b14a[m HEAD@{48}: checkout: moving from home to main
+[33md1ce0b8[m HEAD@{49}: commit: contact module backend setup
+[33me44b14a[m HEAD@{50}: checkout: moving from main to home
+[33me44b14a[m HEAD@{51}: checkout: moving from home to main
+[33me44b14a[m HEAD@{52}: merge main: Fast-forward
+[33mc9b6de7[m HEAD@{53}: checkout: moving from main to home
+[33me44b14a[m HEAD@{54}: commit (merge): contact form module implimentation
+[33mc9b6de7[m HEAD@{55}: checkout: moving from home to main
+[33mc9b6de7[m HEAD@{56}: merge main: Fast-forward
+[33m810fa72[m HEAD@{57}: checkout: moving from main to home
+[33mc9b6de7[m HEAD@{58}: commit (merge): clearence
+[33mfc39ae0[m HEAD@{59}: checkout: moving from home to main
+[33m810fa72[m HEAD@{60}: commit: saving changes before merge
+[33m15e3443[m HEAD@{61}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{62}: checkout: moving from home to main
+[33m15e3443[m HEAD@{63}: reset: moving to HEAD
+[33m15e3443[m HEAD@{64}: reset: moving to HEAD~10
+[33m43c0cf9[m HEAD@{65}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{66}: checkout: moving from home to main
+[33m43c0cf9[m HEAD@{67}: commit: contact message module implimentation
+[33m37dfcdf[m HEAD@{68}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{69}: checkout: moving from home to main
+[33m37dfcdf[m HEAD@{70}: commit: missing files setup
+[33m49b70be[m HEAD@{71}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{72}: checkout: moving from home to main
+[33m49b70be[m HEAD@{73}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{74}: checkout: moving from home to main
+[33m49b70be[m HEAD@{75}: commit: package reinstallation
+[33m86035da[m HEAD@{76}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{77}: checkout: moving from home to main
+[33m86035da[m HEAD@{78}: commit: index.html resetup
+[33m87115b5[m HEAD@{79}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{80}: checkout: moving from home to main
+[33m87115b5[m HEAD@{81}: commit: vite.config.js resetup
+[33md202922[m HEAD@{82}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{83}: checkout: moving from home to main
+[33md202922[m HEAD@{84}: commit: index.css file resetup
+[33m8059188[m HEAD@{85}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{86}: checkout: moving from home to main
+[33m8059188[m HEAD@{87}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{88}: checkout: moving from home to main
+[33m8059188[m HEAD@{89}: commit: resetup files
+[33ma494758[m HEAD@{90}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{91}: checkout: moving from home to main
+[33ma494758[m HEAD@{92}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{93}: checkout: moving from home to main
+[33ma494758[m HEAD@{94}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{95}: checkout: moving from home to main
+[33ma494758[m HEAD@{96}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{97}: checkout: moving from home to main
+[33ma494758[m HEAD@{98}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{99}: checkout: moving from home to main
+[33ma494758[m HEAD@{100}: commit: next deletion
+[33m020d987[m HEAD@{101}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{102}: checkout: moving from home to main
+[33m020d987[m HEAD@{103}: commit: next clearence
+[33m9852f05[m HEAD@{104}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{105}: checkout: moving from home to main
+[33m9852f05[m HEAD@{106}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{107}: checkout: moving from home to main
+[33m9852f05[m HEAD@{108}: commit (merge): nex.js deletion
+[33m15e3443[m HEAD@{109}: checkout: moving from main to home
+[33mfc39ae0[m HEAD@{110}: pull origin main: Fast-forward
+[33m9831d66[m HEAD@{111}: checkout: moving from home to main
+[33m15e3443[m HEAD@{112}: commit: next.js implimentation try
+[33m9831d66[m HEAD@{113}: checkout: moving from main to home
+[33m9831d66[m HEAD@{114}: checkout: moving from home to main
+[33m9831d66[m HEAD@{115}: merge main: Fast-forward
+[33m7b3870c[m HEAD@{116}: checkout: moving from main to home
+[33m9831d66[m HEAD@{117}: pull origin main: Fast-forward
+[33mcb64bba[m HEAD@{118}: checkout: moving from home to main
+[33m7b3870c[m HEAD@{119}: commit: project section
+[33mcb64bba[m HEAD@{120}: merge main: Fast-forward
+[33m4be6c95[m HEAD@{121}: checkout: moving from main to home
+[33mcb64bba[m HEAD@{122}: pull origin main: Fast-forward
+[33m1dadf5c[m HEAD@{123}: checkout: moving from home to main
+[33m4be6c95[m HEAD@{124}: commit: project section setup
+[33m1dadf5c[m HEAD@{125}: merge main: Fast-forward
+[33mf0280a1[m HEAD@{126}: checkout: moving from main to home
+[33m1dadf5c[m HEAD@{127}: pull origin main: Fast-forward
+[33mf9a85e6[m HEAD@{128}: checkout: moving from home to main
+[33mf0280a1[m HEAD@{129}: commit: home section clearence
+[33mf9a85e6[m HEAD@{130}: merge main: Fast-forward
+[33mc1c370a[m HEAD@{131}: checkout: moving from main to home
+[33mf9a85e6[m HEAD@{132}: pull origin main: Fast-forward
+[33mc1c370a[m HEAD@{133}: checkout: moving from home to main
+[33mc1c370a[m HEAD@{134}: merge main: Fast-forward
+[33m46cfa15[m HEAD@{135}: checkout: moving from main to home
+[33mc1c370a[m HEAD@{136}: pull origin main: Fast-forward
+[33mf90bc41[m HEAD@{137}: checkout: moving from home to main
+[33m46cfa15[m HEAD@{138}: commit: home section alignment
+[33mf90bc41[m HEAD@{139}: merge main: Fast-forward
+[33med7a582[m HEAD@{140}: checkout: moving from main to home
+[33mf90bc41[m HEAD@{141}: pull origin main: Fast-forward
+[33m17d4bfe[m HEAD@{142}: checkout: moving from home to main
+[33med7a582[m HEAD@{143}: commit: home responsive
+[33m17d4bfe[m HEAD@{144}: merge main: Fast-forward
+[33me38ea29[m HEAD@{145}: checkout: moving from main to home
+[33m17d4bfe[m HEAD@{146}: pull origin main: Fast-forward
+[33m2725273[m HEAD@{147}: checkout: moving from home to main
+[33me38ea29[m HEAD@{148}: commit: brand section
+[33m2725273[m HEAD@{149}: merge main: Fast-forward
+[33m76deca4[m HEAD@{150}: checkout: moving from main to home
+[33m2725273[m HEAD@{151}: pull origin main: Fast-forward
+[33mfa2cbd2[m HEAD@{152}: checkout: moving from home to main
+[33m76deca4[m HEAD@{153}: commit: home 2nd commit
+[33mfa2cbd2[m HEAD@{154}: merge main: Fast-forward
+[33ma44753b[m HEAD@{155}: checkout: moving from main to home
+[33mfa2cbd2[m HEAD@{156}: pull origin main: Fast-forward
+[33ma44753b[m HEAD@{157}: checkout: moving from home to main
+[33ma44753b[m HEAD@{158}: merge main: Fast-forward
+[33m4083190[m HEAD@{159}: checkout: moving from main to home
+[33ma44753b[m HEAD@{160}: pull origin main: Fast-forward
+[33m4e6295a[m HEAD@{161}: checkout: moving from home to main
+[33m4083190[m HEAD@{162}: commit: home page 1st section
+[33m4e6295a[m HEAD@{163}: merge main: Fast-forward
+[33mbd4a1e0[m HEAD@{164}: checkout: moving from main to home
+[33m4e6295a[m HEAD@{165}: pull origin main: Fast-forward
+[33m1f1b3a3[m HEAD@{166}: checkout: moving from home to main
+[33mbd4a1e0[m HEAD@{167}: commit: Nav section
+[33m1f1b3a3[m HEAD@{168}: merge main: Fast-forward
+[33m3b99b11[m HEAD@{169}: checkout: moving from main to home
+[33m1f1b3a3[m HEAD@{170}: pull origin main: Fast-forward
+[33m3b99b11[m HEAD@{171}: checkout: moving from home to main
+[33m3b99b11[m HEAD@{172}: checkout: moving from main to home
+[33m3b99b11[m HEAD@{173}: clone: from https://github.com/Ajnastk/SDEC.git
