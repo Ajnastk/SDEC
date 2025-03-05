@@ -21,7 +21,7 @@ const Fact = () => {
       {/* Left Section: Heading & Description */}
       <div className=" lg:w-1/2 text-center lg:text-left">
         <div className="mb-13">
-          <div className=" text-white font-bold mb-[-25px] md:mb-[-45px] md:ml-[-10px] ">
+          <div className=" text-white font-bold mb-[-30px] md:mb-[-45px] md:ml-[-10px] ">
             <ScrollFloat
               animationDuration={1}
               ease="back.inOut(2)"

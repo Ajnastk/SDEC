@@ -48,17 +48,17 @@ export default function Feature() {
                   disabled={false}
                   magnetStrength={8}
                 >
-                <motion.img
-  className={`hidden md:block ${marginLeftValues[index]}`} // Hide on mobile
-  src={icon}
-  alt="icons"
-  animate={iconsAnimation[index]}
-  transition={{
-    duration: 1.5,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
-/>
+                  <motion.img
+                    className={`hidden md:block ${marginLeftValues[index]}`} // Hide on mobile
+                    src={icon}
+                    alt="icons"
+                    animate={iconsAnimation[index]}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  />
                 </Magnet>
               ))}
             </div>
@@ -78,13 +78,13 @@ export default function Feature() {
               //   ease: "easeOut",
               // }}
             /> */}
-          <motion.img
-  src={feature.mainImage}
-  animate={{ scale: [], y: [0, 8, 0], x: [0, 5, 0] }}
-  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-  alt="Business Illustration"
-  className="hidden md:block w-48 md:w-60" // Hide on mobile, show on md+
-/>
+            <motion.img
+              src={feature.mainImage}
+              animate={{ scale: [], y: [0, 8, 0], x: [0, 5, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+              alt="Business Illustration"
+              className="hidden md:block w-48 md:w-60" // Hide on mobile, show on md+
+            />
           </div>
 
           {/* Background Heading (Only for Mobile) */}
@@ -96,7 +96,7 @@ export default function Feature() {
         {/* Right Side - Content */}
         <div className="w-full md:w-1/2 relative">
           {/* Background Heading (Only for Desktop) */}
-          <div className="font-bold md:mb-[-45px] md:ml-[-10px] ml-15 mb-[-30px] ">
+          <div className="font-bold md:mb-[-45px] md:ml-[-250px] text-center mb-[-30px] ">
             <ScrollFloat
               animationDuration={1}
               ease="back.inOut(2)"

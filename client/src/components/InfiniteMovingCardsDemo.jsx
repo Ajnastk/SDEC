@@ -56,7 +56,7 @@ export function InfiniteMovingCardsDemo() {
       </div>
 
       {/* Section Title */}
-      <div className="flex flex-col justify-center items-center text-center text-3xl md:text-4xl sm:text-xl font-semibold  text-gray-400 ">
+      <div className="flex flex-col justify-center items-center text-center text-3xl md:text-4xl sm:text-xl  text-gray-400 ">
         <img className="mx-auto" src={says.underLine} alt="underline" />
         <h1>
           {`People's Say About Our`} <br /> Support & Services
