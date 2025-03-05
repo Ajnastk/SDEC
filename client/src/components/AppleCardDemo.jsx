@@ -21,7 +21,7 @@ export function AppleCardsCarouselDemo() {
         </ScrollFloat>
       </div>
       <img src={projectsData.underLineImage} />
-      <p className="text-3xl md:text-4xl sm:text-xl text-gray-400">
+      <p className="text-3xl text-center md:text-4xl sm:text-xl text-gray-400">
         Checkout our Recently
         Completed Projects
       </p>

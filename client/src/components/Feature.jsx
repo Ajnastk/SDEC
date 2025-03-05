@@ -39,7 +39,7 @@ export default function Feature() {
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
         <div className="relative w-full md:w-3/7 flex flex-col justify-center items-center mb-8 md:mb-0">
-          <div className="flex justify-center items-center w-full">
+          <div className="md:flex justify-center items-center w-full hidden ">
             <div className="flex flex-col gap-20">
               {feature.iconsImageArray.map((icon, index) => (
                 <Magnet

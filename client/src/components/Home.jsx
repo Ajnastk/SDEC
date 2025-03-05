@@ -59,7 +59,7 @@ const Home = () => {
           />
           <div className="flex items-center justify-center gap-5 sm:gap-10">
             <img
-              className="w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px] z-10"
+              className="w-[400px] sm:w-[400px] md:w-[500px] lg:w-[600px] z-10 ml-5"
               src={person}
               alt="Person"
             />
