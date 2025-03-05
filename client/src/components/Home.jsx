@@ -5,7 +5,7 @@ import cloud1 from "../assets/images/cloud1.png";
 //import bulb from "../assets/images/bulb.png";
 import ball from "../assets/images/Ball.png";
 import person from "../assets/images/person.png";
-import vector from "../assets/images/vector-1.png";
+import vector from "../../src/assets/images/Vector-1.png"
 import homeBg from "../assets/images/home-bg.png";
 //import Brand from "../components/Brand";
 import FlipWords from "./FlipWords";
@@ -71,7 +71,7 @@ const Home = () => {
         </div>
       </div>
        <div
-        className="absolute bottom-0 left-0 w-full h-1/3 z-20"
+        className="absolute bottom-0 left-0 sm:w-full md:w-full lg:w-full w-full h-1/3 z-20"
         style={{
           backgroundImage: `url(${vector})`,
           backgroundSize: "cover",
