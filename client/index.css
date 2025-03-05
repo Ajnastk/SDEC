@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Avro:wght@400;500;600;700&family=Arvo:wght@400;700&display=swap');
 @import "tailwindcss";
 
 
@@ -6,6 +7,9 @@
     -webkit-text-stroke: 0.5px rgb(148, 148, 148); /* Outline color and thickness */
   }
   
+.avro-font {
+  font-family: 'Avro', 'Arvo', serif;
+}
 
 /* Hide scrollbar but allow scrolling */
 ::-webkit-scrollbar {
@@ -24,12 +28,11 @@
     font-family: 'Jost', sans-serif;
   }
 
-   /* #container3d{
+  #container3d{
     position: fixed;
-    inset: 0; */
+    inset: 0; 
     /* background-color: red; */
-    /* z-index: 100;
+    z-index: 100;
     pointer-events: none;
-  }  */
-   
+  } 
 

@@ -17,7 +17,11 @@ const Who = () => {
             {who.heading}
           </ScrollFloat>
         </div>
-        <img className="w-20 mb-[-5px] h-2.5" alt="Pseudo" src={who.underLineImage} />
+        <img
+          className="w-20 mb-[-5px] h-2.5"
+          alt="Pseudo"
+          src={who.underLineImage}
+        />
         <p className="text-gray-400 leading-snug text-2xl md:text-4xl">
           We’re an Award-Winning <br /> Modern Business Solutions <br /> Agency
         </p>

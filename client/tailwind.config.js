@@ -10,15 +10,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        scroll:
-          "scroll var(--animation-duration, 40s) linear infinite",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         scroll: {
-          to: {
-            transform: "translateX(calc(-50% - 0.5rem))",
-          
-          },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-50%))" },
         },
       },
     },
