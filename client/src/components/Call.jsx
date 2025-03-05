@@ -17,17 +17,16 @@ const Call = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const backendUrl = import.meta.env.MODE === "production" ? import.meta.env.VITE_BACKEND_URL : "http://localhost:2000/"
+    const backendUrl = import.meta.env.MODE === "production" ? import.meta.env.VITE_BACKEND_URL : "http://localhost:2000"
     
     try {
-      const response = await fetch(`${backendUrl}send-email`, {
+      const response = await fetch(`${backendUrl}/send-email`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formdata),
       });
       const data = await response.json();
-      
-      if (response.ok) {
+      if(response.ok){
         Swal.fire({
           title: "success",
           text: data.message,
