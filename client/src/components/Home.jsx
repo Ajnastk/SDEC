@@ -5,7 +5,7 @@ import cloud1 from "../assets/images/cloud1.png";
 //import bulb from "../assets/images/bulb.png";
 import ball from "../assets/images/Ball.png";
 import person from "../assets/images/person.png";
-import vector from "../../src/assets/images/Vector-1.png"
+import vector from "../../src/assets/images/Vector-1.png";
 import homeBg from "../assets/images/home-bg.png";
 //import Brand from "../components/Brand";
 import FlipWords from "./FlipWords";
@@ -20,7 +20,11 @@ const Home = () => {
     <div
       className=" flex flex-col pt-20 scroll-mt-20 z-0 bg-[#010a23]"
       id="home"
-      style={{ backgroundImage: `url(${homeBg})`, backgroundSize: "contain" }}
+      style={{
+        backgroundImage: `url(${homeBg})`,
+        backgroundSize: "contain",
+        height: "100vh",
+      }}
     >
       <Navbar />
       <div className=" flex flex-col lg:flex-row justify-center px-5 lg:px-20 ">
@@ -30,12 +34,11 @@ const Home = () => {
             src={cloud1}
             alt="Cloud"
           />
-          <div> 
-            <div className="flex"> 
-           <FlipWords/>
+          <div>
+            <div className="flex">
+              <FlipWords />
             </div>
-          
-           
+
             {/* <div className="flex bg-amber-900 items-center">
               <p className="text-white font-bold text-3xl lg:text-6xl  w-[160px] sm:w-[190px] md:w-[200px] lg:w-[400px] sm:text-4xl">
                 We Provide
@@ -46,11 +49,10 @@ const Home = () => {
                 alt="Bulb"
               />
             </div> */}
-  
           </div>
         </div>
 
-        <div className="flex flex-col items-center mt-5 lg:mt-0 lg:-mx-30">
+        <div className="flex flex-col items-center mt-5 lg:mt-0 lg:-mx-30 z-51">
           <img
             className="w-[100px] h-[30px] sm:w-[150px] sm:h-[50px] lg:w-[278px] lg:h-[92px]"
             src={cloud1}
@@ -70,16 +72,16 @@ const Home = () => {
           </div>
         </div>
       </div>
-<div className="absolute bottom-0 left-0 sm:w-full md:w-full lg:w-full w-full h-1/3 z-20 bg-blue-400"
-style={{
-  backgroundImage: `url(${vector})`,
-  backgroundSize: "cover",
-  backgroundPosition: "top center",
-  backgroundRepeat: "no-repeat",
-}}
->
-</div>
-        {/* <motion.div
+      <div
+        className="absolute bottom-0 left-0 sm:w-full md:w-full lg:w-full w-full h-1/3 z-20"
+        style={{
+          backgroundImage: `url(${vector})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top center",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
+      {/* <motion.div
           variants={fadeIn}
           initial="hidden"
           whileInView="visible"
@@ -87,7 +89,7 @@ style={{
         >
       <Brand />
         </motion.div> */}
-      </div> 
+    </div>
   );
 };
 
