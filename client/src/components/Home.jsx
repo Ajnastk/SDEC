@@ -18,7 +18,7 @@ import FlipWords from "./FlipWords";
 const Home = () => {
   return (
     <div
-      className=" flex flex-col pt-20 scroll-mt-20 z-0 bg-[#010a23] "
+      className=" flex flex-col pt-20 scroll-mt-20 z-0 bg-[#010a23]"
       id="home"
       style={{ backgroundImage: `url(${homeBg})`, backgroundSize: "contain" }}
     >
@@ -78,10 +78,7 @@ style={{
   backgroundRepeat: "no-repeat",
 }}
 >
- 
 </div>
-        
-  
         {/* <motion.div
           variants={fadeIn}
           initial="hidden"
