@@ -23,7 +23,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${homeBg})`, backgroundSize: "contain" }}
     >
       <Navbar />
-      <div className=" flex flex-col h-[610px] lg:flex-row justify-center px-5 lg:px-20 ">
+      <div className=" flex flex-col lg:flex-row justify-center px-5 lg:px-20 ">
         <div className=" items-center lg:items-start lg:mx-20">
           <img
             className="mt-5 w-[120px] h-[40px] sm:w-[150px] sm:h-[50px] lg:w-[278px] lg:h-[92px]"
@@ -71,7 +71,7 @@ const Home = () => {
         </div>
       </div>
        <div
-        className="absolute bottom-0 left-0 sm:w-full md:w-full lg:w-full w-full h-1/3 z-20"
+        className="absolute lg:bottom-[-55px] md:bottom-[-150px] sm:bottom-[-90px] bottom-[-90px] left-0 sm:w-full md:w-full lg:w-full mb-[-0px] w-full h-1/3 z-[20]"
         style={{
           backgroundImage: `url(${vector})`,
           backgroundSize: "cover",
