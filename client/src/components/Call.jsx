@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 import callImage from "../assets/images/call.svg";
 import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
+import { motion } from "framer-motion";
 const Call = () => {
   const { call } = contents;
   const [formdata, setFormData] = useState({
@@ -63,8 +64,16 @@ const Call = () => {
     >
       {/* Left Side - Image */}
       <div className="lg:w-1/2">
-        <img
+        {/* <img
           className=" w-[350px] sm:w-[400px] md:w-[400px] lg:w-[541px]"
+          alt="Person working on laptop"
+          src={callImage}
+        /> */}
+        <motion.img
+        
+        animate={{ scale: [], y: [0, 8, 0], x: [0, 5, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+              className=" w-[350px] sm:w-[400px] md:w-[400px] lg:w-[541px]"
           alt="Person working on laptop"
           src={callImage}
         />
