@@ -1,10 +1,12 @@
 import whoImage from "../assets/images/who.svg";
 import { contents } from "../Contents";
 import ScrollFloat from "../assets/animations/ScrollFloat";
+import { motion } from "framer-motion";
+
 const Who = () => {
   const { who } = contents;
   return (
-    <div className="relative max-w-5xl md:mx-6 sm:mx-6 mx-6 lg:mx-auto px-4 flex flex-col lg:flex-row items-center gap-10 mt-[130px]">
+    <div className="relative max-w-5xl md:mx-6 sm:mx-6 mx-6 lg:mx-auto flex flex-col lg:pl-[-10px] lg:flex-row items-center gap-10 mt-[130px]">
       <div className="lg:w-1/2 space-y-6 text-center lg:text-left text-white">
         <div className="font-bold mb-[-30px] md:mb-[-45px] ml-[-10px]  md:ml-[-15px] ">
           <ScrollFloat
@@ -25,12 +27,12 @@ const Who = () => {
         <p className="text-gray-400 leading-snug text-2xl md:text-4xl">
           We’re an Award-Winning <br /> Modern Business Solutions <br /> Agency
         </p>
-        <p className="text-lg leading-8">
+        <p className="text-lg sm:mx-14 lg:mx-0 md:mx-14 mx-14">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab
           illo inventore veritatis architecto beatae.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mt-6">
+        <div className="grid grid-cols-1 mx-14 lg:mx-0 sm:grid-cols-3 lg:grid-cols-3 gap-4 max-w-4xl mt-6">
           {[
             "Tech Solutions",
             "IT Consulting",
@@ -53,7 +55,14 @@ const Who = () => {
         </div>
       </div>
       <div className="lg:w-1/2 flex justify-center">
-        <img className="w-full max-w-md" alt="About png" src={whoImage} />
+        {/* <img className="w-full max-w-md" alt="About png" src={whoImage} /> */}
+        <motion.img
+              src={whoImage}
+              animate={{ scale: [], y: [0, 8, 0], x: [0, 5, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+              alt="Business Illustration"
+              className="hidden md:block w-full max-w-md" // Hide on mobile, show on md+
+            />
       </div>
     </div>
   );

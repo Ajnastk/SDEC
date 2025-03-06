@@ -38,13 +38,13 @@ const Seo = () => {
         </p>
 
         {/* Accordion */}
-        <div className="mt-6 space-y-2">
+        <div className="mt-6 space-y-2 ">
           {" "}
           {/* Reduced spacing */}
           {seo.questions.map((item, index) => (
             <div
               key={index}
-              className="w-[100%] lg:w-[80%] lg:ml-10 overflow-hidden"
+              className="w-[100%] lg:w-[100%]  overflow-hidden"
             >
               {/* Animated Button */}
               <motion.button
@@ -88,7 +88,7 @@ const Seo = () => {
           transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
           src={seo.seoImage}
           alt="Left Icon"
-          className="w-full"
+          className="hidden lg:mt-[100px] md:block w-full max-w-md"
         />
         {/* <img
           src={seo.seoImage}
