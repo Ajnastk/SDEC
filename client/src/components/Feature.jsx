@@ -35,10 +35,10 @@ export default function Feature() {
   ];
 
   return (
-    <section className="relative bg-[#000A1F] text-white px-4 md:px-12 overflow-hidden mt-[0px] z-30">
+    <section className="relative bg-[#000a1f] text-white pr-5 overflow-hidden pt-[130px] z-50">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
-        <div className="relative w-full md:w-3/7 flex flex-col justify-center mt-[200px] ">
+        <div className="relative w-full md:w-3/7 flex flex-col justify-center ">
           <div className="md:flex justify-center items-center w-full hidden ">
             <div className="flex flex-col gap-20">
               {feature.iconsImageArray.map((icon, index) => (
