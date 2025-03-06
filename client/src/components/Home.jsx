@@ -70,15 +70,18 @@ const Home = () => {
           </div>
         </div>
       </div>
-       <div
-        className="absolute bottom-0 left-0 sm:w-full md:w-full lg:w-full w-full h-1/3 z-20"
-        style={{
-          backgroundImage: `url(${vector})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+<div className="absolute bottom-0 left-0 sm:w-full md:w-full lg:w-full w-full h-1/3 z-20 bg-blue-400"
+style={{
+  backgroundImage: `url(${vector})`,
+  backgroundSize: "cover",
+  backgroundPosition: "top center",
+  backgroundRepeat: "no-repeat",
+}}
+>
+ 
+</div>
+        
+  
         {/* <motion.div
           variants={fadeIn}
           initial="hidden"
@@ -88,7 +91,6 @@ const Home = () => {
       <Brand />
         </motion.div> */}
       </div> 
-    </div>
   );
 };
 
