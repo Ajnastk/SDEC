@@ -80,13 +80,13 @@ export default function ServiceList() {
       </div>
 
       {/* Show only Mobile view */}
-      <div className="w-full flex flex-col items-center justify-center lg:hidden px-4 sm:px-6 space-y-4">
+      <div className="w-full flex flex-col items-center justify-center lg:hidden px-4 sm:px-2 space-y-4">
         {Object.keys(services.servicesList).map((key, index) => {
           const service = services.servicesList[key];
           return (
             <motion.div
               key={index}
-              className="w-full max-w-[400px]"
+              className="sm:w-[500px]"
               initial="hidden"
               whileInView="visible"
               animate={isInView ? "visible" : "hidden"} // Reverts animation to "hidden" when not in view
