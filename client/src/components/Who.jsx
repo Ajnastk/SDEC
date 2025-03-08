@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Who = () => {
   const { who } = contents;
   return (
-    <div className="relative max-w-5xl md:mx-4 sm:mx-4 mx-4 lg:mx-auto flex flex-col lg:pl-[-10px] lg:flex-row items-center gap-10 mt-[130px]">
+    <div className="relative max-w-5xl md:mx-4 sm:mx-4 mx-4 lg:mx-auto flex flex-col lg:pl-[-10px] lg:flex-row items-center gap-10 md:px-15 mt-[130px]">
       <div className="lg:w-1/2 space-y-6 text-center lg:text-left text-white">
         <div className="font-bold mb-[-30px] md:mb-[-45px] ml-[-10px]  md:ml-[-15px] ">
           <ScrollFloat

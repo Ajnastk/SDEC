@@ -12,7 +12,7 @@ const Seo = () => {
   };
 
   return (
-    <div className="flex flex-col max-w-5xl mt-[130px] pt-20 scroll-mt-20 w-[70%] mx-auto lg:flex-row lg:ml-60 lg:items-start gap-10 px-2 py-12 bg-[#000A1F] text-white">
+    <div className="flex flex-col max-w-5xl mt-[30px] pt-20 scroll-mt-20 md:w-[70%] w-[90%] mx-auto lg:flex-row lg:ml-60 lg:items-start gap-10 px-[1px] py-2 bg-[#000A1F] text-white">
       {/* Left Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
         <div className="relative">
@@ -28,7 +28,6 @@ const Seo = () => {
               {seo.backgroundHeading}
             </ScrollFloat>
           </div>
-         
         </div>
 
         <img src={seo.underLine} alt="" className="mx-auto mb-[-1px] lg:mx-0" />
@@ -38,14 +37,10 @@ const Seo = () => {
         </p>
 
         {/* Accordion */}
-        <div className="mt-6 space-y-2 ">
-          {" "}
+        <div className="mt-6 space-y-2 flex flex-col justify-center">
           {/* Reduced spacing */}
           {seo.questions.map((item, index) => (
-            <div
-              key={index}
-              className="w-[100%] lg:w-[100%]  overflow-hidden"
-            >
+            <div key={index} className="w-[100%] lg:w-[100%] overflow-hidden">
               {/* Animated Button */}
               <motion.button
                 className={`w-full flex justify-between items-center p-3 text-white text-sm lg:text-md font-semibold 
@@ -88,7 +83,7 @@ const Seo = () => {
           transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
           src={seo.seoImage}
           alt="Left Icon"
-          className="hidden lg:mt-[100px] md:block w-full max-w-md"
+          className="hidden lg:mt-[130px] md:block w-full max-w-md"
         />
         {/* <img
           src={seo.seoImage}

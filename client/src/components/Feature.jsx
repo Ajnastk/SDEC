@@ -35,12 +35,12 @@ export default function Feature() {
   ];
 
   return (
-    <section className="relative bg-[#000a1f] text-white pr-5 overflow-hidden pt-[130px] z-50">
-      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
+    <section className="relative bg-[#000a1f] text-white p-5 overflow-hidden pt-[130px] z-50">
+      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center  justify-center z-10">
         {/* Left Side - Illustration */}
         <div className="relative w-full md:w-3/7 flex flex-col justify-center mt-[220px] ">
           <div className="md:flex justify-center items-center w-full hidden ">
-            <div className="flex flex-col gap-20">
+            <div className="flex flex-col gap-20 ">
               {feature.iconsImageArray.map((icon, index) => (
                 <Magnet
                   key={index}
@@ -83,7 +83,7 @@ export default function Feature() {
               animate={{ scale: [], y: [0, 8, 0], x: [0, 5, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
               alt="Business Illustration"
-              className="hidden md:block w-48 md:w-60" // Hide on mobile, show on md+
+              className="hidden lg:block w-48 md:w-60" // Hide on mobile, show on md+
             />
           </div>
 
