@@ -38,7 +38,7 @@ export default function Feature() {
     <section className="relative bg-[#000a1f] text-white pr-5 overflow-hidden pt-[130px] z-50">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
-        <div className="relative w-full md:w-3/7 flex flex-col justify-center ">
+        <div className="relative w-full md:w-3/7 flex flex-col justify-center mt-[220px] ">
           <div className="md:flex justify-center items-center w-full hidden ">
             <div className="flex flex-col gap-20">
               {feature.iconsImageArray.map((icon, index) => (
@@ -96,7 +96,7 @@ export default function Feature() {
         {/* Right Side - Content */}
         <div className="lg:w-1/2  text-center lg:text-left md:text-left relative">
           {/* Background Heading (Only for Desktop) */}
-          <div className=" text-white font-bold mb-[-30px] md:mb-[-45px] md:ml-[-10px] ">
+          <div className=" text-white font-bold mb-[-30px] md:mb-[-45px] lg:ml-3 md:ml-3 ">
             <ScrollFloat
               animationDuration={1}
               ease="back.inOut(2)"
@@ -108,7 +108,7 @@ export default function Feature() {
             </ScrollFloat>
           </div>
 
-          <h2 className="text-gray-400 text-2xl md:text-4xl mb-6 text-center md:text-left">
+          <h2 className="text-gray-400 text-2xl md:text-4xl mb-6 text-center md:text-left lg:ml-4 md:ml-4">
             <img
               src={feature.headingLineImage}
               alt=""
@@ -133,7 +133,7 @@ export default function Feature() {
             </p>
           </motion.div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 items-center justify-center text-center md:text-left">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 items-center ml-4 justify-center text-center md:text-left">
             {feature.featuresList.map((item, index) => (
               <SpotlightCard
                 key={index}
