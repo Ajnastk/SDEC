@@ -35,10 +35,10 @@ export default function Feature() {
   ];
 
   return (
-    <section className="relative bg-[#000a1f] text-white p-5 overflow-hidden pt-[130px] z-50">
+    <section className="relative bg-[#000a1f] text-white p-5 overflow-hidden z-50 lg:mt-[60px] md:mt-[60px] sm:mt-[90px] mt-[50px]">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center  justify-center z-10">
         {/* Left Side - Illustration */}
-        <div className="relative w-full md:w-3/7 flex flex-col justify-center mt-[220px] ">
+        <div className="relative w-full md:w-3/7 flex flex-col justify-center ">
           <div className="md:flex justify-center items-center w-full hidden ">
             <div className="flex flex-col gap-20 ">
               {feature.iconsImageArray.map((icon, index) => (
@@ -133,7 +133,7 @@ export default function Feature() {
             </p>
           </motion.div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 items-center mx-3 justify-center text-center md:text-left">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 items-center justify-center text-center md:text-left">
             {feature.featuresList.map((item, index) => (
               <SpotlightCard
                 key={index}
