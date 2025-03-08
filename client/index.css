@@ -19,6 +19,7 @@
   html {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scroll-behavior: smooth;
   }
 
   /* * {
@@ -35,4 +36,3 @@
     z-index: 100;
     pointer-events: none;
   } 
-

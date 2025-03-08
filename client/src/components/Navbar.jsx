@@ -90,8 +90,19 @@ export default function Navbar() {
     setClick(false); // Close mobile menu if open
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const top = section.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <div className="w-full px-4 pt-3 fixed top-0 left-0 z-50">
+    <div className="w-full px-4 pt-3 fixed top-0 left-0 z-100">
       <nav className={`text-white p-4 bg-gray-900/80 backdrop-blur-md rounded-xl max-w-7xl mx-auto shadow-md transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
         <div className="container mx-auto flex justify-between items-center px-6">
           {/* Logo */}
@@ -108,8 +119,11 @@ export default function Navbar() {
               <li key={item}>
                 <a 
                   href={`#${item.toLowerCase()}`} 
+                  onClick={(e) => { 
+                    e.preventDefault(); // Prevent default anchor behavior
+                    scrollToSection(item.toLowerCase()); 
+                  }}
                   className={`transition-colors duration-300 hover:text-blue-400 ${activeLink === item.toLowerCase() ? 'text-blue-400 font-medium' : ''}`}
-                  onClick={() => handleLinkClick(item)}
                 >
                   {item}
                 </a>
@@ -125,8 +139,11 @@ export default function Navbar() {
               <li key={item}>
                 <a 
                   href={`#${item.toLowerCase()}`} 
+                  onClick={(e) => { 
+                    e.preventDefault(); // Prevent default anchor behavior
+                    scrollToSection(item.toLowerCase()); 
+                  }}
                   className={`block py-2 transition-colors duration-300 hover:text-blue-400 ${activeLink === item.toLowerCase() ? 'text-blue-400 font-medium' : ''}`}
-                  onClick={() => handleLinkClick(item)}
                 >
                   {item}
                 </a>
