@@ -133,7 +133,7 @@ export default function Feature() {
             </p>
           </motion.div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 items-center ml-4 justify-center text-center md:text-left">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 items-center mx-3 justify-center text-center md:text-left">
             {feature.featuresList.map((item, index) => (
               <SpotlightCard
                 key={index}
