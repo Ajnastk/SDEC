@@ -59,7 +59,7 @@ const Fact = () => {
       </div> */}
 
       {/* Fact Cards (3 in a Row) */}
-      <div className="lg:w-1/2 flex flex-wrap justify-center lg:justify-between gap-6">
+      <div className="flex flex-wrap lg:justify-between justify-center gap-6">
         {facts.map((item, index) => (
           <div
             key={index}

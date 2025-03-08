@@ -2,7 +2,7 @@ import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer(){
   return (
-    <div className="bg-gray-900 text-white py-10">
+    <div className="bg-gray-900 text-white py-10 rounded-tl-4xl rounded-tr-4xl mx-4">
       <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {/* Logo & Socials */}
         <div>
@@ -39,8 +39,8 @@ export default function Footer(){
         {/* Contact */}
         <div>
           <p className="text-lg font-medium">Contact</p>
-          <p className="mt-3 text-gray-400">785 Main Street, 2nd Block</p>
-          <p className="text-gray-400">Melbourne, Australia</p>
+          <p className="mt-3 text-gray-400">Tower 1,1422,4th Floor</p>
+          <p className="text-gray-400">HiLite Business Park, Calicut</p>
         </div>
 
         {/* Newsletter */}
@@ -58,7 +58,7 @@ export default function Footer(){
 
       {/* Bottom Footer */}
       <div className="max-w-screen-xl mx-auto px-6 mt-8 flex flex-col md:flex-row justify-between text-gray-400 text-sm">
-        <p>© 2023 Atsu. All Rights Reserved</p>
+        <p> 2025 SDEC. All Rights Reserved</p>
         <div className="flex space-x-6">
           <p>Setting & Privacy</p>
           <p>FAQs</p>
@@ -67,6 +67,3 @@ export default function Footer(){
     </div>
   );
 };
-
-
-
