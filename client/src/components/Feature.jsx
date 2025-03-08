@@ -35,7 +35,7 @@ export default function Feature() {
   ];
 
   return (
-    <section className="relative bg-[#000a1f] text-white pr-5 overflow-hidden pt-[130px] z-50">
+    <section className="relative bg-[#000a1f] text-white pr-5 overflow-hidden pt-[130px] z-50 px-5">
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center z-10">
         {/* Left Side - Illustration */}
         <div className="relative w-full md:w-3/7 flex flex-col justify-center ">

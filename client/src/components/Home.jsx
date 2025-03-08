@@ -18,13 +18,9 @@ import FlipWords from "./FlipWords";
 const Home = () => {
   return (
     <div
-      className=" flex flex-col pt-20 scroll-mt-20 z-0 bg-[#010a23]"
       id="home"
-      style={{
-        backgroundImage: `url(${homeBg})`,
-        backgroundSize: "contain",
-        height: "100vh",
-      }}
+      className="flex flex-col pt-20 scroll-mt-20 z-0 bg-[#010a23] md:h-[700px] sm:h-[80vh] bg-contain h-[85vh]"
+      style={{ backgroundImage: `url(${homeBg})` }}
     >
       <Navbar />
       <div className=" flex flex-col lg:flex-row justify-center px-5 lg:px-20 ">
@@ -73,7 +69,7 @@ const Home = () => {
         </div>
       </div>
       <div
-        className="absolute bottom-0 left-0 sm:w-full md:w-full lg:w-full w-full h-1/3 z-20"
+        className="absolute md:bottom-100 bottom-[-20px] lg:bottom-0 left-0 sm:w-full md:w-full lg:w-full w-full h-1/3 z-20"
         style={{
           backgroundImage: `url(${vector})`,
           backgroundSize: "cover",
