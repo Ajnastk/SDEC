@@ -10,6 +10,7 @@ import { InfiniteMovingCardsDemo } from "./components/InfiniteMovingCardsDemo";
 import Call from "./components/Call";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import FAQAccordion from "./components/FAQAccordion";
 // import Cube from "./components/Cube";
 
 const fadeIn = {
@@ -43,6 +44,8 @@ const App = () => {
       {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
       {/* <Says /> */}
       <InfiniteMovingCardsDemo />
+
+      <FAQAccordion/>
       {/* </motion.div> */}
       {/* <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{amount:0.2}}> */}
       <Call/>

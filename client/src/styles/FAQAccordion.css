@@ -1,0 +1,37 @@
+/* Smooth open animation */
+.faq-enter {
+  transform: scaleY(0);
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.faq-enter-active {
+  transform: scaleY(1);
+  opacity: 1;
+  height: auto;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Smooth close animation */
+.faq-exit {
+  transform: scaleY(1);
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+}
+
+.faq-exit-active {
+  transform: scaleY(0);
+  opacity: 0;
+  height: 0;
+  transition: transform 1s ease-in, opacity 0.3s ease-in;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-0 {
+  transform: rotate(0deg);
+}
