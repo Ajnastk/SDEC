@@ -222,4 +222,33 @@ export const contents = {
     heading: "Call",
     underLine: underLine,
   },
+  faq: {
+    underLine: underLine,
+    backgroundHeading: "FAQ",
+    title: "Let's Answer Your Questions",
+   faqs: [
+  {
+    question: "What is the purpose of this website?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor massa vel ultrices commodo.",
+  },
+  {
+    question: "What is the purpose of this website?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor massa vel ultrices commodo.",
+  },
+  {
+    question: "What is the purpose of this website?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor massa vel ultrices commodo.",
+  },
+  {
+    question: "What is the purpose of this website?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor massa vel ultrices commodo.",
+  },
+],
+
+    faq: 66,
+  },
 };

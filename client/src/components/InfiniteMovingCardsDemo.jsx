@@ -37,10 +37,6 @@ export function InfiniteMovingCardsDemo() {
   return (
     <div
       className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden mt-[130px]"
-      // style={{
-      //   background: "linear-gradient(to bottom, #000510, #001033)",
-      //   backgroundImage: "radial-gradient(circle at 25% 25%, rgba(16, 21, 55, 0.8) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(16, 40, 80, 0.6) 0%, transparent 50%)"
-      // }}
     >
 
       <div className="font-bold  md:mb-[-45px] md:ml-[-10px] text-center mb-[-30px] text-white ">
