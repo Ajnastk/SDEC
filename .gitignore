@@ -7,6 +7,8 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+client 
+
 node_modules
 dist
 dist-ssr
@@ -26,18 +28,32 @@ dist-ssr
 # Ignore node_modules in both client and server folders
 client/node_modules/
 server/node_modules/
+sdec-next/node_modules/
 
 # Ignore environment variable files (.env)
 
 client/.env
 server/.env
+sdec-next/.env
 
 # Ignore build directories (if any)
 client/build/
 server/build/
+sdec/.next
 
 
 
 
 # windsurf rules
 .windsurfrules
+
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
